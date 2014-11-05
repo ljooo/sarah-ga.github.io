@@ -1,60 +1,155 @@
 body{
-	background-color:#F4D1B0;
-	margin:0;
+	background-color:#F2E4BB;
+	margin:0px;
+	font-family: 'Times New Roman', serif;
+	font-size:14px;
+	font-weight:100;
+	color:#782115;
 }
 
 header{
 	width:1000px;
 	height:360px;
-	margin:0 auto;
-	background:url("headerimg.jpg");
-
-}
-
-.wrapper{
-	width:1000px;
-	margin:0 auto;
-}
-
-nav{
-	margin:0;
-	width:1000px;
-	height:55px;
-	float:left;
-	font-family: 'Times New Roman', serif;
-	font-weight:100;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	background-color:#782115;
-}
-
-nav ul li{
-	list-style: none;
-	font-size:12px;
-	display:inline;
-	margin:0 auto;
-	padding:20px;
-}
-
-li a{
-	color:#F4D1B0;
-	text-decoration: none;
-}
-
-li a:hover{
-	color:#F4D1B0;
-	text-decoration: none;
-	border-bottom: solid;
-	border-width: 1px;
+	margin:0px auto;
+	background:url("assets/headerimg.jpg");
 }
 
 #logo{
-	margin:0 auto;
+	margin:0px auto;
 	display:block;
-	width:150px;
-	padding:80px;
+	width:800px;
+	padding:20px;
 }
 
 #logo img{
 	width:100%;
 }
+
+.wrapper{
+	width:1000px;
+	height:830px;
+	background:#ffffff;
+	margin:0 auto;
+	clear:both;
+}
+
+nav{
+	margin:0px auto;
+	width:1000px;
+	height:50px;
+	background-color:#782115;
+	display: block;
+	float:left;
+	clear:both;
+}
+
+ul li{
+	margin:0;
+	padding:5px 40px 0px 5px;
+	list-style: none;
+	font-size:13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	display:inline;
+}
+
+li a{
+	padding:1px;
+	color:#ffffff;
+	text-decoration: none;
+}
+
+li a:hover{
+	text-decoration: none;
+	border-bottom: solid;
+	border-width: 1px;
+}
+
+h1{
+	margin:15px auto;
+	font-family: 'Arial', sans-serif;
+	font-size:20px;
+	font-weight:600;
+	text-align: center;
+	color:#782115;
+}
+
+aside{
+	margin:0px;
+	width:270px;
+	padding:15px;
+	float:left;
+	clear:both;
+	background:#E4EEF4;
+}
+
+
+
+aside p {
+	margin:10px auto 0;
+	padding:5px;
+	line-height: 18px;
+}
+
+hr{
+	width:260px;
+	margin:20px auto 20px;
+	border:none;
+	height:2px;
+	background-color:#782115;
+}
+
+figure{
+	margin:15px auto;
+}
+
+figcaption{
+	margin:0px auto 0;
+	
+	padding:5px;
+	
+}
+
+section{
+	width:700px;
+	margin:0px;
+	padding:0px;
+		float:left;
+}
+
+section h1{
+	margin:15px auto;
+	padding:20px;
+	font-family: 'Arial', sans-serif;
+	font-size:20px;
+	font-weight:800;
+	text-align:center;
+	color:#782115;
+}
+
+section p{
+	display:block;
+}
+
+footer{
+	margin:20px auto;
+	height:270px;
+	width:1000px;
+	background-color:#ffffff;
+}
+
+footer img{
+	width:50%;
+	margin:0px auto;
+	padding:40px 250px;
+}
+
+footer p{
+	width:80%;
+	margin:0px auto;
+	padding:0px 15px;
+	color:#782115;
+}
+
+
+
