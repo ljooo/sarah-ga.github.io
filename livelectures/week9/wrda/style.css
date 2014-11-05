@@ -83,8 +83,6 @@ aside{
 	background:#E4EEF4;
 }
 
-
-
 aside p {
 	margin:10px auto 0;
 	padding:5px;
@@ -105,16 +103,21 @@ figure{
 
 figcaption{
 	margin:0px auto 0;
-	
 	padding:5px;
-	
 }
+
+/*.main-container{
+	width:700px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}*/
 
 section{
 	width:700px;
 	margin:0px;
 	padding:0px;
-		float:left;
+	float:left;
 }
 
 section h1{
@@ -148,7 +151,7 @@ footer p{
 	width:80%;
 	margin:0px auto;
 	padding:0px 15px;
-	color:#782115;
+	color:#000000;
 }
 
 
