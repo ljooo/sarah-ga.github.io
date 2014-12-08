@@ -1,0 +1,128 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+	background: #333333;
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	font-size:16px;
+	color:#ffffff;
+}
+
+
+
+h1{	
+	display: block;
+	width:100%;
+	text-align: center;
+	padding-top:3.5em;
+	font-size:4em;
+	font-weight:800;
+}
+
+#red{
+	color:red;
+	font-size:1.25em;
+}
+
+nav{
+	width:100%;
+	margin:.5em;
+	float:left;
+	clear:both;
+	cursor:pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* ------------------- large nav -------------------- */
+
+.nav_lg ul{
+	list-style: none;
+    margin:1em .5em;
+}
+
+.nav_lg li{
+	display:inline;
+	padding:1em;
+}
+
+.nav_lg li a{
+	text-decoration: none;
+	font-weight:800;
+	color:#ffffff;
+}
+
+
+/* ------------------- small nav -------------------- */
+
+.nav_sm{
+	display:none;
+}
+
+.nav_sm ul {
+  	list-style: none;
+  	margin:.5em;
+  	background:#ffffff;
+}
+
+.nav_sm li{
+	padding:1em;
+	background: #ffffff;
+}
+
+.nav_sm li:hover{
+	background:red;
+}
+
+.nav_sm li a{
+	text-decoration: none;
+	color:#333333;
+	font-weight:800;
+}
+
+.nav_sm li a:hover{
+	text-decoration: none;
+/*	color:#333333;
+	font-weight:800;*/
+}
+
+/* ------------------- toggle menu -------------------- */
+
+#menu-toggle {
+  display: none; /* hide the checkbox */
+}
+
+#menu {
+  display: none; /* hide the menu items */
+}
+
+/* when toggle is checked, dispaly the menu */
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+/* ------------------- media queries -------------------- */
+
+@media screen and (max-width:600px){
+
+	nav{
+		width:90%;
+		margin:1em;
+		float:left;
+		clear:both;
+	}
+
+	.nav_sm{
+		display:block;
+	}
+
+	.nav_lg{
+		display:none;
+	}
+
+}
