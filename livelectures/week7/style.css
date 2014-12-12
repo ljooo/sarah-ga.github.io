@@ -1,0 +1,104 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+	background: #FCDFFF;
+	font-family:'Times New Roman', serif;
+	font-size: 16px;
+	color:#333333;
+	font-weight:100;
+	color:#ffffff;
+}
+
+section{
+	background:#ffffff;
+	width:50%;
+	margin:50px auto 0px;
+	padding:40px;
+	border-radius:10px;
+}
+
+/*------------ multiple selectors! ------------*/
+
+
+h1{
+	font-family:'Arial', 'Helvetica', sans-serif; 
+	font-weight:800;
+	font-size:36px;
+	color:#333333;
+	padding:10px 20px;
+}
+
+h2{
+	font-family:'Arial', 'Helvetica', sans-serif;
+	font-weight:800;
+	font-size:24px;
+	color:#555555;
+	padding:10px 20px;
+}
+
+/*------------ descendant selectors! ------------*/
+
+.box{
+	margin:20px;
+	width:150px;
+	height:100px;
+	border-radius: 8px;
+	background: #444444;
+	display:block;
+	float:left;
+}
+
+a {
+	font-weight:800;
+	color:#893BFF;
+	text-align:center;
+	line-height:100px;
+	padding:10px;
+}
+
+
+/*------------ child selectors! ------------*/
+
+ul, ol{
+	margin-left: 20px;
+}
+
+ul{
+	color:#333333;
+}
+
+li{
+	margin-left: 20px;
+	line-height:18px;
+}
+
+/*ul > li{
+	background:#CCFFFF;
+}*/
+
+
+/*------------ and hey what can we do with section id's??? ------------*/
+
+#sec1{
+}
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
