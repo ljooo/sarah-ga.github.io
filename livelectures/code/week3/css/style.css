@@ -1,0 +1,62 @@
+body{
+	margin:0;
+	font-family:'Helvetica', 'Arial', sans-serif;
+	background:red;
+/*	background:url("../assets/space.jpg") no-repeat;
+	background-size:cover;*/
+}
+
+
+header{
+
+}
+
+
+nav{
+
+}
+
+section{
+
+}
+
+h1{
+	
+}
+
+h2{
+
+}
+
+p{
+	font-family: 'Times New Roman', serif;
+}
+
+footer{
+
+}
+
+
+.squares{ 
+	width:100px;
+	height:100px;
+	background:#000000;
+/*	margin-top:10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;*/
+
+	/* N E S W */
+	margin:10px auto auto 10px;
+
+
+	margin:10px auto;
+}
+
+/*#red{ 
+	width:400px;
+	height:400px;
+	background:#ff0000;
+	margin:10px;
+}
+*/
