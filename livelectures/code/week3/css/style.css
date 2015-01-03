@@ -79,8 +79,8 @@ css shorthand
 > font: weight style variant(small-caps) size family
 */
 
-/*.squares{ 
-	width:100px;
+.squares{ 
+	width:80%;
 	height:100px;
 	background:#000000;
 
@@ -88,12 +88,13 @@ css shorthand
 	margin-right:10px;
 	margin-bottom:10px;
 	margin-left:10px;
-
+/*	display:inline;*/
+/*
 	margin:10px 10px 10px 10px;
 
 	margin:10px;
-	margin:10px auto;
-}*/
+	margin:10px auto;*/
+}
 
 
 /*#redsquare{
