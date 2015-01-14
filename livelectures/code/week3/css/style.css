@@ -79,10 +79,11 @@ css shorthand
 > font: weight style variant(small-caps) size family
 */
 
-.squares{ 
-	width:80%;
+div{ 
+	background: url("assets/astronaut.png");
+	width:200px;
 	height:100px;
-	background:#000000;
+	border: 1px solid #000000;
 
 	margin-top:10px;
 	margin-right:10px;
@@ -94,6 +95,19 @@ css shorthand
 
 	margin:10px;
 	margin:10px auto;*/
+}
+
+#special{
+	background-color:blue;
+}
+
+.red{
+	background-color:red;
+}
+
+
+div p{
+	color:red;
 }
 
 
