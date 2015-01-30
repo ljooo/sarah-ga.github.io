@@ -15,10 +15,11 @@ body{
 
 section{
 	background:#ffffff;
-	width:50%;
-	margin:50px auto 0px;
+	width:100%;
+	margin:0;
 	padding:40px;
-	border-radius:10px;
+/*	height:50vh;*/
+/*	border-radius:10px;*/
 }
 
 /*------------ multiple selectors! ------------*/
@@ -84,6 +85,18 @@ li{
 /*------------ and hey what can we do with section id's??? ------------*/
 
 #sec1{
+	background-color: #98AFC7;
+	height:10vh;
+}
+
+#sec2{
+	background-color: #CCFFFF;
+	height:75vh;
+}
+
+#sec3{
+	background-color: #CBA5B2;
+	height: 15vh;
 }
 
 
