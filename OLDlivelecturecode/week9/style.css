@@ -26,6 +26,7 @@ figure{
 	padding:1em;
 	display:block;
 	float:left;
+	border: 1px solid #000;
 }
 
 figcaption{
