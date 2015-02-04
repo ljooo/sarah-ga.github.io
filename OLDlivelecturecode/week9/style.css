@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-size:16px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	text-align:center;
+}
+
+h1{
+	margin:1em auto 1em;
+	font-size:2.5em;
+	font-weight:800;
+	width:90%;
+}
+
+section{
+	margin:0 auto;
+	width:90%;
+}
+
+figure{
+	padding:1em;
+	display:block;
+	float:left;
+	border: 1px solid #000;
+}
+
+figcaption{
+	display:block;
+	position:relative;
+	padding:1em 0 1.5em;
+/*	font-size:1em;*/
+}
+
+img{
+	display:block;
+	width:100%;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERIES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* iphone portrait or landscape (up to 480px) */
+@media all and (max-width: 30em){
+	figure{
+		width:100%;
+		display:block;
+		float:left;
+	}
+}
+
+
+/* ipad portrait (up to 768px) */
+@media all and (min-width: 30.0625em) and (max-width: 48em){
+	figure{
+		width:50%;
+	}
+}
+
+/*  3 columns  */
+/*  ipad landscape (up to 1024px) */
+@media all and (min-width: 769px) and (max-width: 1080px){
+	figure{
+		width:33.33%;
+	}
+}
+
+/*  4 columns  */
+/*  all screens > 1024px */
+@media all and (min-width: 1081px){
+	figure{
+		width:25%;
+	}
+}
+

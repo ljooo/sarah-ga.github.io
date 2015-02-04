@@ -1,0 +1,45 @@
+/**{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}*/
+
+body{
+	background: #333333;
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	font-weight: 100;
+	color:#ffffff;
+}
+
+section{
+	width:300px;
+	height:300px;
+	padding:40px;
+	border:10px solid #ffffff;
+	margin:10px;
+	float:left;
+}
+
+
+p{
+	font-family: 'Times New Roman';
+	border: 1px solid #FFF;
+	width:100px;
+	padding:20px;
+	margin:20px;
+}
+
+#bb{
+	box-sizing:border-box;
+	padding:200px;
+}
+
+#cb{
+	box-sizing:content-box;
+}
+
+.main{
+	width:740px;
+	margin:60px auto;
+	padding:0;
+}
