@@ -11,7 +11,7 @@ main{
 }
 
 section{
-	padding:1em;
+	padding:2em 3em;
 	margin:1em auto;
 }
 
@@ -35,7 +35,7 @@ figcaption{
 }
 
 h1{	
-	margin:2em 0 0;
+	margin:2em 0 0 1em;
 	font-size:2.617924em;
 	font-weight:600;
 	color:#565051;
@@ -79,8 +79,8 @@ h3 + ul{
 }
 
 .info{
-	width:48%;
-	padding-left:2%;
+	width:46%;
+	padding-left:4%;
 	float:right;
 }
 
