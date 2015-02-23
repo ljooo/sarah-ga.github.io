@@ -66,10 +66,12 @@ ul{
 li{
 	list-style: square;
 	padding:.25em;
+
 }
 
 a{	
 	text-decoration: none;
+	color:#565051;
 }
 
 h3 + ul{
