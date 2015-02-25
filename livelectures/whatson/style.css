@@ -55,8 +55,13 @@ a{
 }
 
 /* caption following image */
-img + p{
+img + p {
 	margin:0 0 1.975em 0;
+
+}
+
+img + h3, ul + h3, img + li{
+	margin:1.975em 0 0 0;
 }
 
 

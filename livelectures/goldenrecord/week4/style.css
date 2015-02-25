@@ -2,9 +2,12 @@ body{
 	background: url("../assets/milkyway.jpg") no-repeat center center fixed;
 	background-size: cover;
 	color:#ffffff; 
+
+	/* define typeface + fallback */
 	font-family: 'Helvetica';
 }
 
+/* apply kerning */
 h1{
 	font-size:96px;
 }
@@ -22,6 +25,8 @@ h4{
 
 }
 
+
+/* apply leading */
 p{
 
 }
