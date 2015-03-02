@@ -14,6 +14,7 @@ body{
 	background-color: #151B54;
 	color:#ffffff; 
 	font-family: 'Helvetica';
+/*	display: block;*/
 }
 
 
@@ -21,14 +22,3 @@ h1{
 
 }
 
-h2{
-	
-}
-
-h3{
-	
-}
-
-p{
-
-}

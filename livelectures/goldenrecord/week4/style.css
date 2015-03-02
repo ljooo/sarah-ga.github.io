@@ -2,7 +2,7 @@ body{
 	background: url("../assets/milkyway.jpg") no-repeat center center fixed;
 	background-size: cover;
 	color:#ffffff; 
-
+	margin:0;
 	/* define typeface + fallback */
 	font-family: 'Helvetica';
 }
@@ -14,11 +14,12 @@ h1{
 
 h2{
 	font-size: 48px;
+	clear:both;
 }
 
 h3{
 	font-size:36px;
-	color:#ffffff;
+	color:#000000;
 }
 
 h4{
@@ -32,7 +33,6 @@ p{
 }
 
 a{
-
 }
 
 div{
@@ -47,10 +47,4 @@ div{
 	margin:0 auto;
 }
 
-.names{
-	width:220px;
-	color:#000000;
-	border-bottom:3px solid #000000;
-	padding:10px;
-}
 
