@@ -1,45 +1,64 @@
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-}
-
 body{
 	color:#ffffff; 
-	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f0f8ff;
 }
 
 nav{
+	
+}
+
+
+article p{
+	max-width: 650px;
+}
+
+footer p{
+	
+}
+
+
+
+ul{
 	display: block;
 	float:right;
-	margin:30px 30px 0 0;
+	margin:30px;
 }
 
 li{
-	display: inline;
-	padding:15px;
+	display: inline-block;
+	padding:1.2em 2em;
 }
 
 li a {
 	text-decoration: none;
+	text-transform: uppercase;
 	color:#ffffff;
+	font-size:.8em;
+	letter-spacing:.07em;
 }
 
 header{
-	width:610px;
-	height:250px;
-	padding:250px 0;
-	margin:0 auto;
+	padding:9em 0;
+
+}
+
+h1, h2, h3, h4, li a{
+	font-family: 'Roboto', sans-serif;
 }
 
 h1{
-	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size:96px;
+	font-size:7em;
+	letter-spacing:-.02em;
+	line-height: 1.5em;
+	font-weight:800;
+	text-align: center;
 }
 
 h2{
-	font-size: 48px;
-	clear:both;
+	font-size: 3em;
+	font-weight:800;
 }
 
 h3{
@@ -60,7 +79,7 @@ a{
 }
 
 section{
-
+	height:100vh;
 }
 
 footer{
@@ -76,18 +95,31 @@ footer{
   height: 0;
 }
 
-#intro{
-	background: url("../assets/milkyway.jpg") no-repeat center center fixed;
-	background-size: cover;
+#landing{
+	background: url("../assets/milkyway.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height:100vh;
 }
 
+#intro{
+	padding:15%;
+}
 
-#golden{
-
+#intro p{
+	width:27.4em;
+	height:27.4em;
+	margin:0 auto;
+	padding:1.618em;
+	color:#3d3d3d;
+	font-size:1em;
+	line-height:1.618em;
 }
 
 #anncarl{
-
+	background-color: #000;
 }
 
 #gold_imgs{
