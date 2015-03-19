@@ -4,22 +4,27 @@ body{
 	color:#ffffff; 
 	margin:0;
 	/* define typeface + fallback */
-	font-family: 'Helvetica';
+	font-family: 'Droid Serif', serif;
 }
 
 /* apply kerning */
+
+h1, h2, h3, h4{
+	font-family: 'Roboto', sans-serif;
+}
+
 h1{
 	font-size:96px;
 }
 
 h2{
 	font-size: 48px;
-	clear:both;
+	margin:0;
+	letter-spacing: -1px;
 }
 
 h3{
 	font-size:36px;
-	color:#000000;
 }
 
 h4{
@@ -29,7 +34,9 @@ h4{
 
 /* apply leading */
 p{
-
+	margin:20px 0 0 0;
+	line-height: 22px;
+	width:654px;
 }
 
 a{
@@ -47,4 +54,14 @@ div{
 	margin:0 auto;
 }
 
+#wrapper{
+	width: 800px;
+	margin:0 auto;
+}
 
+#golden{
+	background-color: #fff;
+	padding:40px;
+	margin:20px 0;
+	color:#000;
+}
