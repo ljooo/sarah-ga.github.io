@@ -12,9 +12,10 @@ What Can SublimeText do for us in CSS?
 
 body{
 	background-color: #151B54;
+/*	background-color: red;*/
 	color:#ffffff; 
 	font-family: 'Helvetica';
-/*	display: block;*/
+
 }
 
 
