@@ -69,3 +69,7 @@ img + h3, ul + h3, img + li{
 h3 + ul, .linked{
 	margin:0 0 2em 0;
 }
+
+span{
+	text-decoration:line-through;
+}

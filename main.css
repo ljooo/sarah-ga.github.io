@@ -78,6 +78,10 @@ h3 + ul{
 	margin:0 0 2em 0;
 }
 
+span{
+	text-decoration:line-through;
+}
+
 .info{
 	width:46%;
 	padding-left:4%;
