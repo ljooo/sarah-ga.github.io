@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+
+
 *{
 	margin:0;
 	padding:0;
@@ -5,16 +9,18 @@
 }
 
 body{
-	background: url("../assets/milkyway.jpg") no-repeat center center fixed;
+/*	move bkgd image to landing*/
+	background: url("../assets/record.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	color:#ffffff; 
-	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Droid Serif', serif;
 }
 
 nav{
-	display: block;
-	float:right;
-	margin:30px 30px 0 0;
+
 }
 
 
@@ -28,28 +34,26 @@ li a {
 	color:#ffffff;
 }
 
-/* apply kerning */
+h1, h2, h3, h4{
+	font-family: 'Roboto', sans-serif;
+}
+
 h1{
-	font-family: 'Helvetica', 'Arial', sans-serif;
 	font-size:96px;
 }
 
 h2{
 	font-size: 48px;
-	clear:both;
 }
 
 h3{
 	font-size:36px;
-	color:#000000;
 }
 
 h4{
 
 }
 
-
-/* apply leading */
 p{
 
 }
@@ -61,12 +65,30 @@ div{
 
 }
 
-#title{
-/*	background-color: #000000;*/
-	width:610px;
-	height:250px;
-	padding:250px 0;
-	margin:0 auto;
+footer{
+
 }
 
+.wrapper{
 
+}
+
+#landing{
+
+}
+
+#intro{
+
+}
+
+#anncarl{
+
+}
+
+#gold_content{
+
+}
+
+#about{
+
+}

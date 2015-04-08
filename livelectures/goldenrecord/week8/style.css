@@ -12,7 +12,7 @@ nav{
 	position: fixed;
 	width:100%;
     background-color: #000;
-    z-index: 100;
+    z-index: 1;
 }
 
 ul{
@@ -135,11 +135,15 @@ footer h2{
   height: 0;
 }
 
+.fullpage{
+	height:100vh;
+	overflow:auto;
+}
+
 .wrapper{
 	margin:2% auto 0;
 	width:90%;
 	max-width:980px;
-	color:#111111;
 }
 
 /* ------------------------------------------- ANN + CARL ------- */

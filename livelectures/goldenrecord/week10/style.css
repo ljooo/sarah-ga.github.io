@@ -35,6 +35,11 @@ li a:link, li a:visited  {
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing:.07em;
+	-o-transition:.8s;
+	-ms-transition:.8s;
+	-moz-transition:.8s;
+	-webkit-transition:.8s;
+	transition:.8s;
 }
 
 li a:hover, li a:active {
@@ -92,7 +97,7 @@ p{
 	line-height: 1.618em;
 }
 
-section, footer{
+footer{
 	height:100vh;
 	overflow:auto;
 }
@@ -101,14 +106,41 @@ span{
 	font-style: italic;
 }
 
+figure{
+	position: relative;
+	width:100%;
+
+}
+
 figure img{
 	width:100%;
-	min-width:300px;
 	max-width:500px;
 }
 
 figcaption{
+	display:none;
+
+}
+
+figure:hover figcaption{
+	display:block;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size: 1em;
+	padding:10%;
 	color:#fff;
+	position:absolute;
+	top:0;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+audio{
+	display: block;
+	margin:1em 0;
 }
 
 footer{
@@ -124,6 +156,8 @@ footer h2{
 	position:relative;
   	top:50%;
   	transform: translateY(-90%);
+  	width:773px;
+  	margin:0 auto;
 }
 
 .clearfix:after {
@@ -135,12 +169,27 @@ footer h2{
   height: 0;
 }
 
+.fullpage{
+	height:100vh;
+	overflow:auto;
+/*	    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );*/
+/*    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;*/
+}
+
 .wrapper{
 	margin:2% auto 0;
 	width:90%;
 	max-width:980px;
-	color:#111111;
 }
+
+/*.fullpage:target {
+  animation: highlight 1s ease;  
+  transform: translateX(20px);     
+}*/
 
 /* ------------------------------------------- ANN + CARL ------- */
 .col_2{
@@ -162,6 +211,30 @@ footer h2{
 }
 
 
+/* ------------------------------------------- GOLD_CONTENT & about WRAP ------- */
+
+.content_wrap{
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+/* ------------------------------------------- SCROLLING ------- */
+
+/*a[ id= "intro" ]:target ~ div.fullpage {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "anncarl" ]:target ~ div.fullpage {
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "gold_content" ]:target ~ div.fullpage {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}*/
+
 /* ------------------------------------------- LANDING ------- */
 
 #landing{
@@ -178,34 +251,18 @@ footer h2{
 	margin:0 auto;
 	width:580px;
 	padding:20px;
-	position: relative;
+	position:relative;
   	top:50%;
   	transform: translateY(-60%);
 }
 
-/* ------------------------------------------- ANN + CARL ------- */
+/* ------------------------------------------- ANN + CARL, ABOUT ------- */
 
-#anncarl{
-	background-color: #ffffff;
+#anncarl, #about{
+	background-color:#ffffff;
+	color:#000;
 }
 
-
-
-/* ------------------------------------------- IMAGES + SOUNDS ------- */
-
-#imgsounds{
-	position: relative;
-  	top:50%;
-  	transform: translateY(-60%);
-}
-
-
-/* ------------------------------------------- ABOUT ------- */
-
-#about{
-
-
-}
 
 /* ------------------------------------------- MOBILE MENU ------- */
 
@@ -222,7 +279,35 @@ footer h2{
 
 
 
-@media screen and (max-width:550px){
+@media screen and (max-width:1050px){
+
+	.col_2{
+		float:none;
+		width:100%;
+		margin:40px 0;
+	}
+
+	.col_3{
+		float:none;
+		width:100%;
+		margin:40px 0;
+	}
+
+	.content_wrap{
+		position: relative;
+		top:0;
+		transform: none;
+		margin:40px auto;
+		width:500px;
+	}
+
+	#anncarl, #gold_content, #about{
+		height:auto;
+	}
+}
+
+
+@media only screen and (max-width:550px){
 
 
 

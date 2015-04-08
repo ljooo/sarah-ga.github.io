@@ -92,7 +92,7 @@ p{
 	line-height: 1.618em;
 }
 
-section, footer{
+footer{
 	height:100vh;
 	overflow:auto;
 }
@@ -135,11 +135,15 @@ footer h2{
   height: 0;
 }
 
+.fullpage{
+	height:100vh;
+	overflow:auto;
+}
+
 .wrapper{
 	margin:2% auto 0;
 	width:90%;
 	max-width:980px;
-	color:#111111;
 }
 
 /* ------------------------------------------- ANN + CARL ------- */
@@ -210,38 +214,30 @@ footer h2{
 /* ------------------------------------------- MOBILE MENU ------- */
 
 
-/* div that holds the main nav */
+/* id that holds the main nav */
 #main-nav{
 	display: block;
 }
 
-/* div that holds the mobile nav */
+/* id that holds the mobile nav */
 #mobile-nav{
 	display: none;
 }
 
 
 
-@media screen and (max-width:400px){
-	.wrapper{
-		margin: 2% auto 0;
- 		max-width:490px;
-	}
+@media screen and (max-width:550px){
 
-	.col_2{
-		float:none;
-		width:98%;
-		margin:0 1%;
-	}
+
 
 /* ---------------------- vertical nav ------ */
 /*	nav{
 	margin:0;
 	position: fixed;
-	bottom:0;
+	top:0;
 	width:100%;
     background-color: #000;
-    z-index: 100;
+    z-index: 1;
 	}
 
 	ul{
@@ -256,6 +252,32 @@ footer h2{
 	display: block;
 	}*/
 
+		.wrapper{
+		margin: 2% auto 0;
+ 		max-width:490px;
+	}
+
+	.col_2{
+	width:100%;
+	margin:7% 0;
+	padding:0;
+	float:none;
+}
+
+	#intro_wrap{
+	margin:0 auto;
+	width:90%;
+	padding:2%;
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+#anncarl{
+	background-color: #ffffff;
+	height:auto;
+}
+
 /* ---------------------- toggle nav ------ */
 
 	#main-nav{
@@ -264,6 +286,8 @@ footer h2{
 
 	#mobile-nav{
 		display: block;
+		position: fixed;
+		bottom:0;
 	}
 
 	label {
@@ -288,6 +312,9 @@ footer h2{
 		display:block;
 		width:100%;
 		text-align: center;
+		position: absolute;
+		top:-170px;
+		background-color: #000;
 	}
 
 	li, li a{

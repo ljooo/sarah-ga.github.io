@@ -1,5 +1,10 @@
+/* add google fonts */
+
 body{
-	background: url("../assets/milkyway.jpg") no-repeat center center fixed;
+	background: url("../assets/record.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	color:#ffffff; 
 	margin:0;
@@ -7,12 +12,12 @@ body{
 	font-family: 'Droid Serif', serif;
 }
 
-/* apply kerning */
 
 h1, h2, h3, h4{
 	font-family: 'Roboto', sans-serif;
 }
 
+/* apply kerning */
 h1{
 	font-size:96px;
 }
@@ -20,7 +25,6 @@ h1{
 h2{
 	font-size: 48px;
 	margin:0;
-	letter-spacing: -1px;
 }
 
 h3{
@@ -32,36 +36,43 @@ h4{
 }
 
 
-/* apply leading */
+/* apply width, leading, margin, padding */
 p{
-	margin:20px 0 0 0;
-	line-height: 22px;
-	width:654px;
+
 }
 
 a{
+
 }
 
 div{
 
 }
 
-#title{
-/*	background-color: #000000;*/
-	width:610px;
-	height:250px;
-	padding:250px 0;
-	margin:0 auto;
+footer{
+
 }
 
-#wrapper{
-	width: 800px;
-	margin:0 auto;
+.wrapper{
+
 }
 
-#golden{
-	background-color: #fff;
-	padding:40px;
-	margin:20px 0;
-	color:#000;
+#landing{
+
+}
+
+#intro{
+
+}
+
+#anncarl{
+
+}
+
+#gold_content{
+
+}
+
+#about{
+
 }
