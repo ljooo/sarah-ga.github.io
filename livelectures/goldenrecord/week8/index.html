@@ -3,16 +3,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <!--    content sets the width of the viewport (browser window) equal to the width of the device; initial-scale sets the zoom level to 100% when page is loaded -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Final Frontier</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
     </head>
 
    <body>
 
         <div class="fullpage" id="landing">
-            <nav>
+            <nav id="main-nav">
                 <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#anncarl">Ann + Carl</a></li>
+                    <li><a href="#gold_content">Images + Sounds</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+
+            <nav id="mobile-nav">
+            <label for="menu-toggle">Menu</label>
+            <input type="checkbox" id="menu-toggle"/>
+                <ul id="menu">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#anncarl">Ann + Carl</a></li>
                     <li><a href="#gold_content">Images + Sounds</a></li>

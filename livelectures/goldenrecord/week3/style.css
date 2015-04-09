@@ -1,12 +1,6 @@
 /*
 // up close + personal with CSS
 
-review
-> start adding CSS
-> shortcut! link a stylesheet
-> bug! stylesheet not linking
-
-
 what is the cascade?
 > top to bottom = general to specific
 > selector order matters + property order [mostly] doesn't
@@ -20,14 +14,13 @@ http://css-tricks.com/the-difference-between-id-and-class/
 
 for the love of images
 > adding images through HTML + file paths
-> alt & title
 > adding images through CSS 
 
 
 css shorthand: https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
 > background: url() color position/size repeat 
 > margin/padding: N E S W
-> border: thickness solid/dotted color
+> border: thickness style color
 > font: weight style variant(small-caps) size family
 
 
@@ -40,14 +33,8 @@ create palettes or themes
 */
 
 body{
-/*	background-color: #fff;*/
-/*	background-image: url("../assets/milkyway.jpg");
-	background-repeat: no-repeat;*/
-	background: url("../assets/record.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-color: #fff;
+/*	add background image*/
 	color:#fff; 
 	font-family: 'Helvetica';
 	font-size:24px;
@@ -82,11 +69,4 @@ a{
 }
 
 
-/*.red{
-	color:#FF0000;
-}
-
-#blue{
-	color:#0000FF;
-}*/
 
