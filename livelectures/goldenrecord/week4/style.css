@@ -1,4 +1,6 @@
 /* add google fonts */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+
 
 body{
 	background: url("../assets/record.jpg") no-repeat center center fixed;
@@ -8,19 +10,25 @@ body{
 	background-size: cover;
 	color:#ffffff; 
 	margin:0;
+	text-align: center;
 	/* droid serif */
-
+	font-family: 'Droid Serif', serif;
+	font-size: 16px;
 }
+
+
 
 
 h1, h2, h3, h4{
 	/* roboto */
-
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 
 /* apply kerning */
 h1{
 	font-size:96px;
+	letter-spacing: -2px;
 }
 
 h2{
@@ -36,14 +44,28 @@ h4{
 
 }
 
-
 /* apply width, leading, margin, padding */
 p{
-
+	line-height: 25.888px;
+	width:520px;
+	margin:20px auto;
+	text-align: left;
 }
 
+/* apply all-caps */
 a{
+	color:white;
+	text-decoration:none;
+	text-transform: uppercase;
+}
 
+ul{
+	list-style: none;
+}
+
+li, li a{
+	display: inline-block;
+	margin:0 15px;
 }
 
 div{
@@ -51,7 +73,9 @@ div{
 }
 
 footer{
-
+	background-color:#000;
+	color:#fff;
+	padding:40px;
 }
 
 .wrapper{
@@ -62,12 +86,16 @@ footer{
 
 }
 
-#intro{
-
+#intro, #gold_content{
+	background-color:#000;
+	color:#fff;
+	padding:40px;
 }
 
-#anncarl{
-
+#anncarl, #about{
+	background-color:#fff;
+	color:#000;
+	padding:40px;
 }
 
 #gold_content{

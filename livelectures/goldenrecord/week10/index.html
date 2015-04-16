@@ -3,19 +3,33 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <!--    content sets the width of the viewport (browser window) equal to the width of the device; initial-scale sets the zoom level to 100% when page is loaded -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Final Frontier</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+<!--         add jquery functionality to your site -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--         smooth scroll credit to: https://github.com/kswedberg/jquery-smooth-scroll -->
+<!--         add the smooth-scroll javascript -->
+        <script src="js/jquery.smooth-scroll.js"></script>
+<!--         call the smoothScroll function for the nav a elements -->
+        <script>
+            $(document).ready(function() {
+                $('ul.smoothnav a').smoothScroll();
+            });
+
+        </script>
+
+
     </head>
 
    <body>
 
         <div class="fullpage" id="landing">
             <nav id="main-nav">
-                <ul>
+                <ul class="smoothnav">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#anncarl">Ann + Carl</a></li>
                     <li><a href="#gold_content">Images + Sounds</a></li>
@@ -26,7 +40,7 @@
             <nav id="mobile-nav">
             <label for="menu-toggle">Menu</label>
             <input type="checkbox" id="menu-toggle"/>
-                <ul id="menu">
+                <ul class="smoothnav" id="menu">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#anncarl">Ann + Carl</a></li>
                     <li><a href="#gold_content">Images + Sounds</a></li>
@@ -103,7 +117,7 @@
         </div>
 
         <footer>
-            <h2>We found each other in the cosmos, and that was wonderful.</h2>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/26QWMMT1c8Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </footer>
 
     </body>

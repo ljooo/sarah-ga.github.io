@@ -191,6 +191,7 @@ footer h2{
 
 #anncarl{
 	background-color: #ffffff;
+	color:#000;
 }
 
 
@@ -231,7 +232,7 @@ footer h2{
 
 
 /* ---------------------- vertical nav ------ */
-/*	nav{
+	nav{
 	margin:0;
 	position: fixed;
 	top:0;
@@ -250,9 +251,9 @@ footer h2{
 	li, li a{
 	width:100%;
 	display: block;
-	}*/
+	}
 
-		.wrapper{
+	.wrapper{
 		margin: 2% auto 0;
  		max-width:490px;
 	}
@@ -262,7 +263,7 @@ footer h2{
 	margin:7% 0;
 	padding:0;
 	float:none;
-}
+	}
 
 	#intro_wrap{
 	margin:0 auto;
@@ -271,16 +272,16 @@ footer h2{
 	position: relative;
   	top:50%;
   	transform: translateY(-60%);
-}
+	}
 
-#anncarl{
-	background-color: #ffffff;
-	height:auto;
-}
+	#anncarl{
+		background-color: #ffffff;
+		height:auto;
+	}
 
 /* ---------------------- toggle nav ------ */
 
-	#main-nav{
+/*	#main-nav{
 		display: none !important;
 	}
 
@@ -320,6 +321,6 @@ footer h2{
 	li, li a{
 		width:100%;
 		display: block;
-	}
+	}*/
 
 }
