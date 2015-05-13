@@ -52,9 +52,15 @@ li a{
 	text-decoration: none;
 }
 
-li p{
-	color:#333;
+li a:hover{	
+	color:#ffdb00;
 }
+
+li p{
+	color:#000;
+}
+
+
 
 footer{
 	background-color: #ffdb00;
