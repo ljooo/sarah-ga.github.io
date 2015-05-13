@@ -1,8 +1,8 @@
 body{
-	background-color:#EBF4FA;
+	background-color:#eaeaea;
 	font-family: 'Karla', serif;
 	font-size:16px;
-	color:#565051;
+	color:#000;
 }
 
 main{
@@ -16,8 +16,8 @@ section{
 }
 
 section:hover{
-	background-color:#ffffff;
-	color:#565051;
+	background-color:#ffdb00;
+	color:#000;
 }
 
 figure{
@@ -37,17 +37,21 @@ figcaption{
 h1{	
 	margin:2em 0 0 1em;
 	font-size:2.617924em;
-	font-weight:600;
-	color:#565051;
+	font-weight:700;
+	color:#000;
 }
 
 h2, h3{
-	color:#8E8AE5;
+	color:#000;
+	font-weight:700;
 }
 
 h2{
 	margin:0 0 0.5em 0;
 	font-size:1.618em;
+	border-bottom:4px solid #000;
+	padding:4px;
+	margin-bottom:1em;
 }
 
 h3{
@@ -55,7 +59,7 @@ h3{
 	padding:0 0 0.75em 0;
 	font-size: 1em;
 	text-transform:uppercase;
-	letter-spacing:.125em;
+	letter-spacing:1px;
 }
 
 
@@ -71,7 +75,7 @@ li{
 
 a{	
 	text-decoration: none;
-	color:#565051;
+	color:#000;
 }
 
 h3 + ul{

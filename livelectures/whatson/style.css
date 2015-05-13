@@ -1,8 +1,8 @@
 body{
-	background-color:#EBF4FA;
+	background-color:#eaeaea;
 	font-family: 'Karla', serif;
 	font-size:16px;
-	color:#565051;
+	color:#000;
 }
 
 main{
@@ -18,14 +18,15 @@ aside{
 h1{	
 	margin:2em 0 0.25em;
 	font-size:2.617924em;
-	font-weight:600;
-	color:#565051;
+	font-weight:700;
+	color:#000;
 }
 
 h2, h3{
 	font-size:1.618em;
 	text-transform: uppercase;
-	color:#8E8AE5;
+	color:#000;
+	font-weight:700;
 }
 
 h2{
@@ -50,8 +51,13 @@ li{
 }
 
 a{	
-	color:#6960EC;
+	color:#000;
 	text-decoration: none;
+	font-weight:700;
+}
+
+a:hover{	
+	color:#ffdb00;
 }
 
 /* caption following image */

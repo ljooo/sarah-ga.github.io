@@ -30,8 +30,6 @@ h2{
 	font-weight:700;
 	border-bottom:4px solid #000;
 	color:#000;
-	padding:4px;
-	margin-bottom:0.5em;
 }
 
 h3{
@@ -59,8 +57,9 @@ li p{
 }
 
 footer{
-	width:65%;
-	margin:0 auto;
+	background-color: #ffdb00;
+	width:100%;
+	padding:4% 0;
 }
 
 .row{
@@ -73,6 +72,16 @@ footer{
 	margin:0 4.5%;
 }
 
+.col{
+	width:41%;
+	float:left;
+	margin:0 4.5%;
+}
+
+h2 + .col{
+	margin:0 9% 0 0;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -82,15 +91,60 @@ footer{
   height: 0;
 }
 
+#footer_wrap{
+	width:65%;
+	margin:0 auto;
+}
+
 @media screen and (max-width:960px){
 	.box{
-		width:55%;
+		width:75%;
 		float:none;
 		margin:0 auto;
 	}
 
-	footer{
-	width:38.5%;
-	margin:0 auto;
+	.col{
+		width:100%;
+		float:none;
+		margin:0 auto;
+	}
+
+	.col ul{
+		margin:0;
+	}
+
+	#footer_wrap{
+		width:52.5%;
+		margin:0 auto;
+	}
 }
+
+@media screen and (max-width:700px){
+	.box{
+		width:85%;
+		float:none;
+		margin:0 auto;
+	}
+
+	.col{
+		width:100%;
+		float:none;
+		margin:0 auto;
+	}
+
+	.col ul{
+		margin:0;
+	}
+
+
+	#footer_wrap{
+		width:38.5%;
+		margin:0 auto;
+	}
+}
+
+@media screen and (max-width:500px){
+	section{
+		width:100%;
+	}
 }
