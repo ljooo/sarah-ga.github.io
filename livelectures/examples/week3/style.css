@@ -6,7 +6,6 @@ what is the cascade?
 > selector order matters + property order [mostly] doesn't
 
 classes vs id's
-http://css-tricks.com/the-difference-between-id-and-class/
 > classes occur multiple times, id’s occur once
 > naming convention: describe content
 
@@ -16,11 +15,11 @@ for the love of images
 > adding images through CSS 
 
 
-css shorthand: https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
-> background: url() color position/size repeat 
+css shorthand
+> background: url() color repeat position attachment 
 > margin/padding: N E S W
-> border: thickness style color
-> font: weight style variant(small-caps) size family
+> 
+
 
 
 color update!
@@ -32,14 +31,17 @@ create palettes or themes
 */
 
 body{
-	background-color: #fff;
-/*	add background image*/
-	color:#fff; 
-	font-family: 'Helvetica';
-	font-size:24px;
+/*	background: url() color repeat position attachment */
+
+
+/*	font: weight style variant(small-caps) size family*/
+	font:16px Helvetica;
+	color:#000; 
 }
 
 div{
+/*	border: thickness style color*/
+
 }
 
 h1{
