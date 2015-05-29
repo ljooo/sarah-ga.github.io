@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ux3</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+    	<link rel="icon" href="imgs/ico/ux3.ico">
+    	
+
+    	<!--[if IE]>
+  		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    	
+    	<!-- google analytics -->
+    	<script type="text/javascript">
+  	// 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	// 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 		// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	// 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  	// 	ga('create', 'UA-55853123-1', 'auto');
+  	// 	ga('send', 'pageview');
+		</script>
+
+		<!-- livesearch -->
+		<script>
+		function showResult(str) {
+		  if (str.length==0) { 
+		    document.getElementById("livesearch").innerHTML="";
+		    document.getElementById("livesearch").style.border="0px";
+		    return;
+		  }
+		  if (window.XMLHttpRequest) {
+		    // code for IE7+, Firefox, Chrome, Opera, Safari
+		    xmlhttp=new XMLHttpRequest();
+		  } else {  // code for IE6, IE5
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+		      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+		      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+		    }
+		  }
+		  xmlhttp.open("GET","livesearch.php"+str,true);
+		  xmlhttp.send();
+		}
+		</script>
+	</head>
+
+	<body>
+		<header>
+		<nav class="clearfix" id="mainnav">
+			<ul>
+			<li><a href="#">+ User Experience of a Heartbreak</a></li>
+		
+			<li><label for="menu-toggle"><img class="navimg" src="imgs/index/grid.png"></label></li>
+			<input type="checkbox" id="menu-toggle"/>
+				<div id="menu">
+					<a href="facebook/index.html">
+					<div class="icons">
+						<img src="imgs/index/nav/fb.png">
+						<p class="iconcap">Facebook</p>
+					</div>
+					</a>
+
+					<a href="google/index.html">
+					<div class="icons">
+						<img src="imgs/index/nav/google.png">
+						<p class="iconcap">Google</p>
+					</div>
+					</a>
+
+					<a href="instagram/index.html">
+					<div class="icons">
+						<img src="imgs/index/nav/ig.png">
+						<p class="iconcap">Instagram</p>
+					</div>
+					</a>
+
+					<a href="ios/index.html">
+					<div class="icons">
+						<img src="imgs/index/nav/ios.png">
+						<p class="iconcap">iOS</p>
+					</div>
+					</a>
+
+					<a href="linkedin/index.html">
+					<div class="icons">
+						<img src="imgs/index/nav/li.png">
+						<p class="iconcap">LinkedIn</p>
+					</div>
+					</a>
+
+					<a href="twitter/index.html">
+					<div class="icons">
+						<img src="imgs/index/nav/tw.png">
+						<p class="iconcap">Twitter</p>
+					</div>
+					</a>
+				</div>	
+				<li><a href="#"><img class="navimg" src="imgs/index/bell.png"></a></li>
+				<li><a href="#"><img class="navimg" src="imgs/index/ux3.png"></a></li>
+			</ul>
+		</nav>
+		</header>
+
+		<main>
+			<div id="search">
+				<img src="imgs/index/google.png">
+
+				<!--  livesearch.php-->
+				<form>
+					<input type="text" size="30" onkeyup="showResult(this.value)">
+					<div id="livesearch"></div>
+				</form>
+
+				<div id="searchbtnwrap">
+					<div class="searchbtns">Google Search</div>
+					<div class="searchbtns">I'm Feeling Lucky</div>
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			<a href="about/index.html">About</a>
+			<a href="thanku/index.html">Thank u</a>
+		</footer>
+	</body>
+</html>

@@ -23,6 +23,7 @@ ul{
     transform: translateX(-50%);
 }
 
+
 li{
 	display: inline-block;
 }
@@ -100,6 +101,10 @@ p{
 footer{
 	height:100vh;
 	overflow:auto;
+}
+
+video{
+	z-index:100;
 }
 
 iframe{
