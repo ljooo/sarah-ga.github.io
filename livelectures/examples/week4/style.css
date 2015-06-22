@@ -1,107 +1,131 @@
-/* add google fonts */
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
 
-
-body{
-	background: url("../assets/record.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color:#ffffff; 
+*{
 	margin:0;
-	text-align: center;
-	/* droid serif */
-	font-family: 'Droid Serif', serif;
-	font-size: 16px;
+	padding:0;
+	box-sizing:border-box;
 }
 
+body{
+	background-color: #DDD2CC;
+	font-size: 16px;
+	color:#494521;
+}
 
-
-
-h1, h2, h3, h4{
-	/* roboto */
-	font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, a{
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 
-/* apply kerning */
 h1{
-	font-size:96px;
-	letter-spacing: -2px;
+	font-size:3em;
 }
 
 h2{
-	font-size: 48px;
-	margin:0;
+	font-size:2em;
+	margin:0 0 1em;
 }
 
 h3{
-	font-size:36px;
+	font-size:1em;
+	text-transform: uppercase;
+	margin:0 0 .5em;
 }
 
 h4{
-
+	font-size:4em;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:.5em;
 }
 
-/* apply width, leading, margin, padding */
-p{
-	line-height: 25.888px;
-	width:520px;
-	margin:20px auto;
-	text-align: left;
+nav{
+	width:370px;
+	margin:auto;
+	padding:1em 0;
 }
 
-/* apply all-caps */
-a{
-	color:white;
-	text-decoration:none;
-	text-transform: uppercase;
+hr{
+	border:none;
+	height:.25em;
+	width:3em;
+	background-color: #fff;
+	margin:0 0 1.5em;
+}
+
+p, li{
+	font-size:1em;
+	font-family:'Playfair Display', serif;
 }
 
 ul{
-	list-style: none;
+	list-style:none;
 }
 
-li, li a{
-	display: inline-block;
-	margin:0 15px;
+li{
+	padding:.2em 0
 }
 
-div{
+p{
+	line-height: 1.618em;
+}
 
+a{
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:1em;
+	color:#494521;
 }
 
 footer{
-	background-color:#000;
-	color:#fff;
-	padding:40px;
-}
-
-.wrapper{
-
-}
-
-#landing{
-
-}
-
-#intro, #gold_content{
-	background-color:#000;
-	color:#fff;
-	padding:40px;
-}
-
-#anncarl, #about{
 	background-color:#fff;
-	color:#000;
-	padding:40px;
+	padding:5em 0;
+	color:#576969;
 }
 
-#gold_content{
-
+.wrap{
+	width:700px;
+	margin:auto;
+	padding:5em 0;
 }
 
-#about{
+.column{
+	display:inline-block;
+}
 
+.column + .column{
+	margin:0 0 0 7.25em;
+}
+
+.center{
+	text-align: center;
+}
+
+#title{
+	background-color: #fff;
+	margin:150px auto 250px;
+	padding:64px;
+}
+
+#hooray{
+/*	image via http://imbreannarose.com/wallpaper-26-lots-of-shapes/*/
+	background:url("assets/shapes.png") no-repeat center center fixed;
+	background-size:cover;
+	padding:10em 0;
+	color:#085b6d;
+}
+
+#intro{
+	background-color:#8C8B93;
+	color:#fff;
+}
+
+#column-wrap{
+	margin:3em 0 0;
+}
+
+#services{
+	padding:5em 0;
+	background-color: #BCB1D6;
 }

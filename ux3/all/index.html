@@ -9,8 +9,9 @@
 		<meta name="keywords"  content="ux,user experience,heartbreak"/>
 		<meta name="Resource-type" content="Document"/>
 
-		<link rel="stylesheet" type="text/css" href="../_style/all.css"/>
-    	<link rel="icon" href="../_imgs/ico/ux3.ico">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    	<link rel="icon" href="../imgs/ico/ux3.ico">
 
     	<script type="text/javascript">
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,161 +25,218 @@
 	
 	<body>
 	
-		<header>	
-			<nav>
-				<a href="../index.html"><img id="logo" src="../_imgs/index/ux3.png"></a>
-			</nav>
+<header>
+		<nav class="clearfix">
+			<ul id="topnav">
+			<li class="topnavli textlink"><a href="#">+User Experience of a Heartbreak</a></li>
+		
+			<li class="topnavli">
+			<label for="allpages-toggle">
+				<img class="topnavimg" src="../imgs/index/grid.png">
+			</label>
+			</li>
+			<input type="checkbox" id="allpages-toggle"/>
+			<div id="allpages">
+				<div id="allpages_icons_wrap">
+					<a class="page_icons_a" href="facebook/index.html">
+					<div class="page_icons_wrap">
+						<img src="../imgs/index/nav/fb.png">
+						<p class="page_icons_cap">Facebook</p>
+					</div>
+					</a>
+
+					<a class="page_icons_a" href="google/index.html">
+					<div class="page_icons_wrap">
+						<img src="../imgs/index/nav/google.png">
+						<p class="page_icons_cap">Google</p>
+					</div>
+					</a>
+
+					<a class="page_icons_a" href="instagram/index.html">
+					<div class="page_icons_wrap">
+						<img src="../imgs/index/nav/ig.png">
+						<p class="page_icons_cap">Instagram</p>
+					</div>
+					</a>
+
+					<a class="page_icons_a" href="ios/index.html">
+					<div class="page_icons_wrap">
+						<img src="../imgs/index/nav/ios.png">
+						<p class="page_icons_cap">iOS</p>
+					</div>
+					</a>
+
+					<a class="page_icons_a" href="linkedin/index.html">
+					<div class="page_icons_wrap">
+						<img src="../imgs/index/nav/li.png">
+						<p class="page_icons_cap">LinkedIn</p>
+					</div>
+					</a>
+
+					<a class="page_icons_a" href="twitter/index.html">
+					<div class="page_icons_wrap">
+						<img src="../imgs/index/nav/tw.png">
+						<p class="page_icons_cap">Twitter</p>
+					</div>
+					</a>
+				</div>
+				<a href="all.html">
+					<div class="more">More</div>
+				</a>
+			</div>	
+			<li class="topnavli"><a href="#"><img class="topnavimg" src="../imgs/index/grid.png"></a></li>
+			<li class="topnavli"><a href="#"><img class="topnavimg" src="../imgs/index/grid.png"></a></li>
+			<li class="topnavli"><a href="#"><img class="topnavimg" src="../imgs/index/ux3.png"></a></li>
+			</ul>
+		</nav>
 		</header>
 
-		<div class="wrapper">
+		<div class="clearfix" id="gifs_wrap">
 		
 			<!-- FACEBOOK -->
 		
 			<a href="../facebook/#section0">
-			<figure id="fb0">
-				<img src="../_imgs/fb/namesearch.gif">
-			</figure>
+			<div class="allgifs" id="fb0">
+				<img class="allgifs_img" class="allgifs_img" src="../imgs/fb/namesearch.gif">
+			</div>
 			</a>
 				
 			<a href="../facebook/#section1">
-			<figure id="fb1">
-				<img src="../_imgs/fb/inarelationship.gif">
-			</figure>
+			<div class="allgifs" id="fb1">
+				<img class="allgifs_img" src="../imgs/fb/inarelationship.gif">
+			</div>
 			</a>
 
 	
 			<a href="../facebook/#section2">
-			<figure id="fb2">
-				<img src="../_imgs/fb/ask.gif">
-			</figure>
+			<div class="allgifs" id="fb2">
+				<img class="allgifs_img" src="../imgs/fb/ask.gif">
+			</div>
 			</a>
 			
 			<a href="../facebook/#section3">
-			<figure id="fb3">
-				<img src="../_imgs/fb/mutualfriends.gif">
-			</figure>
+			<div class="allgifs" id="fb3">
+				<img class="allgifs_img" src="../imgs/fb/mutualfriends.gif">
+			</div>
 			</a>
 			
 			<a href="../facebook/#section4">
-			<figure id="fb4">
-				<img src="../_imgs/fb/friendsuggest.gif">
-			</figure>
+			<div class="allgifs" id="fb4">
+				<img class="allgifs_img" src="../imgs/fb/friendsuggest.gif">
+			</div>
 			</a>
 			
 			<!-- GOOGLE -->
 			
 			<a href="../google/#section0">
-			<figure id="g0">
-				<img src="../_imgs/google/gchatfight.gif">
-			</figure>
+			<div class="allgifs" id="g0">
+				<img class="allgifs_img" src="../imgs/google/gchatfight.gif">
+			</div>
 			</a>
 			
 			<a href="../google/#section1">
-			<figure id="g1">
-				<img src="../_imgs/google/gchatblock.gif">
-			</figure>
+			<div class="allgifs" id="g1">
+				<img class="allgifs_img" src="../imgs/google/gchatblock.gif">
+			</div>
 			</a>
 	
 			<a href="../google/#section2">
-			<figure id="g2">
-				<img src="../_imgs/google/star.gif">
-			</figure>
+			<div class="allgifs" id="g2">
+				<img class="allgifs_img" src="../imgs/google/star.gif">
+			</div>
 			</a>
 			
 			<a href="../google/#section3">
-			<figure id="g3">
-				<img src="../_imgs/google/label.gif">
-			</figure>
+			<div class="allgifs" id="g3">
+				<img class="allgifs_img" src="../imgs/google/label.gif">
+			</div>
 			</a>
 			
 			<a href="../google/#section4">
-			<figure id="g4">
-				<img src="../_imgs/google/incognito.gif">
-			</figure>
+			<div class="allgifs" id="g4">
+				<img class="allgifs_img" src="../imgs/google/incognito.gif">
+			</div>
 			</a>			
 			
 			<!-- INSTAGRAM -->
 			
 			<a href="../instagram/#section0">
-			<figure id="ig0">
-				<img src="../_imgs/ig/tagged.gif">
-			</figure>
+			<div class="allgifs" id="ig0">
+				<img class="allgifs_img" src="../imgs/ig/tagged.gif">
+			</div>
 			</a>			
 
 			<a href="../instagram/#section1">
-			<figure id="ig1">
-				<img src="../_imgs/ig/unfollow.gif">
-			</figure>
+			<div class="allgifs" id="ig1">
+				<img class="allgifs_img" src="../imgs/ig/unfollow.gif">
+			</div>
 			</a>	
 
 			<a href="../instagram/#section2">
-			<figure id="ig2">
-				<img src="../_imgs/ig/like.gif">
-			</figure>
+			<div class="allgifs" id="ig2">
+				<img class="allgifs_img" src="../imgs/ig/like.gif">
+			</div>
 			</a>	
 
 			<!-- IOS -->
 			
 			<a href="../ios/#section0">
-			<figure id="ios0">
-				<div class="sm"><img src="../_imgs/ios/autocorrect.gif"></div>
-			</figure>
+			<div class="allgifs" id="ios0">
+				<div class="sm"><img class="allgifs_img" src="../imgs/ios/autocorrect.gif"></div>
+			</div>
 			</a>			
 
 			<a href="../ios/#section1">
-			<figure id="ios1">
-				<img src="../_imgs/ios/notifications.gif">
-			</figure>
+			<div class="allgifs" id="ios1">
+				<img class="allgifs_img" src="../imgs/ios/notifications.gif">
+			</div>
 			</a>	
 
 			<a href="../ios/#section2">
-			<figure id="ios2">
-				<div class="sm"><img id="ios" src="../_imgs/ios/language.gif"></div>
-			</figure>
+			<div class="allgifs" id="ios2">
+				<div class="sm"><img class="allgifs_img" id="ios" src="../imgs/ios/language.gif"></div>
+			</div>
 			</a>	
 
 			<!-- LINKEDIN -->
 			
 			<a href="../linkedin/#section0">
-			<figure id="li0">
-				<div class="sm"><img src="../_imgs/li/connected.gif"></div>
-			</figure>
+			<div class="allgifs" id="li0">
+				<div class="sm"><img class="allgifs_img" src="../imgs/li/connected.gif"></div>
+			</div>
 			</a>	
 
 			<a href="../linkedin/#section1">
-			<figure id="li1">
-				<img src="../_imgs/li/remove.gif">
-			</figure>
+			<div class="allgifs" id="li1">
+				<img class="allgifs_img" src="../imgs/li/remove.gif">
+			</div>
 			</a>
 
 			<a href="../linkedin/#section2">
-			<figure id="li2">
-				<img src="../_imgs/li/incommon.gif">
-			</figure>
+			<div class="allgifs" id="li2">
+				<img class="allgifs_img" src="../imgs/li/incommon.gif">
+			</div>
 			</a>
 
 			<!-- TWITTER -->
 			
 			<a href="../twitter/#section0">
-			<figure id="tw0">
-				<img src="../_imgs/tw/followsyou.gif">
-			</figure>
+			<div class="allgifs" id="tw0">
+				<img class="allgifs_img" src="../imgs/tw/followsyou.gif">
+			</div>
 			</a>	
 
 			<a href="../twitter/#section1">
-			<figure id="tw1">
-				<img src="../_imgs/tw/joketwitter.gif">
-			</figure>
+			<div class="allgifs" id="tw1">
+				<img class="allgifs_img" src="../imgs/tw/joketwitter.gif">
+			</div>
 			</a>	
 
 			<a href="../twitter/#section2">
-			<figure id="tw2">
-				<img src="../_imgs/tw/disappear.gif">
-			</figure>
+			<div class="allgifs" id="tw2">
+				<img class="allgifs_img" src="../imgs/tw/disappear.gif">
+			</div>
 			</a>	
-
-
-			
 		</div>
 	</body>
 </html>

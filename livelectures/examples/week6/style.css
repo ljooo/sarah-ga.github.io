@@ -1,5 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
 body{
-	color:#000; 
 	font-family: 'Droid Serif', serif;
 }
 
@@ -9,68 +18,94 @@ nav{
 	margin:30px 30px 0 0;
 }
 
-li{
-	display: inline;
-	padding:15px;
-}
 
-li a {
-	text-decoration: none;
-	color:#ffffff;
+nav a {
+	font-size:.8em;
+	text-transform: uppercase;
+	color:#fff;
+	margin:0 20px;
 }
 
 h1, h2, h3, h4{
 	font-family: 'Roboto', sans-serif;
+	
 }
 
 header{
-	width:610px;
+	width:100%;
 	height:250px;
 	padding:250px 0;
 	margin:0 auto;
+	text-align: center;
 }
 
 h1{
-	font-size:96px;
+	font-size:6.5em;
 	color:#fff;
 }
 
 h2{
-	font-size: 48px;
-	clear:both;
+	font-size: 3em;
+	font-weight: 700;
 }
 
 h3{
-	font-size:36px;
-	color:#000000;
+	font-size:2.25em;
+	color:#fff;
+
 }
 
 h4{
-
+	margin:.8em 0 0;
+	font-size: .8em;
+	text-transform: uppercase;
 }
 
 
 p{
-
+	margin:1em 0;
+	line-height: 1.618em;
 }
 
 a{
+	text-decoration: none;
 }
 
 footer{
 
 }
 
-.wrapper{
 
+.fullpage{
 }
 
 .col_2{
-
+	width:450px;
+	float:left;
+	margin:0 2em;
 }
 
 .col_3{
-	
+	width:300px;
+	float:left;
+	margin:0 2em;
+}
+
+.col_3 img{
+	width:100%;
+}
+
+.wide_wrapper{
+	width:100%;
+}
+
+.wrapper{
+	width:80%;
+	margin:0 auto;
+}
+
+.para_content{
+	padding:11em;
 }
 
 .clearfix:after {
@@ -88,20 +123,27 @@ footer{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	height:100vh;
 }
 
-#intro{
 
-}
+
 
 #anncarl{
-
-}
-
-#gold_content{
-
+	background-color: #000;
+	color:#fff;
 }
 
 #about{
 
 }
+
+
+
+#gold_content{
+	background-color: #000;
+	color:#fff;
+}
+
+
+
