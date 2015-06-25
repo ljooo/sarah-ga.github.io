@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700);
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-size:16px;
+	font-family: 'Raleway', sans-serif;
+	color:#4b4f54;
+}
+
+header{
+	background-color: #fafafa;
+	padding:100px 0 0;
+	
+}
+
+span{
+	font-weight:700;
+}
+
+div{
+	border:1px solid #ff0000;
+}
+
+h1{
+	font-weight:300;
+}
+
+p{
+	font-weight:400;
+}
+
+a{
+	font-weight:700;
+	text-decoration:none;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+}
+
+main{
+	background-color: #fafafa;
+}
+
+footer{
+	background-color: #fafafa;
+}
+
+.wrap{
+	width:1015px;
+	margin:0 auto;
+}
+
+.col3{
+	width:305px;
+	margin:15px;
+}
+
+.col3 img{
+	width:305px;
+}
+
+#top-header{
+	border-bottom: 1px solid #edeeee;
+}
+
+#logout a{
+	color:#125688;
+}
+
+#profile_pic{
+	width:150px;
+	height:150px;
+	border-radius: 200px;
+	overflow: hidden;
+}
+
+#profile_pic img{
+	width:150px;
+}
+
+#edit_profile{
+	color:#818488;
+	font-size: .8em;
+	text-transform: uppercase;
+	padding:.5em 1em;
+	border:1px solid #818488;
+	border-radius:3px;
+}
+
+#edit_profile:hover{
+	color:#125688;
+	border:1px solid #125688;
+}
+
+#profile_stats li{
+	margin:0 .8em;
+}
+
+#col3_span2{
+	width:610px;
+}
+
+#load_more{
+	display: block;
+	margin:auto;
+	color:#4090db;
+	font-weight:700;
+	text-transform: uppercase;
+	background-color: #fafafa;
+	border:2px solid #4090db;
+	border-radius: 200px;
+	width:120px;
+	height:120px;
+}
+
+#footer_content{
+	width:506px;
+	margin:auto;
+}
+
+#footer_content li{
+	margin:0 .5em;
+}
+
+#footer_content li a{
+	color:#125688;
+	font-size:.8em;
+	text-transform: uppercase;
+}
+
+#copyright p{
+	color:#125688;
+	font-size:.8em;
+	text-transform: uppercase;
+	text-align: center;
+}
