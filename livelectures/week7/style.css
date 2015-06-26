@@ -8,26 +8,16 @@ body{
 }
 
 nav{
-	margin:0;
+	margin:0 auto;
 	position: fixed;
-	width:100%;
+	width:525px;
     background-color: #000;
     z-index: 1;
 }
 
-ul{
-	display:block;
-	position: relative;
-	width:508px;
-    left:50%;
-    transform: translateX(-50%);
-}
 
-li{
-	display: inline-block;
-}
 
-li a:link, li a:visited  {
+nav a:link, nav a:visited  {
 	display: inline-block;
 	padding:1.2em 2em;
 	font-size:.8em;
@@ -37,7 +27,7 @@ li a:link, li a:visited  {
 	letter-spacing:.07em;
 }
 
-li a:hover, li a:active {
+nav a:hover, nav a:active {
 	background-color: #f0f8ff;
 	color:#000;
 }
@@ -76,6 +66,7 @@ h3{
 	font-size:1.618em;
 	font-weight:700;
 	margin:.25em 0;
+	color:#000;
 }
 
 h4{
@@ -84,12 +75,14 @@ h4{
 	text-transform:uppercase;
 	font-weight:400;
 	margin:0 0 1em;
+	color:#000;
 }
 
 p{
 	font-family:'Droid Serif', serif;
 	font-size: 1em;
 	line-height: 1.618em;
+	color:#000;
 }
 
 section, footer{
@@ -112,7 +105,7 @@ figcaption{
 }
 
 footer{
-	background: url("../assets/milkyway.jpg") no-repeat center center fixed;	 
+	background: url("assets/milkyway.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -143,7 +136,7 @@ footer h2{
 .wrapper{
 	margin:2% auto 0;
 	width:90%;
-	max-width:980px;
+	border:1px solid #000;
 }
 
 /* ------------------------------------------- ANN + CARL ------- */
@@ -152,6 +145,7 @@ footer h2{
 	margin:0 1%;
 	padding:1.25em;
 	float:left;
+
 }
 
 .col_2 img{
@@ -166,10 +160,11 @@ footer h2{
 }
 
 
+
 /* ------------------------------------------- LANDING ------- */
 
 #landing{
-	background: url("../assets/record.jpg") no-repeat center center fixed;	 
+	background: url("assets/record.jpg") no-repeat center center fixed;	 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -206,7 +201,20 @@ footer h2{
 
 /* ------------------------------------------- ABOUT ------- */
 
-#about{
+#about p, #intro p{
+	color:#fff;
 
+}
 
+@media screen and (max-width:752px){
+	.col_2{
+		width:98%;
+		max-width:450px;
+		margin:0 auto;
+		float:none;
+	}
+
+	.fullpage{
+		height:auto;
+	}
 }

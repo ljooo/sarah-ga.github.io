@@ -8,11 +8,10 @@ CSS shorthand
 
 body{
 	font-size: 16px;
-	color:#494521;
 }
 
 header{
-	background-color: #DDD2CC;
+
 }
 
 h1, h2, h3, h4, a{
@@ -49,7 +48,6 @@ hr{
 	border:none;
 	height:4px;
 	width:48px;
-	background-color: #fff;
 	margin:0 0 24px;
 }
 
@@ -75,7 +73,6 @@ a{
 	text-decoration:none;
 	text-transform:uppercase;
 	margin:16px;
-	color:#494521;
 }
 
 img{
@@ -83,7 +80,6 @@ img{
 }
 
 footer{
-	background-color:#fff;
 	padding:80px 0;
 }
 
@@ -94,7 +90,6 @@ footer{
 }
 
 #title{
-	background-color: #fff;
 	margin:150px auto 250px;
 	padding:64px;
 }
@@ -104,11 +99,9 @@ footer{
 	background:url("assets/shapes.png") no-repeat center center fixed;
 	background-size:cover;
 	padding:160px 0;
-	color:#085b6d;
 }
 
 #intro{
-	background-color:#8C8B93;
 	color:#fff;
 }
 
@@ -118,5 +111,4 @@ footer{
 
 #services{
 	padding:80px 0;
-	background-color: #BCB1D6;
 }
