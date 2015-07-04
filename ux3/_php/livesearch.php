@@ -1,8 +1,7 @@
 <?php
 
 $xmlDoc=new DOMDocument();
-$output = <script>console.log("DOMDocument created");</script>
-$xmlDoc->load("links.xml");
+$xmlDoc->load("../_xml/links.xml");
 
 //get the q parameter from URL
 $q=$_GET["q"];
