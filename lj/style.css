@@ -1,0 +1,91 @@
+/*http://coolors.co/app/f7fff6-bcebcb-87d68d-93b48b-8491a3*/
+
+
+@font-face {
+  font-family: 'LearningCurve';
+  src: url('assets/fonts/LearningCurve.eot?#iefix') format('embedded-opentype'),  url('assets/fonts/LearningCurve.woff') format('woff'), url('assets/fonts/LearningCurve.ttf')  format('truetype'), url('assets/fonts/LearningCurve.svg#LearningCurve') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	font-size:10px;
+	background-color: #F7FFF6;
+}
+
+h2{
+	text-align: center;
+	font-size: 10em;
+	font-family: 'LearningCurve';
+}
+
+h3{
+	font-size: 2em;
+	
+}
+
+p{
+	font-size: 1.6em;
+	line-height: 1.618em;
+}
+
+section{
+	padding:6em 0;
+}
+
+.wrap{
+	width:65%;
+	margin:auto;
+}
+
+.col2{
+	width:40%;
+	padding:0 2%;
+	margin:3%;
+	float:left;
+}
+
+.locationtxt{
+	font-family: 'LearningCurve', serif;
+	font-size: 4em;
+}
+
+.locationrule{
+	width:3em;
+	margin: 1em 0;
+	border:none;
+	height:2px;
+	background-color: #BCEBCB;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+#details{
+	background-color: #87D68D;
+
+}
+
+#afterparty{
+	background-color: #BCEBCB;
+
+}
+
+#partytxt{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.618em;
+	font-weight: 600;
+}
+
+#registry{
+	background-color: #8491A3;
+	height:10em;
+}
