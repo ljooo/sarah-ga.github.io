@@ -1,6 +1,8 @@
 <?php
 
-$response="testing to see if this works";
+$q=$_GET["q"];
+
+$response=$q;
 
 echo $response;
 ?>
