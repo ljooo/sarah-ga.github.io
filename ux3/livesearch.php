@@ -1,5 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
+$output = <script>console.log("DOMDocument created");</script>
 $xmlDoc->load("links.xml");
 
 $x=$xmlDoc->getElementsByTagName('link');
