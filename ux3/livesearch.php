@@ -3,7 +3,7 @@
 //get the q parameter from URL
 $q=$_GET["q"];
 
-$xmlDoc=new DOMDocument();
+// $xmlDoc=new DOMDocument();
 // $output = <script>console.log("DOMDocument created");</script>
 // $xmlDoc->load("links.xml");
 
