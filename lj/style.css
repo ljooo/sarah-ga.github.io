@@ -1,6 +1,6 @@
 /*http://coolors.co/app/f7fff6-bcebcb-87d68d-93b48b-8491a3*/
 /*http://coolors.co/app/0f5257-0b3142-c6b9cd-d6d3f0-8491a3*/
-
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400);*/
 
 @font-face {
   font-family: 'LearningCurve';
@@ -10,7 +10,7 @@
 }
 
 body{
-	font-family: Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size:10px;
 	background-color: #F7FFF6;
 }
@@ -20,6 +20,7 @@ header{
 	top:40%;
 	transform:translateY(-50%);
 	background-color: rgba(160,234,184,0.25);
+/*	background-color: rgba(214,211,240,0.25);*/
  	width:65%;
   	margin:auto;
 }
@@ -28,7 +29,6 @@ h1{
 	font-family: 'LearningCurve';
 	font-size: 20em;
 	text-align: center;
-/*	color:#BCEBCB;*/
 	color:#0B3142;
 }
 
@@ -52,20 +52,28 @@ h2{
 
 }
 
-#day{
+.title{
 	width:29.7em;
 	margin:auto;
+}
+
+.titlelines{
+	list-style: none;
+	display: inline-block;
+	padding: 0 1em;
 }
 
 #daytxt{
 	font-size: .8em;
 }
 
-.daylines{
-	list-style: none;
-	display: inline-block;
-	padding: 0 1em;
+#detailstxt{
+	font-size: .8em;
+/*	color:#0B3142;*/
+color:#BF009D;
 }
+
+
 
 
 #datetxt{
@@ -86,6 +94,22 @@ h4{
   font-weight: 600;
   color: #0B3142;
 /*	font-style: italic;*/
+}
+
+h5{}
+
+h6{
+	font-size: 1.6em;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	margin:2em 0 1em;
+	letter-spacing: 0.05em;
+}
+
+p{
+	font-size:1.4em;
+	line-height: 1.6em;
 }
 
 a{
@@ -120,7 +144,10 @@ li{
 }
 
 section{
-	padding:6em 0;
+}
+
+span{
+	color:#BF009D;
 }
 
 .wrap{
@@ -137,23 +164,23 @@ section{
 }
 
 .col3{
-	width:31.33%;
-	margin:1%;
+	width:27%;
+	margin:3.15%;
 	float:left;
 }
 
 .locationtxt{
   font-family: 'LearningCurve', serif;
-	font-size: 11em;
-	color:#BF009D;
+	font-size: 6em;
+/*	color:#BF009D;*/
+	color:#0B3142;
   text-align: center;
-  background-color: rgba(160,234,184,0.25);
-  padding: 195px 0;
+
 }
 
-.locationrule{
+.rules{
 	width:3em;
-	margin: 2em 0;
+	margin:1em auto 2em;
 	border:none;
 	height:3px;
 	background-color: #BF009D;
@@ -164,13 +191,25 @@ section{
 	letter-spacing: .25em;
 }
 
+.address{
+	margin:1em 0;
+	font-weight: 600;
+	line-height: 1.6em;
+	text-align: center;
+}
+
 #leftcol{
 	text-align: right;
 }
 
 #leftrule{
+	margin: 2em 0;
 	position: absolute;
 	right:5%;
+}
+
+#rightrule{
+	margin: 2em 0;
 }
 
 #leftlist{
@@ -190,6 +229,7 @@ section{
 	height:100vh;
 	background:url(assets/imgs/ljpattern400t.png) repeat;
 	background-color: #A0EAB8;
+/*	background-color: #D6D3F0;*/
 	border:1em solid #0B3142;
 }
 
@@ -198,7 +238,7 @@ section{
 #gettingmarried{	
 	text-align: center;
 	font-size: 2em;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .2em;
@@ -211,7 +251,8 @@ section{
 	height: 0;
 	border-left: .8em solid transparent;
 	border-right: .8em solid transparent;
-	border-top: 1.6em solid #0B3142;
+/*	border-top: 1.6em solid #0B3142;*/
+	border-top: 1.6em solid #BF009D;
 	position: absolute;
 	bottom:1.6em;
 	right:50%;
@@ -221,13 +262,19 @@ section{
 
 #date{
 	background-color: #0B3142;
-	padding:8em 0 12em; 
+	padding:16em 0 20em; 
 }
 
 #details{
 	background-color: #D6D3F0;
-	
+}
 
+#detailswrap{
+	margin:0 auto;
+}
+
+#detailsrow{
+	padding:10em;
 }
 
 #friday{
@@ -266,7 +313,7 @@ section{
 }
 
 #accommtitle{
-/*	font-family: Arial, sans-serif;*/
+/*	font-family: Open Sans, Arial, sans-serif;, sans-serif;*/
 	color:#fff;
 	margin:0 0 .15em;
 /*	font-weight: 600;*/
