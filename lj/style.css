@@ -1,4 +1,5 @@
 /*http://coolors.co/app/f7fff6-bcebcb-87d68d-93b48b-8491a3*/
+/*http://coolors.co/app/0f5257-0b3142-c6b9cd-d6d3f0-8491a3*/
 
 
 @font-face {
@@ -14,20 +15,108 @@ body{
 	background-color: #F7FFF6;
 }
 
+header{
+	position: relative;
+	top:40%;
+	transform:translateY(-50%);
+	background-color: rgba(160,234,184,0.25);
+ 	width:65%;
+  	margin:auto;
+}
+
+h1{
+	font-family: 'LearningCurve';
+	font-size: 20em;
+	text-align: center;
+/*	color:#BCEBCB;*/
+	color:#0B3142;
+}
+
 h2{
 	text-align: center;
 	font-size: 10em;
 	font-family: 'LearningCurve';
+	color:#D6D3F0;
+	margin:0.25em 0 1em;
+}
+
+.dateinfo{
+	color:#D6D3F0;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .25em;
+	font-weight: lighter;
+	padding:0.5em 0;
+
+
+}
+
+#day{
+	width:29.7em;
+	margin:auto;
+}
+
+#daytxt{
+	font-size: .8em;
+}
+
+.daylines{
+	list-style: none;
+	display: inline-block;
+	padding: 0 1em;
+}
+
+
+#datetxt{
+	color:#BF009D;
+	margin:0.5em 0;
+	font-size:11em;
 }
 
 h3{
-	font-size: 2em;
+	font-size: 2.5em;
+	font-weight: 600;
+	color:#0B3142;
 	
 }
 
-p{
+h4{
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #0B3142;
+/*	font-style: italic;*/
+}
+
+a{
+	text-decoration:none;
+	font:inherit;
+}
+
+a:link{
+	color:inherit;
+}
+
+a:visited{
+	color:inherit;
+}
+
+a:hover{
+	color:#BF009D;
+}
+
+a:active{
+	color:#BF009D;
+}
+
+ul{
+
+}
+
+li{
 	font-size: 1.6em;
-	line-height: 1.618em;
+	padding:0 0 0.5em;
+	font-weight: 100;
 }
 
 section{
@@ -40,23 +129,52 @@ section{
 }
 
 .col2{
-	width:40%;
+	width:48%;
 	padding:0 2%;
-	margin:3%;
+	margin:1%;
+	float:left;
+	position: relative;
+}
+
+.col3{
+	width:31.33%;
+	margin:1%;
 	float:left;
 }
 
 .locationtxt{
-	font-family: 'LearningCurve', serif;
-	font-size: 4em;
+  font-family: 'LearningCurve', serif;
+	font-size: 11em;
+	color:#BF009D;
+  text-align: center;
+  background-color: rgba(160,234,184,0.25);
+  padding: 195px 0;
 }
 
 .locationrule{
 	width:3em;
-	margin: 1em 0;
+	margin: 2em 0;
 	border:none;
-	height:2px;
-	background-color: #BCEBCB;
+	height:3px;
+	background-color: #BF009D;
+}
+
+.accoms{
+	text-transform: uppercase;
+	letter-spacing: .25em;
+}
+
+#leftcol{
+	text-align: right;
+}
+
+#leftrule{
+	position: absolute;
+	right:5%;
+}
+
+#leftlist{
+	margin:4em 0 0;
 }
 
 .clearfix:after {
@@ -68,13 +186,64 @@ section{
   height: 0;
 }
 
-#details{
-	background-color: #87D68D;
+#landing{
+	height:100vh;
+	background:url(assets/imgs/ljpattern400t.png) repeat;
+	background-color: #A0EAB8;
+	border:1em solid #0B3142;
+}
+
+
+
+#gettingmarried{	
+	text-align: center;
+	font-size: 2em;
+	font-family: Helvetica, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color:#0B3142;
+/*	color:#BCEBCB;*/
+}
+
+#triangle-down{
+	width: 0;
+	height: 0;
+	border-left: .8em solid transparent;
+	border-right: .8em solid transparent;
+	border-top: 1.6em solid #0B3142;
+	position: absolute;
+	bottom:1.6em;
+	right:50%;
+	transform:translateX(-50%);
 
 }
 
+#date{
+	background-color: #0B3142;
+	padding:8em 0 12em; 
+}
+
+#details{
+	background-color: #D6D3F0;
+	
+
+}
+
+#friday{
+	background:url(assets/imgs/friday.jpg) no-repeat center center scroll;
+	background-size: cover;
+	height:500px;
+}
+
+#saturday{
+	background:url(assets/imgs/saturday.jpg) no-repeat center center scroll;
+	background-size: cover;
+	height:500px;
+}
+
 #afterparty{
-	background-color: #BCEBCB;
+/*	background-color: #D6D3F0;*/
 
 }
 
@@ -84,6 +253,28 @@ section{
 	letter-spacing: 1.618em;
 	font-weight: 600;
 }
+
+#accommodations{
+	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
+	background-size: cover;
+	padding:6em 0 18em;
+}
+
+#accomwrap{
+/*	background-color: #D6D3F0;*/
+	padding:3em 0;
+}
+
+#accommtitle{
+/*	font-family: Arial, sans-serif;*/
+	color:#fff;
+	margin:0 0 .15em;
+/*	font-weight: 600;*/
+/*	letter-spacing: .25em;*/
+/*	text-transform: uppercase;*/
+}
+
+
 
 #registry{
 	background-color: #8491A3;
