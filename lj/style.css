@@ -1,6 +1,5 @@
 /*http://coolors.co/app/f7fff6-bcebcb-87d68d-93b48b-8491a3*/
 /*http://coolors.co/app/0f5257-0b3142-c6b9cd-d6d3f0-8491a3*/
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400);*/
 
 @font-face {
   font-family: 'LearningCurve';
@@ -20,7 +19,6 @@ header{
 	top:40%;
 	transform:translateY(-50%);
 	background-color: rgba(160,234,184,0.25);
-/*	background-color: rgba(214,211,240,0.25);*/
  	width:65%;
   	margin:auto;
 }
@@ -40,48 +38,6 @@ h2{
 	margin:0.25em 0 1em;
 }
 
-.dateinfo{
-	color:#D6D3F0;
-	font-size: 1.4em;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: .25em;
-	font-weight: lighter;
-	padding:0.5em 0;
-
-
-}
-
-.title{
-	width:27.45em;
-	margin:auto;
-}
-
-.titlelines{
-	list-style: none;
-	display: inline-block;
-	padding: 0 1em;
-}
-
-#daytxt{
-	font-size: .8em;
-}
-
-#detailstxt{
-	font-size: .8em;
-/*	color:#0B3142;*/
-color:#BF009D;
-}
-
-
-
-
-#datetxt{
-	color:#BF009D;
-	margin:0 0 .25em;
-	font-size:11em;
-}
-
 h3{
 	font-size: 2.5em;
 	font-weight: 600;
@@ -93,7 +49,6 @@ h4{
   font-size: 2.5em;
   font-weight: 600;
   color: #0B3142;
-/*	font-style: italic;*/
 }
 
 h5{}
@@ -145,10 +100,33 @@ li{
 }
 
 section{
+	width:100%;
 }
 
 span{
 	color:#BF009D;
+}
+
+
+/*------------------------------------------ PAGE CLASSES */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.eventinfo{
+	color:#D6D3F0;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .25em;
+	font-weight: lighter;
+	padding:0.5em 0;
 }
 
 .wrap{
@@ -174,15 +152,6 @@ span{
 	float:left;
 }
 
-.locationtxt{
-  font-family: 'LearningCurve', serif;
-	font-size: 6em;
-	color:#BF009D;
-/*	color:#0B3142;*/
-  text-align: center;
-
-}
-
 .rules{
 	width:3em;
 	margin:1em auto 2em;
@@ -199,17 +168,143 @@ span{
 	background-color: #BF009D;
 }
 
+/*------------------------------------------ LANDING CLASSES */
+
+
+.title{
+	width:27.45em;
+	margin:auto;
+}
+
+.titlelines{
+	list-style: none;
+	display: inline-block;
+	padding: 0 1em;
+}
+
+
+/*------------------------------------------ EVENT DETAILS CLASSES */
+
+
+.eventtitle{
+  font-family: 'LearningCurve', serif;
+	font-size: 6em;
+	color:#BF009D;
+  text-align: center;
+
+}
+
+
+/*------------------------------------------ ACCOMMODATIONS CLASSES */
+
 .accoms{
 	text-transform: uppercase;
 	letter-spacing: .25em;
 }
 
-/*.address{
-	margin:1em 0;
-	font-weight: 600;
-	line-height: 1.6em;
+
+
+/*------------------------------------------ TRAVEL CLASSES */
+
+
+
+/*------------------------------------------ REGISTRY CLASSES */
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------ LANDING ID's */
+
+
+#landing{
+	height:100vh;
+	background:url(assets/imgs/ljpattern400t.png) repeat;
+	background-color: #A0EAB8;
+	border:1em solid #0B3142;
+}
+
+#gettingmarried{	
 	text-align: center;
-}*/
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color:#0B3142;
+}
+
+#triangle-down{
+	width: 0;
+	height: 0;
+	border-left: .8em solid transparent;
+	border-right: .8em solid transparent;
+	border-top: 1.6em solid #BF009D;
+	position: absolute;
+	bottom:1.6em;
+	right:50%;
+	transform:translateX(-50%);
+
+}
+
+
+/*------------------------------------------ SAVETHEDATE ID's */
+
+#titletxt{
+	font-size: .8em;
+}
+
+
+#savethedate{
+	background-color: #0B3142;
+	padding:16em 0 11em; 
+}
+
+#thedate{
+	color:#BF009D;
+	margin:0 0 .25em;
+	font-size:11em;
+}
+
+
+
+
+/*------------------------------------------ EVENT DETAILS ID'S */
+
+
+
+#eventdetails{
+	background-color: rgba(160,234,184,0.10);
+	padding:6em 8em 8em;
+	margin:6em 0 4em;
+}
+
+
+
+/*------------------------------------------ ACCOMMODATIONS ID's */
+
+
+#accommodations{
+	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
+	background-size: cover;
+	padding:6em 0 18em;
+}
+
+#accomwrap{
+	padding:3em 0;
+}
+
+#accommtitle{
+	color:#fff;
+	margin:0 0 .15em;
+}
 
 #leftcol{
 	text-align: right;
@@ -229,124 +324,18 @@ span{
 	margin:4em 0 0;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-#landing{
-	height:100vh;
-	background:url(assets/imgs/ljpattern400t.png) repeat;
-	background-color: #A0EAB8;
-/*	background-color: #D6D3F0;*/
-	border:1em solid #0B3142;
-}
 
 
-
-#gettingmarried{	
-	text-align: center;
-	font-size: 2em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: .2em;
-	color:#0B3142;
-/*	color:#BCEBCB;*/
-}
-
-#triangle-down{
-	width: 0;
-	height: 0;
-	border-left: .8em solid transparent;
-	border-right: .8em solid transparent;
-/*	border-top: 1.6em solid #0B3142;*/
-	border-top: 1.6em solid #BF009D;
-	position: absolute;
-	bottom:1.6em;
-	right:50%;
-	transform:translateX(-50%);
-
-}
-
-#date{
-	background-color: #0B3142;
-	padding:16em 0 11em; 
-}
-
-#details{
-	background-color: #D6D3F0;
-}
-
-#detailswrap{
-	margin:0 auto;
-}
-
-#detailsrow{
-	background-color: rgba(160,234,184,0.10);
-	padding:6em 8em 8em;
-	margin:6em 0 4em;
-}
-
-#friday{
-	background:url(assets/imgs/friday.jpg) no-repeat center center scroll;
-	background-size: cover;
-	height:500px;
-}
-
-#saturday{
-	background:url(assets/imgs/saturday.jpg) no-repeat center center scroll;
-	background-size: cover;
-	height:500px;
-}
-
-#afterparty{
-/*	background-color: #D6D3F0;*/
-
-}
-
-#partytxt{
-	font-family: Arial;
-  text-transform: uppercase;
-  letter-spacing: 14px;
-  font-weight: 600;
-  font-size: 3em;
-  color: #BF009D;
-  /* color: #0B3142; */
-  text-align: center;
-  padding: 80px 0;
-}
-
-#accommodations{
-	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
-	background-size: cover;
-	padding:6em 0 18em;
-}
-
-#accomwrap{
-/*	background-color: #D6D3F0;*/
-	padding:3em 0;
-}
-
-#accommtitle{
-/*	font-family: Open Sans, Arial, sans-serif;, sans-serif;*/
-	color:#fff;
-	margin:0 0 .15em;
-/*	font-weight: 600;*/
-/*	letter-spacing: .25em;*/
-/*	text-transform: uppercase;*/
-}
+/*------------------------------------------ TRAVEL ID's */
 
 #travel{
 	background-color: #D6D3F0;
 	height:10em;
 }
 
+
+/*------------------------------------------ REGISTRY ID's */
+
 #registry{
-/*	background-color: #8491A3;*/
 	height:10em;
 }
