@@ -271,9 +271,8 @@ section{
 	border-top: 1.25em solid #BF009D;
 	position: absolute;
 	bottom:1.25em;
-	right:50%;
+	left:50%;
 	transform:translateX(-50%);
-
 }
 
 
@@ -304,7 +303,7 @@ section{
 #eventdetails{
 	background-color: rgba(160,234,184,0.10);
 	padding:5.5rem 5rem;
-	margin:9rem auto 4rem;
+	margin:9rem auto 0;
 	max-width:1968px;
 }
 
@@ -369,41 +368,71 @@ section{
 		width:100%;
 	}
 
+	#eventdetails{
+		padding:5.5rem 1rem;
+	}
+}
+
+
+@media only screen and (max-width: 1272px){
 	.col3{
-		width:44%;
+		width:38%;
+		margin: 0 6%;
+	}
+
+	#eventdetails{
+		padding:5.5rem 2rem;
 	}
 
 	#afterparty{
-		margin:2rem auto;
+		clear:both;
 		float:none;
+		margin:0 auto;
+		padding:5.5rem 0 0;
+		width:100%;
 	}
+
+	#savethedate{
+		padding:9rem 0 4rem;
+	}
+
 }
 
-@media only screen and (max-width: 1205px){
-/*	span{
-		display: block;
-	}*/
-}
+@media only screen and (max-width: 960px){
+	h1{
+		font-size: 10rem;
+	}
 
-@media only screen and (max-width: 946px){
 	.col3{
 		width:100%;
 		float:none;
 		margin:0 auto 5rem;
 	}
-}
 
-@media only screen and (max-width: 911px){
-
-	h1{
-		font-size: 10rem;
+	.col2{
+		width:44%;
+		margin: 0 3%;
 	}
 
+	#afterparty{
+		padding:0;
+	}
+
+	#eventdetails{
+		padding:5.5rem 2rem;
+		margin:9rem 0 0;
+	}
 }
+
 
 @media only screen and (max-width: 700px){
 	span{
 		display: block;
+	}
+
+	header{
+		top:0%;
+		transform:none;
 	}
 
 	h1{
@@ -411,8 +440,20 @@ section{
 		margin:0 0 3rem;
 	}
 
+	#landing{
+		height:auto;
+		border:none;
+	}
+
+	#triangle-down{
+		position: relative;
+		bottom:-14em;
+		left:50%;
+		transform:translateX(-50%);
+}
+
 	#accommtitle{
-	font-size:9em;
+		font-size:9em;
 	}
 }
 
@@ -427,12 +468,23 @@ section{
 	}
 
 	#eventdetails{
-		padding:5.5rem 1rem;
-		
+		padding:5.5rem 2rem 7.5rem;
+	}
+
+	#savethedate{
+		padding:9rem 0 0;
 	}
 
 	#accommtitle{
-		font-size:6em;
+		font-size:8em;
+	}
+
+	#leftcol{
+		text-align: left;
+	}
+
+	#rightcol{
+		margin: 0 0 0 6%;
 	}
 }
 
@@ -440,7 +492,14 @@ section{
 	h1{
 		font-size: 8rem;
 		line-height: .5em;
+	}
 
+	#leftcol{
+		margin: 0 6% 0 0;
+	}
+
+	#rightcol{
+		margin: 0 0 0 6%;
 	}
 }
 
