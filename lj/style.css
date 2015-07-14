@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+html{
+	overflow-x: hidden;
+}
+
 body{
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size:10px;
@@ -196,7 +200,7 @@ section{
 
 .eventtitle{
   	font-family: 'LearningCurve', serif;
-	font-size: 5em;
+	font-size: 6em;
 	color:#BF009D;
   	text-align: center;
 }
@@ -378,6 +382,10 @@ section{
 	.col3{
 		width:38%;
 		margin: 0 6%;
+	}
+
+	.eventtitle{
+		font-size: 8em;
 	}
 
 	#eventdetails{
