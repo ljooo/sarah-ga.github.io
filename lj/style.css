@@ -23,8 +23,8 @@ header{
 	position: relative;
 	top:40%;
 	transform:translateY(-50%);
-	background-color: rgba(160,234,184,0.25);
- 	width:65%;
+	background-color: rgba(160,234,184,0.5);
+	padding:3rem;
   	margin:auto;
 }
 
@@ -44,7 +44,7 @@ h2{
 }
 
 h3{
-	margin:0 0 0.6rem;
+
 }
 
 h4{
@@ -68,15 +68,15 @@ h4 + h4{
 	padding:0;
 }
 
-h5{}
-
-h6{
-	font-size: 1.6rem;
-	font-weight: 600;
+h5{
+	margin:0.2em 0;
+	padding:0.75em 0;
+	font-weight: 100;
+	font-size: 0.9rem;
 	text-transform: uppercase;
 	text-align: center;
-	margin:2rem 0 1rem;
-	letter-spacing: 0.05rem;
+	letter-spacing: .2rem;
+	color:#BF009D;
 }
 
 hr{
@@ -128,11 +128,12 @@ li{
 section{
 	width:100%;
 	padding:9rem 0; 
+	position: relative;
 }
 
-/*span{
-	color:#BF009D;
-}*/
+span{
+	text-transform:uppercase;
+}
 
 
 /*------------------------------------------ PAGE CLASSES */
@@ -156,11 +157,11 @@ section{
 }
 
 .col2{
-	width:48%;
-	padding:0 2%;
-	margin:1%;
+	width:45%;
+/*	padding:0 2%;*/
+	margin:2.5%;
 	float:left;
-	position: relative;
+	
 }
 
 .col3{
@@ -171,8 +172,10 @@ section{
 	float:left;
 }
 
+
 .greenrules{
 	background-color: #A0EAB8;
+	margin: 2em 0;
 }
 
 .pinkrules{
@@ -221,7 +224,13 @@ section{
 
 /*------------------------------------------ ACCOMMODATIONS CLASSES */
 
-.accommtitles{
+.triptitlemain{
+	font-size:11em;
+	color:#fff;
+	margin:0 0 .15em;
+}
+
+.triptitles{
 	font-size: 2.5em;
   	font-weight: 600;
   	color: #0B3142;
@@ -230,10 +239,40 @@ section{
 }
 
 
+.leftcol{
+	text-align: right;
+}
+
+
 
 /*------------------------------------------ TRAVEL CLASSES */
 
+.traveltxt{
+	color:#BF009D;
+	padding:5em 0 0;
+	text-transform: 
+}
 
+.travelarrow{
+	font-size: 9em;
+	color:#BF009D;
+	margin:.25em .75em;
+}
+
+.innercol{
+	width:35%;
+	padding:0;
+	margin:0;
+	float:left;
+	text-align: center;
+}
+
+.outercol{
+	width:65%;
+	margin:0;
+	padding:3em 0;
+	float:left;
+}
 
 /*------------------------------------------ REGISTRY CLASSES */
 
@@ -268,14 +307,11 @@ section{
 	color:#0B3142;
 }
 
-#triangle-down{
-	width: 0;
-	height: 0;
-	border-left: 1em solid transparent;
-	border-right: 1em solid transparent;
-	border-top: 1.25em solid #BF009D;
+#arrow-down{
+	color:#BF009D;
+	font-size: 4em;
 	position: absolute;
-	bottom:1.25em;
+	bottom:.25em;
 	left:50%;
 	transform:translateX(-50%);
 }
@@ -325,37 +361,22 @@ section{
 	padding:6rem 0 18rem;
 }
 
-#accommtitle{
-	font-size:11em;
-	color:#fff;
-	margin:0 0 .15em;
-}
-
-#leftcol{
-	text-align: right;
-}
-
 #leftrule{
-	margin: 1em 0;
-	position: absolute;
-	right:5%;
+	float:right;
 }
-
-#rightrule{
-	margin: 2em 0;
-}
-
-#leftlist{
-	margin:4em 0 0;
-}
-
 
 
 /*------------------------------------------ TRAVEL ID's */
 
 #travel{
 	background-color: #D6D3F0;
-	height:10rem;
+	color:#BF009D;
+}
+
+#traveltitle{
+	font-size:11em;
+	color:#0B3142;
+	margin:0 0 .15em;
 }
 
 
@@ -389,6 +410,14 @@ section{
 		font-size: 8em;
 	}
 
+	.innercol{
+		width:45.5%;
+	}
+
+	.outercol{
+		width:54.5%;
+	}
+
 	#eventdetails{
 		padding:5.5rem 2rem;
 	}
@@ -419,8 +448,30 @@ section{
 	}
 
 	.col2{
-		width:44%;
-		margin: 0 3%;
+		width:60%;
+		margin:3em auto 4em;
+		float:none;
+		text-align:center; 
+	}
+
+	.innercol{
+		width:50%;
+	}
+
+	.outercol{
+		width:50%;
+	}
+
+	.traveltxt{
+		padding: 4em 0 0;
+	}
+
+	.leftcol{
+		text-align: center;
+	}
+
+	.greenrules{
+		margin: 2em auto;
 	}
 
 	#afterparty{
@@ -431,13 +482,14 @@ section{
 		padding:5.5rem 2rem;
 		margin:9rem 0 0;
 	}
+
+	#leftrule{
+		float:none;
+	}
 }
 
 
 @media only screen and (max-width: 700px){
-	span{
-		display: block;
-	}
 
 	header{
 		top:0%;
@@ -449,20 +501,21 @@ section{
 		margin:0 0 3rem;
 	}
 
+	.block{
+		display: block;
+	}
+
+	.col2{
+		width:80%;
+	}
+
+	.triptitlemain{
+		font-size:9em;
+	}
+
 	#landing{
 		height:auto;
 		border:none;
-	}
-
-	#triangle-down{
-		position: relative;
-		bottom:-14em;
-		left:50%;
-		transform:translateX(-50%);
-}
-
-	#accommtitle{
-		font-size:9em;
 	}
 }
 
@@ -472,9 +525,19 @@ section{
 		width:100%
 	}
 
+	.col2{
+		width:88%;
+	}
+
 	.col3{
 		min-width: 0;
 	}
+
+	.triptitlemain{
+		font-size:8em;
+	}
+
+
 
 	#eventdetails{
 		padding:5.5rem 2rem 7.5rem;
@@ -484,17 +547,7 @@ section{
 		padding:9rem 0 0;
 	}
 
-	#accommtitle{
-		font-size:8em;
-	}
 
-	#leftcol{
-		text-align: left;
-	}
-
-	#rightcol{
-		margin: 0 0 0 6%;
-	}
 }
 
 @media only screen and (max-width: 400px){
@@ -503,12 +556,8 @@ section{
 		line-height: .5em;
 	}
 
-	#leftcol{
-		margin: 0 6% 0 0;
-	}
-
-	#rightcol{
-		margin: 0 0 0 6%;
+	.col2{
+		width:100%;
 	}
 }
 
