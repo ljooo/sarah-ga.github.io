@@ -1,132 +1,142 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+/*http://coolors.co/app/f7fff6-bcebcb-87d68d-93b48b-8491a3*/
+/*http://coolors.co/app/0f5257-0b3142-c6b9cd-d6d3f0-8491a3*/
+
+@font-face {
+  font-family: 'LearningCurve';
+  src: url('assets/fonts/LearningCurve.eot?#iefix') format('rembedded-opentype'),  url('assets/fonts/LearningCurve.woff') format('woff'), url('assets/fonts/LearningCurve.ttf')  format('truetype'), url('assets/fonts/LearningCurve.svg#LearningCurve') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body { 
+	width:100%;  
+	overflow-x:hidden; 
+}
 
 body{
-	background-color: #000;
-	font-size: 16px;
-	color:#f0f8ff;
-}
-
-nav{
-	margin:0;
-	position: fixed;
-	width:100%;
-    background-color: #000;
-    z-index: 100;
-}
-
-ul{
-	display:block;
-	position: relative;
-	width:508px;
-    left:50%;
-    transform: translateX(-50%);
-}
-
-li{
-	display: inline-block;
-}
-
-li a:link, li a:visited  {
-	display: inline-block;
-	padding:1.2em 2em;
-	font-size:.8em;
-	color:inherit;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing:.07em;
-}
-
-li a:hover {
-	background-color: #f0f8ff;
-	color:#000;
-}
-
-hr{
-	position:relative;
-  	top:50%;
-  	height:1px;
-  	background-color: #fff;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size:10px;
+	background-color: #fff;
 }
 
 header{
-	position:relative;
-  	top:50%;
-  	transform: translateY(-60%);
+	position: relative;
+	top:40%;
+	transform:translateY(-50%);
+	background-color: rgba(160,234,184,0.5);
+	padding:3rem;
+  	margin:auto;
 }
 
-h1, h2, h3, li a, label{
-	font-family:'Roboto', sans-serif;
+h1, h2{
+	font-family: 'LearningCurve';
+	text-align: center;
 }
 
 h1{
-	font-size:6em;
-	letter-spacing:-.02em;
-	font-weight:400;
-	text-align:center;
+	font-size: 12.5rem;
+	color:#0B3142;
 }
 
 h2{
-	font-size:3em;
-	font-weight:700;
-	margin:0.5em 0;
+	color:#D6D3F0;
+	margin:0.25rem 0 2rem;
 }
 
 h3{
-	font-size:1.618em;
-	font-weight:700;
-	margin:.25em 0;
+
 }
 
 h4{
-	font-family:'Droid Serif', serif;
-	font-size:.75em;
-	text-transform:uppercase;
-	font-weight:400;
-	margin:0 0 1em;
+	margin:0.2em 0;
+	padding:0.75em 0;
+	font-weight: 100;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .2rem;
+	color:#D6D3F0;
+}
+
+h4 + p, p + h4{
+	margin:1rem 0 0;
+}
+
+
+h4 + h4{
+	margin:0;
+	padding:0;
+}
+
+h5{
+	margin:0.2em 0;
+	padding:0.75em 0;
+	font-weight: 100;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .2rem;
+	color:#BF009D;
+}
+
+hr{
+	width:1.75rem;
+	margin:0 auto 2rem;
+	border:none;
+	height:3px;
 }
 
 p{
-	font-family:'Droid Serif', serif;
-	font-size: 1em;
-	line-height: 1.618em;
-}
-
-footer{
-	height:100vh;
-	overflow:auto;
-}
-
-span{
+	font-size:0.85rem;
+	line-height: 1.4rem;
+	letter-spacing:0.04rem;
+	color:#D6D3F0;
 	font-style: italic;
 }
 
-figure img{
+a{
+	text-decoration:none;
+	font:inherit;
+}
+
+a:link{
+	color:inherit;
+}
+
+a:visited{
+	color:inherit;
+}
+
+a:hover{
+	color:#1E6060;
+}
+
+a:active{
+	color:#BF009D;
+}
+
+ul{
+
+}
+
+li{
+	font-size: 1rem;
+	letter-spacing: .04rem;
+	padding:0 0 0.5rem;
+}
+
+section{
 	width:100%;
-	min-width:300px;
-	max-width:500px;
+	padding:9rem 0; 
+	position: relative;
 }
 
-figcaption{
-	color:#fff;
+span{
+	text-transform:uppercase;
 }
 
-footer{
-	background: url("assets/milkyway.jpg") no-repeat center center fixed;	 
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	position: relative;
-}
 
-footer h2{
-	padding:5em 0;
-}
-
-p ~ p{
-	padding:1.618em 0 0;
-}
+/*------------------------------------------ PAGE CLASSES */
 
 .clearfix:after {
   visibility: hidden;
@@ -137,188 +147,425 @@ p ~ p{
   height: 0;
 }
 
-.fullpage{
-	height:100vh;
-	overflow:auto;
-}
-
-.wrapper{
-	margin:2% auto 0;
+.wrap{
 	width:90%;
-	max-width:980px;
+	margin:auto;
 }
 
-/* ------------------------------------------- ANN + CARL ------- */
-.col_2{
-	width:48%;
-	margin:0 1%;
-	padding:1.25em;
+.row{
+
+}
+
+.col2{
+	width:45%;
+/*	padding:0 2%;*/
+	margin:2.5%;
 	float:left;
-/*	background-color:#ffbd00;*/
+	
 }
 
-.col_2 img{
-	width:100%;
-}
-
-/* ------------------------------------------- IMAGES + SOUNDS ------- */
-.col_3{
-	width:30%;
-	margin:1% 1.665%;
+.col3{
+	width:27.33%;
+	min-width: 19rem;
+	max-width: 458px;
+	margin: 0 3%;
 	float:left;
 }
 
 
-/* ------------------------------------------- LANDING ------- */
+.greenrules{
+	background-color: #A0EAB8;
+	margin: 2em 0;
+}
+
+.pinkrules{
+	background-color: #BF009D;
+}
+
+
+
+/*------------------------------------------ LANDING CLASSES */
+
+
+.title{
+	width:17.505rem;
+	margin:0 auto 3rem;
+}
+
+.titlelines{
+	list-style: none;
+	display: inline-block;
+	padding: 0 1em;
+}
+
+
+/*------------------------------------------ EVENT DETAILS CLASSES */
+
+
+.eventtitle{
+  	font-family: 'LearningCurve', serif;
+	font-size: 6em;
+	color:#BF009D;
+  	text-align: center;
+}
+
+.eventinfo{
+	font-size:1.25em;
+}
+
+.eventtimes{
+	font-size:1.25em;
+}
+
+.addlink{
+	margin:2em 0 0;
+}
+
+.address{
+	letter-spacing: .09em;
+	text-transform: none;
+}
+
+/*------------------------------------------ ACCOMMODATIONS CLASSES */
+
+.triptitlemain{
+	font-size:11em;
+	color:#fff;
+	margin:0 0 .15em;
+}
+
+.triptitles{
+	font-size: 2.5em;
+  	font-weight: 600;
+  	color: #0B3142;
+	text-transform: uppercase;
+	letter-spacing:.25em;
+}
+
+
+.leftcol{
+	text-align: right;
+}
+
+
+
+/*------------------------------------------ TRAVEL CLASSES */
+
+.traveltxt{
+	color:#BF009D;
+	padding:5em 0 0;
+	text-transform: 
+}
+
+.travelarrow{
+	font-size: 9em;
+	color:#BF009D;
+	margin:.25em .75em;
+}
+
+.innercol{
+	width:35%;
+	padding:0;
+	margin:0;
+	float:left;
+	text-align: center;
+}
+
+.outercol{
+	width:65%;
+	margin:0;
+	padding:3em 0;
+	float:left;
+}
+
+
+
+/*------------------------------------------ REGISTRY CLASSES */
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------ LANDING ID's */
+
 
 #landing{
-	background: url("assets/record.jpg") no-repeat center center fixed;	 
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	height:100vh;
+	background:url(assets/imgs/ljpattern400t.png) repeat;
+	background-color: #A0EAB8;
+	border:1em solid #0B3142;
 }
 
-/* ------------------------------------------- INTRO ------- */
-
-#intro_wrap{
-	margin:0 auto;
-	width:580px;
-	padding:20px;
-	position: relative;
-  	top:50%;
-  	transform: translateY(-60%);
+#gettingmarried{	
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	color:#0B3142;
 }
 
-/* ------------------------------------------- ANN + CARL ------- */
-
-#anncarl{
-	background-color: #ffffff;
-	color:#000;
-}
-
-
-
-/* ------------------------------------------- IMAGES + SOUNDS ------- */
-
-#imgsounds{
-	position: relative;
-  	top:50%;
-  	transform: translateY(-60%);
+#arrow-down{
+	color:#BF009D;
+	font-size: 4em;
+	position: absolute;
+	bottom:.25em;
+	left:50%;
+	transform:translateX(-50%);
 }
 
 
-/* ------------------------------------------- ABOUT ------- */
+/*------------------------------------------ SAVETHEDATE ID's */
 
-#about{
-	padding:100px 0;
-
-}
-
-#abouttext{
-	max-width:680px;
-}
-
-/* ------------------------------------------- MOBILE MENU ------- */
-
-
-/* id that holds the main nav */
-#main-nav{
-	display: block;
-}
-
-/* id that holds the mobile nav */
-#mobile-nav{
-	display: none;
+#titletxt{
+	font-size: .8em;
 }
 
 
-@media screen and (max-width: 890px){
+#savethedate{
+	background-color: #0B3142;
+}
+
+#thedate{
+	font-size:11em;
+	color:#BF009D;
+	margin:0 0 2.5rem;
+}
+
+
+
+
+/*------------------------------------------ EVENT DETAILS ID'S */
+
+
+
+#eventdetails{
+	background-color: rgba(160,234,184,0.10);
+	padding:5.5rem 5rem;
+	margin:9rem auto 0;
+	max-width:1968px;
+}
+
+
+
+
+
+/*------------------------------------------ ACCOMMODATIONS ID's */
+
+
+#accommodations{
+	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
+	background-size: cover;
+	padding:6rem 0 18rem;
+}
+
+#leftrule{
+	float:right;
+}
+
+
+/*------------------------------------------ TRAVEL ID's */
+
+#travel{
+	background-color: #D6D3F0;
+	color:#BF009D;
+}
+
+#traveltitle{
+	font-size:11em;
+	color:#0B3142;
+	margin:0 0 .15em;
+}
+
+
+/*------------------------------------------ REGISTRY ID's */
+
+#registry{
+	height:10em;
+}
+
+
+
+
+@media only screen and (max-width: 1415px){
 	header{
-		width:80%;
-		margin:auto;
-	}
-}
-
-@media screen and (max-width: 865px){
-	.col_2{
-	width:100%;
-	max-width: 450px;
-	margin:0 auto;
-	padding:1.25em;
-	float:none;
-	}
-
-	.fullpage{
-	height:auto;
-	overflow:auto;
-	}
-}
-
-/* ---------------------- toggle nav ------ */
-@media screen and (max-width: 540px){
-	#main-nav{
-		display: none !important;
-	}
-
-	#mobile-nav{
-		display: block;
-		position: fixed;
-/*		bottom:0;
-		top:0;*/
-	}
-
-	label {
-		display: block;
-	  	cursor: pointer;
-	  	text-align: center;
-		padding:1.2em 2em;
-		font-size:.8em;
-		text-transform: uppercase;
-		letter-spacing:.07em;
-	}
-
-	#menu-toggle{
-		display: none;
-	}
-
-	#menu{
-		display: none;
-	}
-
-	#menu-toggle:checked + #menu {
-		display:block;
 		width:100%;
+	}
+
+	#eventdetails{
+		padding:5.5rem 1rem;
+	}
+}
+
+
+@media only screen and (max-width: 1272px){
+	.col3{
+		width:38%;
+		margin: 0 6%;
+	}
+
+	.eventtitle{
+		font-size: 8em;
+	}
+
+	.innercol{
+		width:45.5%;
+	}
+
+	.outercol{
+		width:54.5%;
+	}
+
+	#eventdetails{
+		padding:5.5rem 2rem;
+	}
+
+	#afterparty{
+		clear:both;
+		float:none;
+		margin:0 auto;
+		padding:5.5rem 0 0;
+		width:100%;
+	}
+
+	#savethedate{
+		padding:9rem 0 4rem;
+	}
+
+}
+
+@media only screen and (max-width: 960px){
+	h1{
+		font-size: 10rem;
+	}
+
+	.col3{
+		width:100%;
+		float:none;
+		margin:0 auto 5rem;
+	}
+
+	.col2{
+		width:60%;
+		margin:3em auto 4em;
+		float:none;
+		text-align:center; 
+	}
+
+	.innercol{
+		width:50%;
+	}
+
+	.outercol{
+		width:50%;
+	}
+
+	.traveltxt{
+		padding: 4em 0 0;
+	}
+
+	.leftcol{
 		text-align: center;
-		background-color: #000;
 	}
 
-	li, li a{
-		width:100%;
+	.greenrules{
+		margin: 2em auto;
+	}
+
+	#afterparty{
+		padding:0;
+	}
+
+	#eventdetails{
+		padding:5.5rem 2rem;
+		margin:9rem 0 0;
+	}
+
+	#leftrule{
+		float:none;
+	}
+}
+
+
+@media only screen and (max-width: 700px){
+
+	header{
+		top:0%;
+		transform:none;
+	}
+
+	h1{
+		line-height: .5em;
+		margin:0 0 3rem;
+	}
+
+	.block{
 		display: block;
 	}
 
-	li a:hover {
-	background-color: #000;
-	color:#fff;
+	.col2{
+		width:80%;
 	}
 
-	li a:active{
-	background-color: #f0f8ff;
-	color:#000;
-	} 
+	.triptitlemain{
+		font-size:9em;
+	}
 
 	#landing{
-	background: url("assets/record_mobile.jpg") no-repeat center center fixed;	 
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	height:100vh;
+		height:auto;
+		border:none;
+	}
 }
 
-.fullpage{
-	height:100vh;
+
+@media only screen and (max-width: 514px){
+	.wrap{
+		width:100%
+	}
+
+	.col2{
+		width:88%;
+	}
+
+	.col3{
+		min-width: 0;
+	}
+
+	.triptitlemain{
+		font-size:8em;
+	}
+
+
+
+	#eventdetails{
+		padding:5.5rem 2rem 7.5rem;
+	}
+
+	#savethedate{
+		padding:9rem 0 0;
+	}
+
+
 }
+
+@media only screen and (max-width: 400px){
+	h1{
+		font-size: 8rem;
+		line-height: .5em;
+	}
+
+	.col2{
+		width:100%;
+	}
 }
+
+
 
