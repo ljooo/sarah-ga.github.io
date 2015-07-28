@@ -32,13 +32,26 @@ main{
 
 figure{
 	width:80%;
-	margin:5em auto;
+	margin:0 auto;
+	height: 500px;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a; 
+}
+
+figure:before{
+	  content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
 }
 
 figure img{
 	width:100%;
 	margin:auto;
-	max-width: 600px;
+	max-width: 500px;
+	display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    font: 16px/1 Arial sans-serif; 
 }
 
 img{
