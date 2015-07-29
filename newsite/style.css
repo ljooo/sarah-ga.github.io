@@ -21,19 +21,18 @@ h1{
 
 }
 
-h1 a{
-	color:#551A8B;
-	text-decoration: none;
-		transform: rotate(-90deg);
-	position: fixed;
-	top:7em;
-	left:-4em;
+h1, h2{
+	font-size: 1.2em;
 }
 
 h2{
 	letter-spacing: .1em;
-	float: right;
-	
+	font-size: 1.2em;
+}
+
+a{
+	text-decoration: none;
+	color:#551A8B;
 }
 
 main{
@@ -107,18 +106,32 @@ footer{
 }
 
 #logo{
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 	position: fixed;
-	top:7em;
-	left:-4em;
+	top:9em;
+	left:-5em;
 }
 
 #info{
+	float: right;
 	margin:1.5em 1.5em 0 0;
 }
 
-#about{
+#circle{
+	width:2em;
+	height:2em;
+	float:right;
+	border:1px solid #551A8B;
+	border-radius: 200%;
 	margin:0 1.5em 1.5em 0;
+}
+
+#about{
+	text-align: center;
+	line-height: 1.75em;
 }
 
 @media screen and (max-width: 900px){
