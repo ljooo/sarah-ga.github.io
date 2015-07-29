@@ -1,17 +1,18 @@
 html{
+	height:100%;
 }
 
 body{
 	font-family: Arial;
 	font-size:10px;
 	background-color: #FFFDFD;
+	min-height:100%;
 }
 
-header{
-		transform: rotate(-90deg);
+header, footer{
+	width:100%;
 	position: fixed;
-	top:7em;
-	left:-4em;
+	z-index: 1;
 }
 
 h1{
@@ -25,37 +26,23 @@ h1 a{
 	text-decoration: none;
 }
 
+h2{
+	letter-spacing: .1em;
+	float: right;
+	
+}
+
 main{
 	width:80%;
 	margin:auto;
 }
 
-figure{
-	width:80%;
-	margin:0 auto;
-	height: 500px;
-    text-align: center;  /* align the inline(-block) elements horizontally */
-    font: 0/0 a; 
-}
-
-figure:before{
-	  content: ' ';
-    display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
-    height: 100%;
-}
-
-figure img{
-	width:100%;
-	margin:auto;
-	max-width: 500px;
-	display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
-    font: 16px/1 Arial sans-serif; 
-}
-
 img{
 	display: block;
+}
+
+footer{
+	bottom:0;
 }
 
 .clearfix:after{
@@ -67,17 +54,45 @@ img{
 	clear:both;
 }
 
-
-
-.thumbnail{
+.container{
 	width:50%;
 	float:left;
+	position: relative;
 }
 
-#page_wrap{
-	position: absolute;
+.vert{
+	 padding-top: 100%; /* forces 1:1 aspect ratio */
+}
+
+.thumbnail{
+	width:80%;
+	margin:0 auto;
+	max-width: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    text-align:center; /* Align center inline elements */
+    font: 0/0 a;
+}
+
+.thumbnail:before{
+	content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.thumbnail img{
 	width:100%;
-	height:100%;
+	max-width: 100%;
+	max-height: 100%;   
+	margin:auto;
+	display: inline-block;
+    vertical-align: middle;
+    font: 10px/1 Arial sans-serif; 
 }
 
 #half{
@@ -87,26 +102,39 @@ img{
 	background-color: #DFFDF5;
 }
 
+#logo{
+	transform: rotate(-90deg);
+	position: fixed;
+	top:7em;
+	left:-4em;
+}
+
+#info{
+	margin:1.5em 1.5em 0 0;
+}
+
+#about{
+	margin:0 1.5em 1.5em 0;
+}
+
 @media screen and (max-width: 900px){
-	figure{
-		margin:7em auto;
+	body{
+		border: 1px solid #FF8FF0;
 	}
 
 	.thumbnail{
+		width:100%;
+		margin:7em auto;
+	}
+
+	.container{
 		float:none;
 		width:90%;
 		margin:auto;
 	}
 
 	#half{
+		background-color: #FFFDFD;
 		display: none;
 	}
-}
-
-
-@media screen and (max-width: 680px){
-	figure{
-		width:100%;
-	}
-
 }
