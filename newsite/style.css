@@ -24,6 +24,10 @@ h1{
 h1 a{
 	color:#551A8B;
 	text-decoration: none;
+		transform: rotate(-90deg);
+	position: fixed;
+	top:7em;
+	left:-4em;
 }
 
 h2{
