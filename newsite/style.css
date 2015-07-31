@@ -9,25 +9,32 @@ body{
 	min-height:100%;
 }
 
-header, footer{
-	width:100%;
-	position: fixed;
-	z-index: 1;
-}
-
 h1{
 	text-transform: uppercase;
-	letter-spacing: .1em;
-
 }
 
-h1, h2{
+h1, h4{
 	font-size: 1.2em;
+	letter-spacing: .1em;
 }
 
 h2{
-	letter-spacing: .1em;
-	font-size: 1.2em;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 1.4em;
+	line-height: 1.618em;
+	font-weight: 600;
+}
+
+hr{
+	border:none;
+	height:.25em;
+	background-color: #DFFDF5;
+	width:3em;
+	margin:2em 0;
 }
 
 a{
@@ -35,18 +42,46 @@ a{
 	color:#551A8B;
 }
 
+p{
+	font-family: Georgia, serif;
+	font-size: 1.6em;
+	line-height: 1.7em;
+}
+
+ul{
+	margin:1em 0;
+}
+
+li a{
+	font-family: Georgia, serif;
+	font-size: 1.6em;
+	line-height: 1.8em;
+}
+
 main{
+
+}
+
+article{
+	padding:7em 0;
+	position: relative;
+}
+
+figure{
 	width:80%;
-	margin:auto;
+	margin:0 auto 3em;
+}
+
+figure img{
+	width:100%;
 }
 
 img{
 	display: block;
 }
 
-footer{
-	bottom:0;
-}
+
+
 
 .clearfix:after{
 	display: block;
@@ -57,7 +92,14 @@ footer{
 	clear:both;
 }
 
-.container{
+/* --------------------------------------------------- index classes */
+
+.page_wrap{
+	width:80%;
+	margin:auto;
+}
+
+.box{
 	width:50%;
 	float:left;
 	position: relative;
@@ -98,12 +140,41 @@ footer{
     font: 10px/1 Arial sans-serif; 
 }
 
+/* --------------------------------------------------- page classes */
+
+/*.relative{
+	position: relative;
+}*/
+
+.fixed{
+/*	position: fixed;*/
+}
+
+.col_left{
+	position: fixed;
+	width:33%;
+}
+
+.col_right{
+	margin-left:40%;
+	width:65%;
+}
+
+.project-desc{
+	margin:1.5em 0;
+}
+
 #half{
 	position: fixed;
 	width:50%;
 	height:100%;
 	background-color: #DFFDF5;
 }
+
+/*#me{
+	background: url("assets/me.jpeg");
+	background-size:cover;
+}*/
 
 #logo{
 	-webkit-transform: rotate(-90deg);
@@ -120,6 +191,17 @@ footer{
 	margin:1.5em 1.5em 0 0;
 }
 
+#page-header, #page-footer{
+	width:100%;
+	position: fixed;
+	z-index: 1;
+}
+
+
+#page-footer{
+	bottom:0;
+}
+
 #circle{
 	width:2em;
 	height:2em;
@@ -131,12 +213,25 @@ footer{
 
 #about{
 	text-align: center;
-	line-height: 1.75em;
+	line-height: 1.618em;
+}
+
+@media screen and (max-width: 1040px){
+	.col_left{
+		position: static;
+		width:80%;
+		margin:auto;
+	}
+
+	.col_right{
+		width:100%;
+		margin:3em auto;
+	}
 }
 
 @media screen and (max-width: 900px){
 	body{
-		border: 1px solid #FF8FF0;
+		border: 1px solid #551A8B;
 	}
 
 	.thumbnail{
@@ -144,14 +239,31 @@ footer{
 		margin:7em auto;
 	}
 
-	.container{
+	.box{
 		float:none;
 		width:90%;
 		margin:auto;
 	}
 
+
+
 	#half{
 		background-color: #FFFDFD;
 		display: none;
+	}
+}
+
+@media screen and (max-width: 670px){
+	.page_wrap{
+		width:100%;
+		margin:auto;
+	}
+
+
+}
+
+@media screen and (max-width: 427px){
+	figure{
+		width:100%;
 	}
 }
