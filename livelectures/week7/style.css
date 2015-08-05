@@ -16,8 +16,7 @@ body{
 
 header{
 	position: relative;
-	top:40%;
-	transform:translateY(-50%);
+	top:100px;
 	background-color: rgba(160,234,184,0.5);
 	padding:3em;
   	margin:auto;
@@ -143,27 +142,26 @@ span{
 }
 
 .wrap{
-	width:90%;
+	width:1200px;
 	margin:auto;
 }
 
 .row{
-
+	width:1080px;
+	margin:auto;
 }
 
 .col2{
-	width:45%;
-/*	padding:0 2%;*/
-	margin:2.5%;
+	width:500px;
+	margin:20px;
 	float:left;
 	
 }
 
 .col3{
-	width:27.33%;
+	width:300px;
 	min-width: 19em;
-	max-width: 458px;
-	margin: 0 3%;
+	margin: 0 33px;
 	float:left;
 }
 
@@ -259,7 +257,7 @@ span{
 }
 
 .innercol{
-	width:35%;
+	width:300px;
 	padding:0;
 	margin:0;
 	float:left;
@@ -267,7 +265,7 @@ span{
 }
 
 .outercol{
-	width:65%;
+	width:200px;
 	margin:0;
 	padding:3em 0;
 	float:left;
@@ -313,8 +311,7 @@ span{
 	font-size: 4em;
 	position: absolute;
 	bottom:.25em;
-	left:50%;
-	transform:translateX(-50%);
+	left:650px;
 }
 
 
@@ -346,7 +343,7 @@ span{
 	background-color: rgba(160,234,184,0.10);
 	padding:5.5em 5em;
 	margin:9em auto 0;
-	max-width:1968px;
+	width:1200px;
 }
 
 
