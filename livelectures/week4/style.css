@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
 
+
+
 *{
 	margin:0;
 	padding:0;
@@ -46,6 +48,13 @@ nav{
 	padding:1em 0;
 }
 
+nav a{
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:1em;
+	color:#494521;
+}
+
 hr{
 	border:none;
 	height:.25em;
@@ -71,12 +80,7 @@ p{
 	line-height: 1.618em;
 }
 
-a{
-	text-decoration:none;
-	text-transform:uppercase;
-	margin:1em;
-	color:#494521;
-}
+
 
 footer{
 	background-color:#fff;

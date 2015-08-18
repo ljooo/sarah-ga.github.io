@@ -1,0 +1,385 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+
+body{
+	background-color: #000;
+	font-size: 16px;
+	color:#f0f8ff;
+}
+
+nav{
+	margin:0;
+	position: fixed;
+	width:100%;
+    background-color: #000;
+    z-index: 100;
+}
+
+ul{
+	display:block;
+	position: relative;
+	width:508px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+hr{
+	border:none;
+	background-color: white;
+	height:1px;
+	position: relative;
+	top:50%;
+	
+}
+
+
+li a{
+	display: block;
+	float:left;
+}
+
+li a:link, li a:visited  {
+/*	display: inline-block;*/
+	padding:1.2em 2em;
+	font-size:.8em;
+	color:inherit;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing:.07em;
+
+	-o-transition:.8s;
+	-ms-transition:.8s;
+	-moz-transition:.8s;
+	-webkit-transition:.8s;
+	transition:.8s;
+}
+
+li a:hover, li a:active {
+	background-color: #f0f8ff;
+	color:#000;
+}
+
+hr{
+	position:relative;
+  	top:50%;
+  	height:1px;
+  	background-color: #fff;
+}
+
+header{
+	position:relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+h1, h2, h3, li a, label{
+	font-family:'Roboto', sans-serif;
+}
+
+h1{
+	font-size:6em;
+	letter-spacing:-.02em;
+	font-weight:400;
+	text-align:center;
+}
+
+h2{
+	font-size:3em;
+	font-weight:700;
+	margin:0.5em 0;
+}
+
+h3{
+	font-size:1.618em;
+	font-weight:700;
+	margin:.25em 0;
+}
+
+h4{
+	font-family:'Droid Serif', serif;
+	font-size:.75em;
+	text-transform:uppercase;
+	font-weight:400;
+	margin:0 0 1em;
+}
+
+p{
+	font-family:'Droid Serif', serif;
+	font-size: 1em;
+	line-height: 1.618em;
+}
+
+footer{
+	height:100vh;
+	overflow:auto;
+}
+
+video{
+	z-index:100;
+}
+
+iframe{
+	display: block;
+}
+
+span{
+	font-style: italic;
+}
+
+figure{
+	position: relative;
+	width:100%;
+
+}
+
+figure img{
+	width:100%;
+	max-width:500px;
+}
+
+figcaption{
+	display:none;
+
+}
+
+figure:hover figcaption{
+	display:block;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size: 1em;
+	padding:10%;
+	color:#fff;
+	position:absolute;
+	top:0;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+audio{
+	display: block;
+	margin:1em 0;
+}
+
+footer{
+/*	background: url("assets/milkyway.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position: relative;*/
+}
+
+footer h2{
+	position:relative;
+  	top:50%;
+  	transform: translateY(-90%);
+  	width:773px;
+  	margin:0 auto;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.fullpage{
+	height:100vh;
+	overflow:auto;
+/*	    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );*/
+/*    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;*/
+}
+
+.wrapper{
+	margin:2% auto 0;
+	width:90%;
+	max-width:980px;
+}
+
+/*.fullpage:target {
+  animation: highlight 1s ease;  
+  transform: translateX(20px);     
+}*/
+
+/* ------------------------------------------- ANN + CARL ------- */
+.col_2{
+	width:48%;
+	margin:0 1%;
+	padding:1.25em;
+	float:left;
+}
+
+.col_2 img{
+	width:100%;
+}
+
+/* ------------------------------------------- IMAGES + SOUNDS ------- */
+.col_3{
+	width:30%;
+	margin:1% 1.665%;
+	float:left;
+}
+
+
+/* ------------------------------------------- GOLD_CONTENT & about WRAP ------- */
+
+.content_wrap{
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+/* ------------------------------------------- LANDING ------- */
+
+#landing{
+	background: url("assets/record.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/* ------------------------------------------- INTRO ------- */
+
+#intro_wrap{
+	margin:0 auto;
+	width:580px;
+	padding:20px;
+	position:relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+/* ------------------------------------------- ANN + CARL, ABOUT ------- */
+
+#anncarl, #about{
+	background-color:#ffffff;
+	color:#000;
+}
+
+
+/* ------------------------------------------- MOBILE MENU ------- */
+
+
+/* id that holds the main nav */
+#main-nav{
+	display: block;
+}
+
+/* id that holds the mobile nav */
+#mobile-nav{
+	display: none;
+}
+
+
+
+@media screen and (max-width:1050px){
+
+	.col_2{
+		float:none;
+		width:100%;
+		margin:40px 0;
+	}
+
+	.col_3{
+		float:none;
+		width:100%;
+		margin:40px 0;
+	}
+
+	.content_wrap{
+		position: relative;
+		top:0;
+		transform: none;
+		margin:40px auto;
+		width:500px;
+	}
+
+	#anncarl, #gold_content, #about{
+		height:auto;
+	}
+}
+
+
+@media only screen and (max-width:550px){
+
+	.wrapper{
+		margin: 2% auto 0;
+ 		max-width:490px;
+	}
+
+	.col_2{
+	width:100%;
+	margin:7% 0;
+	padding:0;
+	float:none;
+}
+
+	#intro_wrap{
+	margin:0 auto;
+	width:90%;
+	padding:2%;
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+#anncarl{
+	background-color: #ffffff;
+	height:auto;
+}
+
+/* ---------------------- toggle nav ------ */
+
+	#main-nav{
+		display: none !important;
+	}
+
+	#mobile-nav{
+		display: block;
+		position: fixed;
+		top:0;
+	}
+
+	label {
+		display: block;
+	  	cursor: pointer;
+	  	text-align: center;
+		padding:1.2em 2em;
+		font-size:.8em;
+		text-transform: uppercase;
+		letter-spacing:.07em;
+	}
+
+	#menu-toggle{
+		display: none;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	#menu-toggle:checked + #menu {
+		background-color: #000;
+		width:100%;
+		text-align: center;
+		display:block;
+		height:172px;
+	}
+
+	li, li a{
+		width:100%;
+		display: block;
+	}
+
+}
