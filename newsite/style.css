@@ -297,6 +297,7 @@ footer{
 
 	.vert{
 		padding-top: 0; 
+		display: none;
 	}
 
 	.thumbnail{
@@ -304,10 +305,13 @@ footer{
 		max-width: 750px;
 		margin:7em auto;
 	    position: static;
+	    font:inherit;
 	}
 
 	.thumbnail:before{
-	    display: none;
+	    content:none;
+	    display:none;
+	    height:auto;
 	}
 
 	.thumbnail img{
