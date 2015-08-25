@@ -282,7 +282,7 @@ footer{
 	right:0;
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (max-width:1040px) and (orientation:landscape) {
 	.thumbnail, .thumbnail:before, .thumbnail img{
 		height: auto !important;
 	}
