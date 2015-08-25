@@ -10,8 +10,8 @@ body{
 	font-size:12px;
 	background-color: #F9F9F9;
 	height:100%;
-	color:#7B67B5;
-/*color:red;*/
+/*	color:#7B67B5;*/
+color:red;
 }
 
 header{
@@ -282,7 +282,13 @@ footer{
 	right:0;
 }
 
-@media screen and (max-width: 1040px){
+@media screen and (orientation:landscape) {
+	.thumbnail, .thumbnail:before, .thumbnail img{
+		height: auto !important;
+	}
+}
+
+@media screen and (max-width:1040px){
 	body{
 		background-color: #F9F9F9;
 	}
