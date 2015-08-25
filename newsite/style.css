@@ -307,18 +307,18 @@ footer{
 		margin:7em auto;
 	    position: static;
 	    font:inherit;
-	    height: auto;
+	    height: auto !important;
 	}
 
 	.thumbnail:before{
 	    content:none;
 	    display:none;
-	    height:auto;
+	    height: auto !important;
 	}
 
 	.thumbnail img{
 		display: block;
-		height: auto;
+		height: auto !important;
 	}
 
 	.box{
