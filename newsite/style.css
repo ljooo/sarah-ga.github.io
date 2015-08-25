@@ -306,6 +306,7 @@ footer{
 		margin:7em auto;
 	    position: static;
 	    font:inherit;
+	    height: auto;
 	}
 
 	.thumbnail:before{
@@ -316,6 +317,7 @@ footer{
 
 	.thumbnail img{
 		display: block;
+		height: auto;
 	}
 
 	.box{
