@@ -203,14 +203,16 @@ footer{
 	padding:4em 0 0;
 }
 
-.fixed{
+
+
+/* --------------------------------------------------- all IDs */
+#page-header{
 	width:100%;
 	position:fixed;
 	z-index:1;
 	margin:0;
 }
 
-/* --------------------------------------------------- all IDs */
 #logo{
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
@@ -222,7 +224,7 @@ footer{
 }
 
 #info{
-	position: fixed;
+	position: absolute;
 	right:0;
 	margin:1em .75em 0 0;
 }
@@ -305,11 +307,7 @@ footer{
 	}
 
 	.thumbnail:before{
-		content: ' ';
-	    display: block;
-	    vertical-align: middle; 
-	    height: 100%;
-	    max-height:100%;
+	    display: none;
 	}
 
 	.thumbnail img{
@@ -322,6 +320,10 @@ footer{
 		margin: 3.5em auto;
 	}
 
+	.box:last-child{
+		margin: 3.5em auto 0;
+	}
+
 	#half{
 		display: none;
 		height:0;
@@ -331,14 +333,13 @@ footer{
 
 @media screen and (max-width: 870px){
 	article, aside{
-		width:90%;
+		width:99%;
 		max-width:100%;
-		margin:3em auto;
+		margin:3em 0;
 		float:none;
 	}
 
 	.project-wrap{
-		width:90%;
 		padding:1em 0;
 	}
 }
@@ -369,7 +370,11 @@ footer{
 
 	.project-wrap{
 		width:90%;
-		padding:4em 0 0;
+		padding:0;
+	}
+
+	#page-header{
+		position:static;
 	}
 
 	#logo{
@@ -383,7 +388,7 @@ footer{
 
 	#info{
 		float: none;
-		margin:1em 0 0;
+		margin:.5em 0 0;
 		text-align: center;
 		position: static;
 	}
@@ -400,10 +405,12 @@ footer{
 	}
 
 	article, aside{
+		width:93%;
+		margin:3em 0 0 2.5%;
 		padding:3em;
 	}
 
-	.project-wrap{
+	.project-wrap, .box{
 		width:100%;
 	}
 
