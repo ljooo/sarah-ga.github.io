@@ -12,6 +12,7 @@ html{
 body{
 	font-family: 'Open Sans', Arial, sans-serif;
 	background-color: #0B3142;
+	position: relative;
 }
 
 header{
@@ -355,7 +356,12 @@ span{
 	max-width:1968px;
 }
 
-
+#fixed{
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	z-index: 2;
+}
 
 
 
