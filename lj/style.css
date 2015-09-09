@@ -11,7 +11,7 @@ html{
 
 body{
 	font-family: 'Open Sans', Arial, sans-serif;
-	background-color: #fff;
+	background-color: #D6D3F0;
 }
 
 header{
@@ -56,12 +56,6 @@ h4{
 h4 + p, p + h4{
 	margin:1em 0 0;
 }
-
-
-/*h4 + h4{
-	margin:0;
-	padding:0;
-}*/
 
 h5{
 	margin:0.2em 0;
@@ -120,6 +114,16 @@ li{
 	padding:0 0 0.5em;
 }
 
+#thedate{
+	background-color: #0B3142;
+	color:#D6D3F0;
+	padding:5em 0;
+}
+
+#thedate .title{
+	margin:0 auto 1em;
+}
+
 section{
 	width:100%;
 	padding:9em 0; 
@@ -128,6 +132,41 @@ section{
 
 span{
 	text-transform:uppercase;
+}
+
+figure{
+	width:50%;
+	padding: 0 10%;
+	float:left;
+}
+
+figure img{
+	width:100%;
+	margin:auto;
+}
+
+figcaption{
+	font-family: 'LearningCurve';
+	color:#D6D3F0;
+	font-size: 7em;
+	text-align: center;
+	font-weight: 300;
+}
+
+figcaption + p{
+	text-align: center;
+}
+sup{
+	vertical-align: super;
+	font-size: smaller;
+	color:#BF009D;
+	padding:0 2px;
+}
+
+svg{
+	width:50px;
+	height:1px;
+	fill:currentColor;
 }
 
 
@@ -145,10 +184,6 @@ span{
 .wrap{
 	width:90%;
 	margin:auto;
-}
-
-.row{
-
 }
 
 .col2{
@@ -185,15 +220,18 @@ span{
 .title{
 	width:27.05em;
 	margin:0 auto 3em;
+	color:inherit;
 }
 
 .titlelines{
+	color: inherit;
 	list-style: none;
 	display: inline-block;
 	padding: 0 1em;
 }
 
 .titletxt{
+	color:inherit;
 	font-size: .75em;
 }
 
@@ -218,6 +256,8 @@ span{
 
 .addlink{
 	margin:2em 0 0;
+	padding:1em;
+/*	border:1px solid #D6D3F0;*/
 }
 
 .address{
@@ -239,27 +279,23 @@ span{
   	color: #0B3142;
 	text-transform: uppercase;
 	letter-spacing:.25em;
+/*	text-align: center;*/
 }
-
-
-.leftcol{
-	text-align: right;
-}
-
 
 
 /*------------------------------------------ TRAVEL CLASSES */
 
 .traveltxt{
-	color:#BF009D;
-	padding:5em 0 0;
-	text-transform: 
+	color:#0B3142;
+	padding:1em 0 0;
 }
 
 .travelarrow{
-	font-size: 9em;
+	font-size: 4em;
 	color:#BF009D;
-	margin:.25em .75em;
+	margin:.25em .5em 1em;
+	text-align:center;
+	float: left;
 }
 
 .innercol{
@@ -277,6 +313,9 @@ span{
 	float:left;
 }
 
+.block{
+	text-transform: none;
+}
 
 
 /*------------------------------------------ REGISTRY CLASSES */
@@ -313,7 +352,7 @@ span{
 }
 
 #arrow-down{
-	color:#BF009D;
+	color:inherit;
 	font-size: 4em;
 	position: absolute;
 	bottom:.25em;
@@ -325,27 +364,26 @@ span{
 /*------------------------------------------ SAVETHEDATE ID's */
 
 
-
-
-#savethedate{
-	background-color: #0B3142;
+#portraits{
+	width:60%;
+	margin:0 auto 5em;
 }
 
-#thedate{
-	font-size:11em;
+#thedate h2{
+	font-size:7em;
 	color:#BF009D;
-	margin:0 0 .5em;
+	color:#D6D3F0;
+	color: #A0EAB8;
+	margin:0 0 1em;
 }
-
-
 
 
 /*------------------------------------------ EVENT DETAILS ID'S */
 
 
 
-#eventdetails{
-	background-color: rgba(160,234,184,0.10);
+main{
+	background-color: #004245;
 	padding:5.5em 5em;
 	margin:9em auto 0;
 	max-width:1968px;
@@ -373,7 +411,7 @@ span{
 
 #travel{
 	background-color: #D6D3F0;
-	color:#BF009D;
+	color:#fff;
 }
 
 #traveltitle{
@@ -397,7 +435,7 @@ span{
 		width:100%;
 	}
 
-	#eventdetails{
+	main{
 		padding:5.5em 1em;
 	}
 }
@@ -421,7 +459,7 @@ span{
 		width:54.5%;
 	}
 
-	#eventdetails{
+	main{
 		padding:5.5em 2em;
 	}
 
@@ -433,7 +471,7 @@ span{
 		width:100%;
 	}
 
-	#savethedate{
+	#thedate{
 		padding:9em 0 4em;
 	}
 
@@ -477,7 +515,7 @@ span{
 		padding:0;
 	}
 
-	#eventdetails{
+	main{
 		padding:5.5em 2em;
 		margin:9em 0 0;
 	}
@@ -537,11 +575,11 @@ span{
 
 
 
-	#eventdetails{
+	main{
 		padding:5.5em 2em 7.5em;
 	}
 
-	#savethedate{
+	#thedate{
 		padding:9em 0 0;
 	}
 

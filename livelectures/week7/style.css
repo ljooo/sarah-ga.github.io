@@ -91,6 +91,7 @@ p{
 a{
 	text-decoration:none;
 	font:inherit;
+	padding:inherit;
 }
 
 a:link{
