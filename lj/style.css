@@ -18,7 +18,7 @@ header{
 	position: relative;
 	top:40%;
 	transform:translateY(-50%);
-	background-color: rgba(160,234,184,0.5);
+	background-color: rgba(188,255,210,0.65);
 	padding:3em;
   	margin:auto;
 }
@@ -140,7 +140,8 @@ figure{
 	float:left;
 }
 
-figure img{
+img{
+	display: block;
 	width:100%;
 	margin:auto;
 }
@@ -202,9 +203,8 @@ svg{
 	float:left;
 }
 
-
 .greenrules{
-	background-color: #A0EAB8;
+	background-color: #BCFFD2;
 	margin: 2em 0;
 }
 
@@ -274,12 +274,13 @@ svg{
 }
 
 .triptitles{
-	font-size: 2.5em;
-  	font-weight: 600;
-  	color: #0B3142;
-	text-transform: uppercase;
-	letter-spacing:.25em;
-/*	text-align: center;*/
+    font-size: 5.5em;
+    font-weight: 600;
+    color: #0B3142;
+    font-family: 'LearningCurve';
+    /* letter-spacing: .25em; */
+    margin: .25em 0 0;
+     text-align: center; 
 }
 
 
@@ -288,6 +289,7 @@ svg{
 .traveltxt{
 	color:#0B3142;
 	padding:1em 0 0;
+	font-style:normal;
 }
 
 .travelarrow{
@@ -337,7 +339,7 @@ svg{
 #landing{
 	height:100vh;
 	background:url(assets/imgs/ljpattern400t.png) repeat;
-	background-color: #A0EAB8;
+	background-color: #BCFFD2;
 	border:1em solid #0B3142;
 }
 
@@ -373,7 +375,7 @@ svg{
 	font-size:7em;
 	color:#BF009D;
 	color:#D6D3F0;
-	color: #A0EAB8;
+	color: #BCFFD2;
 	margin:0 0 1em;
 }
 
