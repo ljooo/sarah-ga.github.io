@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
 @font-face {
   font-family: 'LearningCurve';
   src: url('assets/fonts/LearningCurve.eot?#iefix') format('embedded-opentype'),  url('assets/fonts/LearningCurve.woff') format('woff'), url('assets/fonts/LearningCurve.ttf')  format('truetype'), url('assets/fonts/LearningCurve.svg#LearningCurve') format('svg');
@@ -10,15 +12,16 @@ html{
 }
 
 body{
-	font-family: 'Open Sans', Arial, sans-serif;
-	background-color: #D6D3F0;
+	font-family: 'Cutive Mono', sans-serif;
+	/*background-color: #D6D3F0;*/
+	background-color: #fff;
 }
 
 header{
 	position: relative;
 	top:40%;
 	transform:translateY(-50%);
-	background-color: rgba(188,255,210,0.65);
+	background-color: rgba(244,243,253,0.7);
 	padding:3em;
   	margin:auto;
 }
@@ -31,10 +34,11 @@ h1, h2{
 h1{
 	font-size: 16em;
 	color:#0B3142;
+	line-height: .75em;
 }
 
 h2{
-	color:#D6D3F0;
+	color:#0B3142;
 	margin:0.25em 0 2em;
 }
 
@@ -58,14 +62,9 @@ h4 + p, p + h4{
 }
 
 h5{
-	margin:0.2em 0;
-	padding:0.75em 0;
-	font-weight: 100;
-	font-size: 1.2em;
-	text-transform: uppercase;
+	color:inherit;
+	font-size: 1.8em;
 	text-align: center;
-	letter-spacing: .2em;
-	color:#BF009D;
 }
 
 hr{
@@ -76,11 +75,11 @@ hr{
 }
 
 p{
-	font-size:1.4em;
-	line-height: 1.8em;
-	letter-spacing:0.04em;
-	color:#D6D3F0;
-	font-style: italic;
+	font-size:1.8em;
+	line-height: 1.6em;
+/*	letter-spacing:0.03em;*/
+/*	color:#D6D3F0;*/
+/*	font-style: italic;*/
 }
 
 a{
@@ -104,9 +103,6 @@ a:active{
 	color:#BF009D;
 }
 
-ul{
-
-}
 
 li{
 	font-size: 1.6em;
@@ -114,54 +110,51 @@ li{
 	padding:0 0 0.5em;
 }
 
-#thedate{
-	background-color: #0B3142;
-	color:#D6D3F0;
-	padding:5em 0;
-}
 
-#thedate .title{
-	margin:0 auto 1em;
-}
 
 section{
 	width:100%;
-	padding:9em 0; 
-	position: relative;
+	padding:7em 0; 
 }
 
-span{
-	text-transform:uppercase;
-}
 
 figure{
 	width:50%;
-	padding: 0 10%;
+	padding: 0 1%;
 	float:left;
 }
 
-img{
+figure img{
 	display: block;
-	width:100%;
+	width:60%;
 	margin:auto;
 }
 
 figcaption{
 	font-family: 'LearningCurve';
-	color:#D6D3F0;
-	font-size: 7em;
+	font-size: 5.5em;
 	text-align: center;
 	font-weight: 300;
 }
 
 figcaption + p{
 	text-align: center;
+	font-size: 1.6em;
 }
 sup{
 	vertical-align: super;
 	font-size: smaller;
 	color:#BF009D;
 	padding:0 2px;
+}
+
+span{
+	margin:.05em;
+}
+
+img{
+	width:100%;
+	display: block;
 }
 
 svg{
@@ -217,23 +210,10 @@ svg{
 /*------------------------------------------ LANDING CLASSES */
 
 
-.title{
-	width:27.05em;
-	margin:0 auto 3em;
-	color:inherit;
-}
 
-.titlelines{
-	color: inherit;
-	list-style: none;
-	display: inline-block;
-	padding: 0 1em;
-}
 
-.titletxt{
-	color:inherit;
-	font-size: .75em;
-}
+
+
 
 
 /*------------------------------------------ EVENT DETAILS CLASSES */
@@ -244,6 +224,7 @@ svg{
 	font-size: 6em;
 	color:#BF009D;
   	text-align: center;
+  	font-weight: 300;
 }
 
 .eventinfo{
@@ -339,45 +320,57 @@ svg{
 #landing{
 	height:100vh;
 	background:url(assets/imgs/ljpattern400t.png) repeat;
-	background-color: #BCFFD2;
-	border:1em solid #0B3142;
+	background-color: #F4F3FD;
+/*	border:1em solid #0B3142;*/
 }
 
 #gettingmarried{	
 	text-align: center;
 	font-size: 2em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-family: 'Cutive Mono', sans-serif;
+/*	font-weight: 600;
+	text-transform: uppercase;*/
 	letter-spacing: .25em;
 	color:#0B3142;
+	margin:0;
 }
 
 #arrow-down{
-	color:inherit;
-	font-size: 4em;
+	font-family: sans-serif;
+	color:#0B3142;
+	font-size: 3.5em;
 	position: absolute;
 	bottom:.25em;
 	left:50%;
 	transform:translateX(-50%);
+	font-weight: 100;
 }
+
+
 
 
 /*------------------------------------------ SAVETHEDATE ID's */
 
+#joinus{
+	color: #D6D3F0;
+	background-color:#0B3142;
+}
 
 #portraits{
-	width:60%;
-	margin:0 auto 5em;
+	width:65%;
+	margin:2em auto 5em;
+	padding:5em 5%;
+	background-color: #F4F3FD;
+	color:#0B3142;
 }
 
-#thedate h2{
-	font-size:7em;
-	color:#BF009D;
-	color:#D6D3F0;
-	color: #BCFFD2;
-	margin:0 0 1em;
+#thedate{
+	font-size:9em;
+	color: #BF009D;
+	margin:0.1em 0;
 }
+
+
 
 
 /*------------------------------------------ EVENT DETAILS ID'S */
@@ -386,8 +379,8 @@ svg{
 
 main{
 	background-color: #004245;
-	padding:5.5em 5em;
-	margin:9em auto 0;
+/*background-color: #D6D3F0;*/
+	padding:7em 5em;
 	max-width:1968px;
 }
 
@@ -473,7 +466,7 @@ main{
 		width:100%;
 	}
 
-	#thedate{
+	#joinus{
 		padding:9em 0 4em;
 	}
 
@@ -581,9 +574,7 @@ main{
 		padding:5.5em 2em 7.5em;
 	}
 
-	#thedate{
-		padding:9em 0 0;
-	}
+
 
 
 }
