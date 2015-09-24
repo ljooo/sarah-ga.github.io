@@ -17,6 +17,8 @@ header{
 
 }
 
+
+
 h1{
 	font-size: 2em;
 	font-weight: 400;
@@ -392,7 +394,7 @@ footer{
 		-o-transform: rotate(180deg);
 		transform: rotate(180deg);
 		position: static;
-		margin:-0.55em 0 0;
+		margin:0;
 	}
 
 	#info{
@@ -407,10 +409,15 @@ footer{
 		margin:0 auto;
 	}
 
+	#me{
+		height:165%;
+	}
+
 	#bio{
-		width:75%;
+		width:85%;
 		float:none;
-		margin:1em auto;
+		margin:100% auto 0;
+		min-width: 290px;
 	}
 }
 
@@ -427,9 +434,5 @@ footer{
 
 	.project-wrap, .thumb{
 		width:100%;
-	}
-
-	#logo{
-		margin:-0.35em 0 0;
 	}
 }
