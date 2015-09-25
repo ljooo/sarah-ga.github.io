@@ -13,8 +13,7 @@ html{
 
 body{
 	font-family: 'Cutive Mono', sans-serif;
-	/*background-color: #D6D3F0;*/
-	background-color: #fff;
+	background-color: #D6D3F0;
 }
 
 header{
@@ -26,39 +25,42 @@ header{
   	margin:auto;
 }
 
-h1, h2{
+h1, 
+h2,
+h3{
 	font-family: 'LearningCurve';
 	text-align: center;
 }
 
+h1,
+h2{
+	color:#0B3142;
+}
+
 h1{
 	font-size: 16em;
-	color:#0B3142;
 	line-height: .75em;
 }
 
 h2{
-	color:#0B3142;
-	margin:0.25em 0 2em;
+	font-size: 6.875em;
 }
 
 h3{
-
+    font-size: 6em;
+    font-weight: 300;
+    color: #3b8bb5;
+    font-family: 'LearningCurve';
+    margin: .25em 0 0;
+    text-align: center; 
 }
 
 h4{
-	margin:0em 0;
-	padding:0.25em 0;
-	font-weight: 100;
-	font-size: 1.2em;
-	text-transform: uppercase;
+	margin:0 0 1em;
 	text-align: center;
-	letter-spacing: .2em;
-	color:#D6D3F0;
-}
-
-h4 + p, p + h4{
-	margin:1em 0 0;
+	font-size:1.8em;
+	line-height: 1.4em;
+	color:#0B3142;
 }
 
 h5{
@@ -69,17 +71,21 @@ h5{
 
 hr{
 	width:1.75em;
-	margin:0 auto 2em;
+	margin:1em auto 2em;
 	border:none;
 	height:3px;
+	background-color: #0B3142;
 }
 
 p{
 	font-size:1.8em;
 	line-height: 1.6em;
-/*	letter-spacing:0.03em;*/
-/*	color:#D6D3F0;*/
-/*	font-style: italic;*/
+	margin:2em 0 0;
+	color:#0B3142;
+}
+
+p:nth-of-type(2){
+	margin:3em 0 0;
 }
 
 a{
@@ -110,7 +116,12 @@ li{
 	padding:0 0 0.5em;
 }
 
-
+main{
+	/*background-color: #004245;*/
+	background-color: #3b8bb5;
+	padding:7em 5em;
+	max-width:1968px;
+}
 
 section{
 	width:100%;
@@ -141,12 +152,6 @@ figcaption + p{
 	text-align: center;
 	font-size: 1.6em;
 }
-sup{
-	vertical-align: super;
-	font-size: smaller;
-	color:#BF009D;
-	padding:0 2px;
-}
 
 span{
 	margin:.05em;
@@ -157,11 +162,32 @@ img{
 	display: block;
 }
 
-svg{
-	width:50px;
-	height:1px;
-	fill:currentColor;
+sup{
+	vertical-align: super;
+	font-size: smaller;
+	color:#BF009D;
+	padding:0 2px;
 }
+
+address{
+	margin:2em 0 0;
+	padding:1em;
+	text-align: center; 
+	font-size:1.8em;
+	line-height: 1.4em;
+	letter-spacing: .09em;
+	font-style: normal;
+	color:#0B3142;
+	-webkit-transition: all .15s ease .15s;
+    -moz-transition: all .15s ease .15s;
+    -o-transition: all .15s ease .15s;
+	transition: all .15s ease .15s;
+}
+
+address:hover{
+	color:#3b8bb5;
+}
+
 
 
 /*------------------------------------------ PAGE CLASSES */
@@ -182,154 +208,61 @@ svg{
 
 .col2{
 	width:45%;
-/*	padding:0 2%;*/
 	margin:2.5%;
 	float:left;
 	
 }
 
 .col3{
-	width:27.33%;
+	background-color: #F4F3FD;
+	width:30.33%;
+	height:480px;
 	min-width: 19em;
 	max-width: 458px;
-	margin: 0 3%;
+	margin: 0 1.5%;
+	padding:3%;
 	float:left;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
+	-o-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
+	-ms-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
+	box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
 }
 
-.greenrules{
-	background-color: #BCFFD2;
-	margin: 2em 0;
+.col3 img{
+	width:33.33%;
+	margin:auto;
 }
 
-.pinkrules{
-	background-color: #BF009D;
-}
-
-
-
-/*------------------------------------------ LANDING CLASSES */
-
-
-
-
-
-
-
-
-/*------------------------------------------ EVENT DETAILS CLASSES */
-
-
-.eventtitle{
-  	font-family: 'LearningCurve', serif;
-	font-size: 6em;
-	color:#BF009D;
-  	text-align: center;
-  	font-weight: 300;
-}
-
-.eventinfo{
-	font-size:1.25em;
-}
-
-.eventtimes{
-	font-size:1.25em;
-}
-
-.addlink{
-	margin:2em 0 0;
-	padding:1em;
-/*	border:1px solid #D6D3F0;*/
-}
-
-.address{
-	letter-spacing: .09em;
-	text-transform: none;
-}
-
-/*------------------------------------------ ACCOMMODATIONS CLASSES */
-
-.triptitlemain{
-	font-size:11em;
-	color:#fff;
-	margin:0 0 .15em;
-}
-
-.triptitles{
-    font-size: 5.5em;
-    font-weight: 600;
-    color: #0B3142;
-    font-family: 'LearningCurve';
-    /* letter-spacing: .25em; */
-    margin: .25em 0 0;
-     text-align: center; 
-}
-
-
-/*------------------------------------------ TRAVEL CLASSES */
-
-.traveltxt{
-	color:#0B3142;
-	padding:1em 0 0;
-	font-style:normal;
-}
-
-.travelarrow{
-	font-size: 4em;
-	color:#BF009D;
-	margin:.25em .5em 1em;
-	text-align:center;
-	float: left;
-}
-
-.innercol{
-	width:35%;
-	padding:0;
-	margin:0;
-	float:left;
-	text-align: center;
-}
-
-.outercol{
+.event{
+	background-color: #F4F3FD;
+	padding:3em 10em 7em;
+	margin:5em auto;
 	width:65%;
-	margin:0;
-	padding:3em 0;
-	float:left;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.7);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.7);
+	-o-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.7);
+	-ms-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.7);
+	box-shadow: 2px 2px 0px 0px rgba(11,49,66,.7);
+	-webkit-transition: all .15s ease .15s;
+    -moz-transition: all .15s ease .15s;
+    -o-transition: all .15s ease .15s;
+	transition: all .15s ease .15s;
 }
 
-.block{
-	text-transform: none;
-}
 
-
-/*------------------------------------------ REGISTRY CLASSES */
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------------ LANDING ID's */
-
+/*------------------------------------------ landing */
 
 #landing{
 	height:100vh;
 	background:url(assets/imgs/ljpattern400t.png) repeat;
 	background-color: #F4F3FD;
-/*	border:1em solid #0B3142;*/
 }
 
 #gettingmarried{	
 	text-align: center;
 	font-size: 2em;
 	font-family: 'Cutive Mono', sans-serif;
-/*	font-weight: 600;
-	text-transform: uppercase;*/
 	letter-spacing: .25em;
 	color:#0B3142;
 	margin:0;
@@ -347,13 +280,17 @@ svg{
 }
 
 
-
-
-/*------------------------------------------ SAVETHEDATE ID's */
+/*------------------------------------------ join us */
 
 #joinus{
 	color: #D6D3F0;
 	background-color:#0B3142;
+}
+
+#thedate{
+	font-size:9em;
+	color: #3b8bb5;
+	margin:0.1em 0;
 }
 
 #portraits{
@@ -362,33 +299,25 @@ svg{
 	padding:5em 5%;
 	background-color: #F4F3FD;
 	color:#0B3142;
-}
-
-#thedate{
-	font-size:9em;
-	color: #BF009D;
-	margin:0.1em 0;
-}
-
-
-
-
-/*------------------------------------------ EVENT DETAILS ID'S */
-
-
-
-main{
-	background-color: #004245;
-/*background-color: #D6D3F0;*/
-	padding:7em 5em;
-	max-width:1968px;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	-o-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	-ms-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 
+/*------------------------------------------ event details */
 
 
 
-/*------------------------------------------ ACCOMMODATIONS ID's */
+
+
+
+
+
+
+/*------------------------------------------ accommodations */
 
 
 #accommodations{
@@ -397,23 +326,21 @@ main{
 	padding:6em 0 18em;
 }
 
-#leftrule{
-	float:right;
-}
 
-
-/*------------------------------------------ TRAVEL ID's */
+/*------------------------------------------ travel */
 
 #travel{
 	background-color: #D6D3F0;
 	color:#fff;
+	padding: 7em 0 12em;
 }
 
-#traveltitle{
+#travel h2{
 	font-size:11em;
-	color:#0B3142;
+	color:#fff;
 	margin:0 0 .15em;
 }
+
 
 
 /*------------------------------------------ REGISTRY ID's */
@@ -421,173 +348,4 @@ main{
 #registry{
 	background-color: #0B3142;
 }
-
-
-
-
-@media only screen and (max-width: 1415px){
-	header{
-		width:100%;
-	}
-
-	main{
-		padding:5.5em 1em;
-	}
-}
-
-
-@media only screen and (max-width: 1272px){
-	.col3{
-		width:38%;
-		margin: 0 6%;
-	}
-
-	.eventtitle{
-		font-size: 8em;
-	}
-
-	.innercol{
-		width:45.5%;
-	}
-
-	.outercol{
-		width:54.5%;
-	}
-
-	main{
-		padding:5.5em 2em;
-	}
-
-	#afterparty{
-		clear:both;
-		float:none;
-		margin:0 auto;
-		padding:5.5em 0 0;
-		width:100%;
-	}
-
-	#joinus{
-		padding:9em 0 4em;
-	}
-
-}
-
-@media only screen and (max-width: 960px){
-	.col3{
-		width:100%;
-		float:none;
-		margin:0 auto 5em;
-	}
-
-	.col2{
-		width:60%;
-		margin:3em auto 4em;
-		float:none;
-		text-align:center; 
-	}
-
-	.innercol{
-		width:50%;
-	}
-
-	.outercol{
-		width:50%;
-	}
-
-	.traveltxt{
-		padding: 4em 0 0;
-	}
-
-	.leftcol{
-		text-align: center;
-	}
-
-	.greenrules{
-		margin: 2em auto;
-	}
-
-	#afterparty{
-		padding:0;
-	}
-
-	main{
-		padding:5.5em 2em;
-		margin:9em 0 0;
-	}
-
-	#leftrule{
-		float:none;
-	}
-}
-
-
-@media only screen and (max-width: 700px){
-	header{
-		top:0%;
-		transform:none;
-	}
-
-	h1{
-		line-height: .5em;
-		margin:0 0 .5em;
-	}
-
-	.block{
-		display: block;
-	}
-
-	.col2{
-		width:80%;
-	}
-
-	.triptitlemain{
-		font-size:9em;
-	}
-
-	#landing{
-		height:auto;
-		border:none;
-	}
-}
-
-
-@media only screen and (max-width: 514px){
-	.wrap{
-		width:100%
-	}
-
-	.col2{
-		width:88%;
-	}
-
-	.col3{
-		min-width: 0;
-	}
-
-	.triptitlemain{
-		font-size:8em;
-	}
-
-
-
-	main{
-		padding:5.5em 2em 7.5em;
-	}
-
-
-
-
-}
-
-@media only screen and (max-width: 400px){
-	h1{
-		line-height: .5em;
-	}
-
-	.col2{
-		width:100%;
-	}
-}
-
-
 
