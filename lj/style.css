@@ -43,7 +43,7 @@ h1{
 }
 
 h2{
-	font-size: 6.875em;
+	font-size: 9em;
 }
 
 h3{
@@ -110,11 +110,11 @@ a:active{
 }
 
 
-li{
+/*li{
 	font-size: 1.6em;
 	letter-spacing: .04em;
 	padding:0 0 0.5em;
-}
+}*/
 
 main{
 	/*background-color: #004245;*/
@@ -123,7 +123,7 @@ main{
 	max-width:1968px;
 }
 
-section{
+section, footer{
 	width:100%;
 	padding:7em 0; 
 }
@@ -206,12 +206,31 @@ address:hover{
 	margin:auto;
 }
 
-.col2{
+.aloha{
+	height:100vh;
+	background:url(assets/imgs/ljpattern400t.png) repeat;
+	background-color: #F4F3FD;
+}
+/*.col2{
 	width:45%;
 	margin:2.5%;
 	float:left;
-	
 }
+
+.col2:nth-of-type(1){
+	text-align: right;
+}
+.col2:nth-of-type(1) hr{
+	float:right;
+}
+
+.col2:nth-of-type(1) h3{
+	text-align: right;
+}
+
+.col2:nth-of-type(2) h3{
+	text-align: left;
+}*/
 
 .col3{
 	background-color: #F4F3FD;
@@ -222,11 +241,16 @@ address:hover{
 	margin: 0 1.5%;
 	padding:3%;
 	float:left;
-	-webkit-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
-	-moz-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
-	-o-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
-	-ms-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
-	box-shadow: 2px 2px 0px 0px rgba(11,49,66,.075);
+/*	-webkit-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.2);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.2);
+	-o-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.2);
+	-ms-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.2);
+	box-shadow: 2px 2px 0px 0px rgba(11,49,66,.2);*/
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(59,139,181,.2);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(59,139,181,.2);
+	-o-box-shadow: 2px 2px 0px 0px rgba(59,139,181,.2);
+	-ms-box-shadow: 2px 2px 0px 0px rgba(59,139,181,.2);
+	box-shadow: 2px 2px 0px 0px rgba(59,139,181,.2);
 }
 
 .col3 img{
@@ -251,13 +275,17 @@ address:hover{
 }
 
 
+input.text{
+	    border-top: 1px solid red;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 1px solid #ddd;
+    background: #fff url(/images/fieldbg.gif) repeat-x top;
+}
+
 /*------------------------------------------ landing */
 
-#landing{
-	height:100vh;
-	background:url(assets/imgs/ljpattern400t.png) repeat;
-	background-color: #F4F3FD;
-}
+
 
 #gettingmarried{	
 	text-align: center;
@@ -316,18 +344,7 @@ address:hover{
 
 
 
-
-/*------------------------------------------ accommodations */
-
-
-#accommodations{
-	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
-	background-size: cover;
-	padding:6em 0 18em;
-}
-
-
-/*------------------------------------------ travel */
+/*------------------------------------------ travel & accommodations */
 
 #travel{
 	background-color: #D6D3F0;
@@ -335,17 +352,57 @@ address:hover{
 	padding: 7em 0 12em;
 }
 
-#travel h2{
-	font-size:11em;
+#travel h5, 
+#accommodations h5{
+	color:#3b8bb5;
+}
+
+#travel h2, 
+#accommodations h2{
 	color:#fff;
-	margin:0 0 .15em;
+	margin:0 0 .25em;
+}
+
+#travel h3{
+	font-size:5em;
+}
+
+#accommodations{
+	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
+	background-size: cover;
+	padding:6em 0 18em;
+}
+
+#accommodations .col3{
+	background-color: #fff;
+}
+
+#accommodations h3{
+	font-size: 5em;
+	margin:.25em 0 .5em;
 }
 
 
 
-/*------------------------------------------ REGISTRY ID's */
+/*------------------------------------------ registry */
 
 #registry{
 	background-color: #0B3142;
+	color:#F4F3FD;
 }
 
+#registry h2,
+#registry p,
+#registry a{
+	color:#F4F3FD;
+}
+
+
+/*------------------------------------------ rsvp */
+
+#rsvp{
+	background-color: #F4F3FD;
+	width:60%;
+	margin: auto;
+	padding:5em;
+}
