@@ -41,7 +41,7 @@ html{background-image:none;background-color:#99cc00;font-family:'CutiveMono', sa
 .wufoo input.text{border:1px solid #0B3142;}
 
 /* Typography */
-.wufoo .info h2{display:none !important;}
+.wufoo .info h2{color:red;}
 .wufoo .info div{display:none !important;}
 .wufoo .info div{display:none !important;}
 .wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
