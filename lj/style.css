@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+/*@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);*/
 
 @font-face {
   font-family: 'LearningCurve';
@@ -12,7 +12,7 @@ html{
 }
 
 body{
-	font-family: 'Cutive Mono', sans-serif;
+	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 	background-color: #D6D3F0;
 }
 
@@ -48,7 +48,7 @@ h2{
 }
 
 h3{
-    font-size: 7em;
+    font-size: 9em;
     font-weight: 300;
     color: #3b8bb5;
     margin: .25em 0 0;
@@ -59,7 +59,7 @@ h4{
 	margin:0 0 1em;
 	text-align: center;
 	font-size:1.8em;
-	line-height: 1.4em;
+	line-height: 1.2em;
 	color:#0B3142;
 }
 
@@ -82,6 +82,7 @@ p{
 	line-height: 1.6em;
 	margin:2em 0 0;
 	color:#0B3142;
+	text-align: center;
 }
 
 p:nth-of-type(2){
@@ -119,8 +120,7 @@ a:active{
 main{
 	/*background-color: #004245;*/
 	background-color: #3b8bb5;
-	padding:7em 5em;
-	max-width:1968px;
+	padding:7em 0;
 }
 
 section, footer{
@@ -146,10 +146,11 @@ figcaption{
 	font-size: 6em;
 	text-align: center;
 	margin:0.5em 0 0;
+	color: #0B3142;
 }
 
 figcaption + p{
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 1.6em;
 	margin: 0;
 }
@@ -177,19 +178,22 @@ address{
 	font-size:1.8em;
 	line-height: 1.4em;
 	letter-spacing: .09em;
-	font-style: normal;
 	color:#0B3142;
-	-webkit-transition: all .15s ease .15s;
-    -moz-transition: all .15s ease .15s;
-    -o-transition: all .15s ease .15s;
-	transition: all .15s ease .15s;
 }
+
+
+
+
+/*.map{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.6em;
+}*/
 
 address:hover{
-	color:#3b8bb5;
+	font-weight:bold;
 }
-
-
 
 /*------------------------------------------ PAGE CLASSES */
 
@@ -238,7 +242,7 @@ address:hover{
 }*/
 
 .col3{
-	background-color: #F4F3FD;
+	background-color: #fff;
 	width:30.33%;
 	height:480px;
 	min-width: 19em;
@@ -263,9 +267,9 @@ address:hover{
 	margin:auto;
 }
 
-.event{
+.card{
 	background-color: #F4F3FD;
-	padding:3em 10em 7em;
+	padding:4% 8% 6%;
 	margin:5em auto;
 	width:65%;
 	-webkit-box-shadow: 2px 2px 0px 0px rgba(11,49,66,.7);
@@ -279,6 +283,10 @@ address:hover{
 	transition: all .15s ease .15s;
 }
 
+.card:nth-of-type(8) a:link{
+	color:red;
+	font-weight: bold;
+}
 
 .small{
 	font-size: 1.4em;
@@ -289,9 +297,9 @@ address:hover{
 
 
 #gettingmarried{	
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 2em;
-	font-family: 'Cutive Mono', sans-serif;
+	font-family: font-family: 'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 	letter-spacing: .25em;
 	color:#0B3142;
 	margin:0;
@@ -312,8 +320,10 @@ address:hover{
 /*------------------------------------------ join us */
 
 #joinus{
-	color: #D6D3F0;
 	background-color:#0B3142;
+}
+#joinus h5{
+	color:#F4F3FD;
 }
 
 #thedate{
@@ -323,7 +333,7 @@ address:hover{
 }
 
 #portraits{
-	width:65%;
+/*	width:65%;
 	margin:2em auto 5em;
 	padding:5em 5%;
 	background-color: #F4F3FD;
@@ -332,7 +342,7 @@ address:hover{
 	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 	-o-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 	-ms-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
-	box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);*/
 }
 
 
@@ -348,54 +358,80 @@ address:hover{
 /*------------------------------------------ travel & accommodations */
 
 #travel{
-	background-color: #D6D3F0;
+	/*background-color: #D6D3F0;*/
+	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
+	background-size: cover;
 	color:#fff;
 	padding: 7em 0 12em;
 }
 
-#travel h5, 
-#accommodations h5{
+#travel h5{
 	color:#3b8bb5;
 }
-
-#travel h2, 
+#travel h2{
+	color: #0B3142;
+	margin:0 0 0.25em;
+}
+ 
 #accommodations h2{
-	color:#fff;
+	color:#3b8bb5;
 	margin:0 0 .25em;
 }
 
+/*#accommodations h5{
+
+}*/
+
 #travel h3{
+	color: #0B3142;
 	font-size:5em;
 }
 
 #accommodations{
-	background:url(assets/imgs/accommodations1.jpg) no-repeat center center scroll;
-	background-size: cover;
-	padding:6em 0 18em;
-}
 
-#accommodations .col3{
-	background-color: #fff;
+	background-color: #0B3142;
+	color:#3b8bb5;
 }
 
 #accommodations h3{
-	font-size: 5em;
-	margin:.25em 0 .5em;
+	color:#0B3142;
+	font-weight: bold;
+	font-size: 1.8em;
+	margin:.25em 0 2em;
+	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+ 
 }
 
 
+#accommodations h5{
+	color:#F4F3FD;
+}
 
 /*------------------------------------------ registry */
 
 #registry{
-	background-color: #0B3142;
+	background-color: #3b8bb5;
 	color:#F4F3FD;
 }
 
-#registry h2,
-#registry p,
-#registry a{
+#registry h2{
 	color:#F4F3FD;
+}
+
+#registry a{
+	width:3em;
+	font-size: 6em;
+	line-height: 0;
+	background-color:#3b8bb5;
+	padding:1em;
+	display: block;
+	margin:1em auto 0;
+	text-align: center;
+}
+
+#registry a:hover{
+	background-color: #0B3142;
+	color: #F4F3FD;
 }
 
 
@@ -407,4 +443,8 @@ address:hover{
 	margin: auto;
 	padding:5em;
 	text-align: center;
+}
+
+#form{
+	margin:3em auto;
 }
