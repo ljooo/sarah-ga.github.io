@@ -1,5 +1,3 @@
-<!-- http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/ -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,16 +9,22 @@
     <!--[if lt IE 9]>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
   	<![endif]-->
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="smoothscroll.js"></script>
 
 </head>
 <body>
 
 	<section class="aloha" id="landing">
-		<header style="padding:0; margin:0; ">
+		<header>
 			<h1>Jordan + Laura<span>Jo</span></h1>
 			<p id="gettingmarried">are getting married!</p>
 		</header>
-		<div id="arrow-down">&#8595;</div>
+		<a href="#joinus" class="smoothScroll">
+			<div class="arrow-link">
+				<p>the date<br><span class="arrow">&#8595;</span></p>
+			</div>
+		</a>
 	</section>
 
 	<section id="joinus">
@@ -38,13 +42,17 @@
 				<p>(drawn by Jordan)</p>
 			</figure>
 		</div>
+		<a href="#toast" class="smoothScroll">
+			<div class="arrow-link">
+				<p>the main event<br><span class="arrow">&#8595;</span></p>
+			</div>
+		</a>
 	</section>
 		
-
 	<main class="clearfix">
+	<section id="toast">
+	<h3>welcome toast</h3>
 		<div class="card">
-			<h3>a toast</h3>
-			
 			<h4>Friday, July 22<br>8pm – 11pm</h4>
 			<p>Come raise your glass at one of our fave upstate restaurants. Share tales from our eon of togetherness and help us kick off the festivities just right.</p>
 			<hr>
@@ -56,9 +64,12 @@
 			</address>
 			</a>
 		</div>
+	</section>
 
+	<section id="wedding">
+	<h3>a lovely day</h3>
 		<div class="card">
-			<h3>a lovely day</h3>
+			
 			<h4>Saturday, July 23<br>4pm – 11pm</h4>
 			<p>This is the most special day! In the middle of nature, we’ll dress up nice,<sup>1</sup> dine on farmer fare and dance into the night.<sup>2</sup></p>
 			
@@ -73,9 +84,17 @@
 			</address>
 			</a>
 		</div>
-
+		<a href="#travel" class="smoothScroll">
+			<div class="arrow-link">
+				<p>directions<br><span class="arrow">&#8595;</span></p>
+			</div>
+		</a>
+	</section>
+	
+	<section id="afterparty">
+	<h3>midnight rumble</h3>
 		<div class="card">
-			<h3>a midnight rumble</h3>
+			
 			<h4>Saturday, July 23<br>11pm – ??</h4>
 			<p>This late-night party is still in the works, but at some point we’ll happily and tipsily stand on chairs in our finery and spread the word on where to go. All we know is this: there’s a 99% chance of nachos.</p>
 			<hr>
@@ -83,97 +102,126 @@
 			<address>Stay tuned for location.</address>
 			</a>
 		</div>
-	</main>
 
+	</section>
+	</main>
 	<section id="travel">
+		<h2>getting there</h2>
 		<div class="wrap clearfix">
-			<h2>Getting There</h2>
 			<div class="col3">
 				<img src="assets/imgs/plane.png" alt="airplane" title="take the air">
-				<h3>take the air</h3>
-				<p>The nearest airports are <a href="http://www.albanyairport.com/" target="blank">Albany (ALB)</a> and <a href="http://www.panynj.gov/airports/stewart.html" target="blank">Newburgh (SWF)</a>and from either, the site is a one-hour drive.
-</p>
+				<h3>Take the Air</h3>
+				<p>The nearest airports are <a href="http://www.albanyairport.com/" target="blank">Albany (ALB)</a> and <a href="http://www.panynj.gov/airports/stewart.html" target="blank">Newburgh (SWF)</a>and from either, the site is a one-hour drive.</p>
 			</div>
 
 			<div class="col3">
 				<img src="assets/imgs/plane.png" alt="airplane" title="take the air">
-				<h3>take the roads</h3>
+				<h3>Take the Roads</h3>
 				<p>The nearest city is, of course, NYC. It’s a two and a half hour ride that goes from <a href="https://www.google.com/maps/dir/New+York,+NY/Germantown,+NY/data=!4m8!4m7!1m2!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!1m2!1m1!1s0x89dda26d04ffc68d:0x87bda81f5ca49b45!3e0?sa=X&ved=0CCcQox0wAGoVChMI0dXq0ZWsyAIViVg-Ch1GXQse" target="blank">concrete to green</a>.</p>
 			</div>
 
 			<div class="col3">
 				<img src="assets/imgs/plane.png" alt="airplane" title="take the air">
-				<h3>take the rails</h3>
+				<h3>Take the Rails</h3>
 				<p>You can take <a href="http://www.amtrak.com/servlet/ContentServer?pagename=am/am2Station/Station_Page&code=RHI">Amtrak to Rhinecliff, NY</a> and snag a taxi, but you’ll probably need a car to get around.</p>
 			</div>
 		</div>
+		<a href="#accommodations" class="smoothScroll">
+			<div class="arrow-link">
+				<p>where to stay<br><span class="arrow">&#8595;</span></p>
+			</div>
+		</a>
 	</section>
 
  	<section id="accommodations">
+		
+		<h2>accommodations</h2>
+		<div class="card">
+			<p>We have rooms blocked at these places:<br>(all two-night minimums / breakfast included!)</p>
+		</div>
 		<div class="wrap clearfix">
-			<h2>Accommodations</h2>
 			<a href="http://centralhousehotelinn.com/" target="blank">
-			<div class="card">
-				<h3>Central House Inn | Germantown, NY</h3>
+			<div class="col3">
+				<h3>Central House Inn</h3>
+				<p>Germantown, NY</p>
 				<h4>&#65515; $195+ per night &#65513;</h4>
 				<p>Tell them you’re staying for Laura Jo and Jordan’s wedding. Located 7 minutes from site.</p>
 			</div>
 			</a>
 			<a href="http://hoteltivoli.org/hotel/" target="blank">
-			<div class="card">
-				<h3>Hotel Tivoli | Tivoli, NY</h3>
-				<h4>&#65515; $185+ per night &#65513;</h4>
+			<div class="col3">
+				<h3>Hotel Tivoli</h3>
+				<p>Tivoli, NY</p>
+				<h4>&#65515; $300+ per night &#65513;</h4>
 				<p>Please use reference code 0722 when booking. Located 5 minutes from site.</p>
 			</div>
 			</a>
 			<a href="http://hamptoninn3.hilton.com/en/hotels/new-york/hampton-inn-kingston-POUKGHX/index.html" target="blank">
-			<div class="card">
-				<h3>Hampton Inn | Kingston, NY</h3>
+			<div class="col3">
+				<h3>Hampton Inn</h3>
+				<p>Kingston, NY</p>
 				<h4>&#65515; $229+ per night &#65513;</h4>
-				<p>Use the code HYW if booking online. Please tell them you’re here for the Hess + Yearsley wedding. Located 20 minutes from site.</p>
+				<p>Use the code HYW if booking online and tell them you’re here for the Hess + Yearsley wedding. Located 20 minutes from site.</p>
 			</div>
 			</a>
-			<div class="card">
-			<p>Feel free to book elsewhere, too! We recommends staying in <a href="https://www.airbnb.com/s/Tivoli--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&ss_id=enrhab1o" target="blank">Tivoli</a>, <a href="https://www.airbnb.com/s/Red-Hook--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&ss_id=enrhab1o" target="blank">Red Hook</a>, <a href="https://www.airbnb.com/s/Hudson--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&source=bb&ss_id=enrhab1o" target="blank">Hudson</a>, or <a href="https://www.airbnb.com/s/Rhinebeck--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&ss_id=enrhab1o" target="blank">Rhinebeck</a>, but all the nearby towns have some hidden gems and hideaways. Just a heads up that most have a two-night minimum.</p>
-			</div>
 		</div>
+			<div class="card">
+				<p>Feel free to book elsewhere, too! We recommends staying in <a href="https://www.airbnb.com/s/Tivoli--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&ss_id=enrhab1o" target="blank">Tivoli</a>, <a href="https://www.airbnb.com/s/Red-Hook--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&ss_id=enrhab1o" target="blank">Red Hook</a>, <a href="https://www.airbnb.com/s/Hudson--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&source=bb&ss_id=enrhab1o" target="blank">Hudson</a>, or <a href="https://www.airbnb.com/s/Rhinebeck--NY--United-States?checkin=07%2F22%2F2016&checkout=07%2F24%2F2016&guests=2&ss_id=enrhab1o" target="blank">Rhinebeck</a>, but all the nearby towns have some hidden gems and hideaways. Just a heads up that most have a two-night minimum.</p>
+			</div>
+		
+		<a href="#registry" class="smoothScroll">
+			<div class="arrow-link">
+				<p>rsvp<br><span class="arrow">&#8595;</span></p>
+			</div>
+		</a>
 	</section>
 
-	<section id="registry">
-		<div class="wrap clearfix">
-			<h2 class="triptitlemain">Registry</h2>
-			<div class="card">
+	<section class="clearfix" id="rsvpreg">
+		<div class="col2" id="rsvp">
+			<h2>r.s.v.p</h2>
+			<div id="form">
+				<div id="wufoo-z1ww844k13o59h7"></div>
+				<script type="text/javascript">var z1ww844k13o59h7;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'ljandjordan',
+				'formHash':'z1ww844k13o59h7',
+				'autoResize':true,
+				'height':'458',
+				'async':true,
+				'host':'wufoo.com',
+				'header':'show',
+				'ssl':true};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { z1ww844k13o59h7 = new WufooForm();z1ww844k13o59h7.initialize(options);z1ww844k13o59h7.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');</script>
+			</div>
+		</div>
+		
+		<div class="col2" id="registry">
+			<h2 class="triptitlemain">registry</h2>
+			
 				<p>Your presence is everything, but if you insist on gifting, here are a few things we know we’ll love.</p>
 				<a href="https://www.zola.com/registry/laurajordan" target="blank">&hearts;</a>
-			</div>
 		</div>
+		<a href="#footer" class="smoothScroll">
+			<div class="arrow-link">
+				<p>ps<br><span class="arrow">&#8595;</span></p>
+			</div>
+		</a>
 	</section>
 
-	<footer class="aloha">
-		<div id="rsvp">
-			<h2>R.S.V.P</h2>
-			<div id="form">
-			<div id="cover"></div>
-			<div id="wufoo-z1ww844k13o59h7">
+	<footer id="footer">
+		<h2>We can't wait to see you!</h2>
+		<p>Love,<br>LJ + Jordan</p>
+
+		<a href="#landing" class="smoothScroll">
+		<div class="arrow-link">
+				<p><span class="arrow">&#8593;</span><br>top</p>
 			</div>
-			<script type="text/javascript">var z1ww844k13o59h7;(function(d, t) {
-			var s = d.createElement(t), options = {
-			'userName':'ljandjordan',
-			'formHash':'z1ww844k13o59h7',
-			'autoResize':true,
-			'height':'458',
-			'async':true,
-			'host':'wufoo.com',
-			'header':'show',
-			'ssl':true};
-			s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-			s.onload = s.onreadystatechange = function() {
-			var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-			try { z1ww844k13o59h7 = new WufooForm();z1ww844k13o59h7.initialize(options);z1ww844k13o59h7.display(); } catch (e) {}};
-			var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-			})(document, 'script');</script>
-		</div>
-<!-- 		<iframe src="https://docs.google.com/forms/d/11kvjljhFFCiucmXa17lbBin0MoyzB4sEjjHAb2bfIgY/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+		</a>
 	</footer>
 </body>
 </html>
