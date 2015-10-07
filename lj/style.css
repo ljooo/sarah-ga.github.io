@@ -76,6 +76,10 @@ p a{
 	border-bottom: 1px dotted;
 }
 
+p a:hover{
+	border-bottom: 2px solid;
+}
+
 a{
 	text-decoration:none;
 	font:inherit;
@@ -90,9 +94,10 @@ a:visited{
 }
 
 main section{
-	height:auto;
-	padding:2em;
+	padding:2em 0;
 	height: 915px;
+	width:27.5%; 
+	float:left;
 }
 
 main .card{
@@ -153,13 +158,13 @@ img{
 sup{
 	vertical-align: super;
 	font-size: smaller;
-	color:#BF009D;
+	color:#F4F3FD;
 	padding:0 2px;
 }
 
 address{
 	margin:2em 0 0;
-	padding:1em;
+	padding:1em 0;
 	text-align: center; 
 	font-size:1.8em;
 	line-height: 1.4em;
@@ -205,14 +210,7 @@ address:hover{
 	font-weight: lighter;
 }
 
-.aloha{
-	background:url(assets/imgs/ljpattern400t.png) repeat;
-	background-color: #F4F3FD;
-}
 
-#landing{
-	height:100vh;
-}
 
 .col3{
 	color:#0B3142;
@@ -264,7 +262,10 @@ address:hover{
 
 /*------------------------------------------ landing */
 
-
+#landing{
+	background:url(assets/imgs/ljpattern400t.png) repeat;
+	background-color: #F4F3FD;
+}
 
 #gettingmarried{	
 	font-size: 2em;
@@ -291,9 +292,19 @@ address:hover{
 /*------------------------------------------ event details */
 
 
-#toast{width:27.5%; float:left; background-color: #D6D3F0; }
-#wedding{width:45%; float:left;background-color: #9A98B0;padding:3em 0; }
-#afterparty{width:27.5%; float:left;background-color: #57537D;}
+#toast{
+	background-color: #D6D3F0; 
+}
+
+#wedding{
+	width:45%; 
+	background-color: #9A98B0;
+	padding:3em 0; 
+}
+
+#afterparty{
+	background-color: #57537D;
+}
 
 
 #toast h3, #afterparty h3{
@@ -301,6 +312,9 @@ address:hover{
 	font-size:6em;
 }
 
+#wedding h3{
+	margin:.25em 0 .15em;
+}
 
 
 /*------------------------------------------ travel */
