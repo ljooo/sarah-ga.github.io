@@ -7,7 +7,7 @@
 }
 
 body{
-	font-size:10px;
+	font-size:16px;
 	font-family: 'Raleway', sans-serif;
 	background-color: #fafafa;
 	color:#4b4f54;
@@ -162,7 +162,7 @@ footer{
 }
 
 #footer_content{
-	width:506px;
+	width:507px;
 	float:left;
 }
 

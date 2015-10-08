@@ -102,7 +102,7 @@ main section{
 
 main .card{
 	width:100%;
-	padding:0 8% 10%;
+	padding:0 12% 10%;
 }
 
 main h4{font-weight: bold;}
@@ -111,7 +111,7 @@ section,
 footer{
 	width:100%;
 	padding:5em 0; 
-	height: 100vh;
+/*	height: 98vh;*/
 	position: relative
 }
 
@@ -119,6 +119,7 @@ footer{
 	background:url(assets/imgs/saturday.JPG) no-repeat center center scroll;
 	background-size: cover;
 	color:#107095;
+	height:100vh;
 }
 
 figure{
@@ -170,11 +171,16 @@ address{
 	line-height: 1.4em;
 	letter-spacing: .09em;
 	color:#0B3142;
+	
+}
+
+address a{
+	border-bottom: 1px dotted;
 }
 
 
-address:hover{
-	font-weight:bold;
+address a:hover{
+	border-bottom: 2px solid;
 }
 
 /*------------------------------------------ PAGE CLASSES */
@@ -199,15 +205,16 @@ address:hover{
 	margin:0;
 	text-align: center;
 	position: absolute;
-	bottom:.25em;
+	bottom:0em;
 	left:50%;
 	transform:translateX(-50%);
 }
 
 .arrow{
 	font-family: sans-serif;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: lighter;
+	line-height: .8em;
 }
 
 
@@ -219,7 +226,7 @@ address:hover{
 	min-width: 19em;
 	max-width: 458px;
 	margin: 0 1.5%;
-	padding:2.5%;
+	padding:1.5%;
 	float:left;
 }
 
@@ -241,13 +248,13 @@ address:hover{
 .col2{
 	width: 50%;
 	float:left;
-	height: 100vh;
+	height: 750px;
 	padding:3% 5%;
 }
 
 .card{
 	color:#0B3142;
-	padding:0 8%;
+	padding:0 8% 5%;
 	margin:0 auto;
 	width:65%;
 	-webkit-transition: all .15s ease .15s;
@@ -265,6 +272,7 @@ address:hover{
 #landing{
 	background:url(assets/imgs/ljpattern400t.png) repeat;
 	background-color: #F4F3FD;
+	height:100vh;
 }
 
 #gettingmarried{	
@@ -357,6 +365,7 @@ address:hover{
 
 #accommodations .card{
 	color:#fff;
+	padding:0 8%;
 }
 
 #accommodations p{
