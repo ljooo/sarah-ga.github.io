@@ -16,20 +16,22 @@
 <body>
 
 	<section id="landing">
-		<header>
-			<h1>Jordan + Laura Jo</h1>
-			<p id="gettingmarried">are getting married!</p>
-		</header>
-		<a href="#joinus" class="smoothScroll">
-			<div class="arrow-link">
-				<p>the date<br><span class="arrow">&#8595;</span></p>
-			</div>
-		</a>
+		<div id="overlay">
+			<header>
+				<h1>Jordan + Laura Jo</h1>
+				<p id="gettingmarried">are getting married!</p>
+			</header>
+			<a href="#joinus" class="smoothScroll">
+				<div class="arrow-link">
+					<p>the date<br><span class="arrow">&#8595;</span></p>
+				</div>
+			</a>
+		</div>
 	</section>
 
 	<section id="joinus">
 		<h2 id="thedate">July 23, 2016</h2>
-		<div class="card clearfix">
+		<div class="clearfix" id="joinus_wrap">
 			<figure>
 				<img src="assets/imgs/j2.png" alt="jordan" title="drawn by LJ">
 				<figcaption>Jordan Yearsley</figcaption>
@@ -54,8 +56,6 @@
 			<div class="card">
 				<h4>Friday, July 22<br>8pm – 11pm</h4>
 				<p>Come raise your glass at one of our fave upstate restaurants. Share tales from our eon of togetherness and help us kick off the festivities just right.</p>
-				<!-- <hr> -->
-				
 				<address>
 					<a href="http://hoteltivoli.org/the-corner/" target="blank">
 					The Corner @ Hotel Tivoli
@@ -96,17 +96,13 @@
 		<section id="afterparty">
 		<h3>midnight rumble</h3>
 			<div class="card">
-				
 				<h4>Saturday, July 23<br>11pm – ??</h4>
 				<p>This late-night party is still in the works, but at some point we’ll happily and tipsily stand on chairs in our finery and spread the word on where to go. All we know is this: there’s a 99% chance of nachos.</p>
-				<!-- <hr> -->
-				
-				<address><a href="#" target="blank">Stay tuned for location.</a></address>
-				
+				<address>Stay tuned for location.</address>
 			</div>
-
 		</section>
 	</main>
+
 	<section id="travel">
 		<h2>getting there</h2>
 		<div class="wrap clearfix">
@@ -204,9 +200,8 @@
 		
 		<div class="col2" id="registry">
 			<h2 class="triptitlemain">registry</h2>
-			
-				<p>Your presence is everything, but if you insist on gifting, here are a few things we know we’ll love.</p>
-				<a href="https://www.zola.com/registry/laurajordan" target="blank">&hearts;</a>
+				<p>Your presence is everything, but if you insist on gifting, <a href="https://www.zola.com/registry/laurajordan" target="blank">here are a few things</a> we know we’ll love.</p>
+				<a id="registry_link" href="https://www.zola.com/registry/laurajordan" target="blank">&hearts;</a>
 		</div>
 		<a href="#footer" class="smoothScroll">
 			<div class="arrow-link">
