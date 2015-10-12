@@ -97,7 +97,9 @@ main section{
 	float:left;
 }
 
-main h4{font-weight: bold;}
+main h4{
+	font-size:2.2em;
+}
 
 section, 
 footer{
