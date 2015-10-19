@@ -455,6 +455,13 @@ address a:hover{
 	}
 }
 @media screen and (max-width:1000px){
+
+	header{
+		position: static;
+		top:0%;
+		transform:translateY(0%);
+		padding-top:15vh;
+	}
 	.break{
 		display: block;
 	}
