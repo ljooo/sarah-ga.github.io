@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 html{
@@ -6,7 +7,7 @@ html{
 }
 
 body{
-	font-family: 'Inconsolata', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-size:12px;
 	background-color: #F9F9F9;
 	height:100%;
@@ -82,7 +83,7 @@ hr{
 
 a{
 	text-decoration: none;
-	border-bottom: 1px solid #7B67B5;
+	border-bottom: 1px dotted #7B67B5;
 	color:#7B67B5;
 }
 

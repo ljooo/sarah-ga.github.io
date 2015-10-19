@@ -1,31 +1,45 @@
-/*
-Cascade
-Classes + ID's
-Divs (widths, margin, padding, border)
-Images
-CSS shorthand
-*/
+/*http://coolors.co/8c8b93-ddd2cc-494521-576969-bcb1d6*/
 
 body{
 	font-size: 16px;
+	font-family:sans-serif;
+	text-align: center;
 }
 
 header{
 
 }
 
+nav{
+	
+}
+
+main{
+	padding:50px;
+}
+
+section{
+	padding:50px;
+	background-color: #000;
+	color:#fff;
+}
+
+footer{
+	padding:50px;
+}
+
 h1{
 	font-size:48px;
+	text-align: center;
+	padding:80px;
 }
 
 h2{
 	font-size:32px;
-	margin:0 0 16px;
 }
 
 h3{
 	font-size:16px;
-	margin:0 0 8px;
 }
 
 h4{
@@ -33,77 +47,58 @@ h4{
 	text-align:center;
 }
 
-nav{
-	width:370px;
-	margin:auto;
-	padding:16px 0;
-}
 
-hr{
-	border:none;
-	height:4px;
-	width:48px;
-	margin:0 0 24px;
-}
-
-p, li{
+p{
 	font-size:16px;
 	font-family:'Georgia', serif;
 }
 
 ul{
 	list-style:none;
-	margin:0 0 32px;
 }
 
 li{
-	padding:4px 0
 }
 
-p{
-
-}
 
 a{
+	color:purple;
 	text-decoration:none;
-	text-transform:uppercase;
-	margin:16px;
 }
 
 img{
-	margin:auto;
+	width:300px;
 }
 
-footer{
-	padding:80px 0;
+
+hr{
+	border:none;
+	height:4px;
+	width:48px;
+	margin:0 auto;
+	background-color: rgba(0,0,0,0.5);
 }
 
-.wrap{
-	width:700px;
-	margin:auto;
-	padding:80px 0;
+
+div{
+
 }
 
-#title{
-	margin:150px auto 250px;
-	padding:64px;
+.navlinks{
+	padding:15px;
+}
+
+.planets{
+	width:350px;
+	display: inline-block;
+	margin:20px;
 }
 
 #hooray{
-/*	image via http://imbreannarose.com/wallpaper-26-lots-of-shapes/*/
-	background:url("assets/shapes.png") no-repeat center center fixed;
-	background-size:cover;
-	padding:160px 0;
+	background-image:url(assets/carina-nebula.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:50px;
+	color:#fff;
 }
 
-#intro{
-	color:#000;
-}
-
-#column-wrap{
-	margin:48px 0 0;
-}
-
-#services{
-	padding:80px 0;
-}

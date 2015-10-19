@@ -1,5 +1,3 @@
-/*@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);*/
-
 @font-face {
   font-family: 'LearningCurve';
   src: url('assets/fonts/LearningCurve.eot?#iefix') format('embedded-opentype'),  url('assets/fonts/LearningCurve.woff') format('woff'), url('assets/fonts/LearningCurve.ttf')  format('truetype'), url('assets/fonts/LearningCurve.svg#LearningCurve') format('svg');
@@ -15,6 +13,7 @@ body{
 	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 	background-color: #D6D3F0;
 	color:#0B3142;
+	text-align: center;
 }
 
 header{
@@ -23,12 +22,10 @@ header{
 	transform:translateY(-50%);
 }
 
-
 h1, 
 h2,
 h3{
 	font-family: 'LearningCurve';
-	text-align: center;
 }
 
 h1{
@@ -40,53 +37,35 @@ h2{
 	font-size: 11em;
 }
 
-h3{
-    font-size: 11em;
-    font-weight: 300;
-    margin: .25em 0 0;
-    text-align: center; 
-}
-
 h4{
 	margin:0 0 1em;
-	text-align: center;
-	font-size:1.8em;
+	font-size:2em;
 	line-height: 1.4em;
-}
-
-hr{
-	width:1.75em;
-	margin:3em auto 0;
-	border:none;
-	height:3px;
-	background-color: #0B3142;
+	text-align: center;
 }
 
 p{
 	font-size:1.8em;
 	line-height: 1.6em;
 	margin:1.5em 0;
-	text-align: center;
-}
-
-p a{
-	border-bottom: 1px dotted;
-}
-
-p a:hover{
-	border-bottom: 2px solid;
-}
-
-a{
-	text-decoration:none;
-	font:inherit;
+	text-align: inherit;
 }
 
 a:link{
+	border-bottom: 1px dotted;
+	text-decoration:none;
 	color:inherit;
 }
 
 a:visited{
+	color:inherit;
+}
+
+a:hover{
+	border-bottom: 2px solid;
+}
+
+a:active{
 	color:inherit;
 }
 
@@ -176,6 +155,13 @@ address a:hover{
 	border-bottom: 2px solid;
 }
 
+span{
+	font-family: sans-serif;
+	font-size: 3em;
+	font-weight: lighter;
+	line-height: .8em;
+}
+
 /*------------------------------------------ PAGE CLASSES */
 
 .clearfix:after {
@@ -192,7 +178,7 @@ address a:hover{
 	margin: 3em auto 0;
 }
 
-.arrow-link{
+.arrow{
 	color:inherit;
 	font-size: .75em;
 	margin:0;
@@ -203,17 +189,14 @@ address a:hover{
 	transform:translateX(-50%);
 }
 
-.arrow{
-	font-family: sans-serif;
-	font-size: 3em;
-	font-weight: lighter;
-	line-height: .8em;
+.col2{
+	width: 50%;
+	float:left;
+	height: 750px;
+	padding:3% 5%;
 }
 
-
-
 .col3{
-	color:#0B3142;
 	width:30.33%;
 	height:480px;
 	min-width: 19em;
@@ -235,26 +218,15 @@ address a:hover{
 }
 
 .col3 p{
+	text-align: left;
 	margin:0 0 2em;
-}
-
-.col2{
-	width: 50%;
-	float:left;
-	height: 750px;
-	padding:3% 5%;
-}
-
-#joinus_wrap{
-	padding:0 8% 5%;
-	margin:0 auto 2em;
-	width:75%;
 }
 
 .card{
 	width:100%;
 	padding:0 12% 10%;
 	color:inherit;
+	text-align: left;
 }
 
 .small{
@@ -271,40 +243,38 @@ address a:hover{
 }
 
 #overlay{
-	position: absolute;
-	top:0;
 	background-color: rgba(244,243,253,0.65);
 	width:100%;
 	height: 100%;
+	position: absolute;
+	top:0;
 }
 
-
 #gettingmarried{	
-	font-size: 2em;
-	font-family: font-family: 'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-	letter-spacing: .25em;
-	color:#0B3142;
+	font-size: 2.2em;
+	letter-spacing: .4em;
 	margin:0;
 }
 
 /*------------------------------------------ join us */
-
-#thedate{
-	font-size:11em;
-	color: #107095;
-	margin:0.1em 0 .5em;
-}
 
 #joinus{
 	background-color: #FDFCF3;
 	color:#107095;
 }
 
+#joinus h2{
+	margin:0.1em 0 .5em;
+	color: #107095;
+}
 
-
+#portraits{
+	padding:0 8% 5%;
+	margin:0 auto 2em;
+	width:75%;
+}
 
 /*------------------------------------------ event details */
-
 
 #toast{
 	background-color: #D6D3F0; 
@@ -322,24 +292,22 @@ address a:hover{
 	color:#D6D3F0;
 }
 
-
-#toast h3, #afterparty h3{
-	padding:1em 0 0.5em;
+#toast h3, 
+#afterparty h3{
 	font-size:6em;
+	padding:1em 0 0.5em;
 }
 
 #wedding h3{
+	font-size:11em;
 	margin:.25em 0 .15em;
 }
 
 
 /*------------------------------------------ travel */
 
-
-
 #travel{
 	background-color: #B7CDD5;
-	/*color:#107095;*/
 	height: 750px;
 }
 
@@ -359,7 +327,6 @@ address a:hover{
 }
 
 #accommodations .col3{
-	padding:2em 1%;
 	color:#F4F3FD;
 	-webkit-transition: all .15s ease .15s;
     -moz-transition: all .15s ease .15s;
@@ -370,23 +337,12 @@ address a:hover{
 
 #accommodations .col3:hover{
 	background-color: #107095;
-}
-
-#accommodations .card{
 	color:#fff;
-	padding:0 8%;
 }
-
-#accommodations p{
-	/*margin:0;*/
-}
-
-
 
 /*------------------------------------------ rsvp & registry */
 
-
-#rsvpreg{
+#rsvp_reg{
 	margin: 0;
 	padding:0;
 } 
@@ -411,6 +367,7 @@ address a:hover{
 	line-height: 0;
 	background-color:#107095;
 	padding:1em;
+	border:none;
 	display: block;
 	margin:1em auto 0;
 	text-align: center;
