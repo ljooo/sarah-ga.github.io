@@ -394,7 +394,7 @@ address a:hover{
 		width:80%;
 		float:none;
 		min-width: auto;
-		max-width: 1000px;
+		max-width: none;
 		margin:0 auto;
 		padding:0;
 	}
