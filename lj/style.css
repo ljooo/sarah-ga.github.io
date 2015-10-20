@@ -12,8 +12,8 @@ html{
 
 body{
 	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-	/*background-color: #D6D3F0;*/
-	background-color: red;
+	background-color: #D6D3F0;
+	/*background-color: red;*/
 	color:#0B3142;
 	text-align: center;
 	height:100%;
@@ -401,7 +401,7 @@ address a:hover{
 	.col3{
 		width:80%;
 		float:none;
-		min-width: auto;
+		/*min-width: auto;*/
 		max-width: 400px;
 		margin:0 auto;
 		padding:0;
@@ -599,11 +599,14 @@ address a:hover{
 
 	#joinus h2,
 	#toast h3, 
-	#wedding h3,
-	#afterparty h3{
+	#wedding h3{
 		font-size:8em;
 	}
 
+	#accommodations h2,
+	#afterparty h3{
+		font-size: 7.25em;
+	}
 }
 
 
