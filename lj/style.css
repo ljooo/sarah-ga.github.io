@@ -12,7 +12,8 @@ html{
 
 body{
 	font-family:'Courier New','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-	background-color: #D6D3F0;
+	/*background-color: #D6D3F0;*/
+	background-color: red;
 	color:#0B3142;
 	text-align: center;
 	height:100%;
