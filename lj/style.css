@@ -254,7 +254,7 @@ address a:hover{
 #overlay{
 	background-color: rgba(244,243,253,0.65);
 	width:100%;
-	height: 100%;
+	height: 100vh;
 	position: absolute;
 	top:0;
 }
