@@ -208,8 +208,8 @@ address a:hover{
 
 .col3{
 	width:30.33%;
-	min-width: 324px;
-	max-width: 458px;
+	/*min-width: 324px;*/
+	/*max-width: 458px;*/
 	margin: 0 1.5%;
 	padding:1.5%;
 	float:left;
@@ -349,6 +349,11 @@ address a:hover{
 	color:#fff;
 }
 
+#accommodations .col3:active{
+	background-color: #107095;
+	color:#fff;
+}
+
 /*------------------------------------------ rsvp & registry */
 
 #rsvp_reg{
@@ -402,7 +407,7 @@ address a:hover{
 		width:80%;
 		float:none;
 		/*min-width: auto;*/
-		max-width: 375px;
+		/*max-width: 375px;*/
 		margin:0 auto;
 		padding:0;
 	}
@@ -455,7 +460,8 @@ address a:hover{
 		width:60%;
 		padding:1% 6%;
 		height:auto;
-		min-width: 522px;
+		/*min-width: 522px;*/
+		border-bottom:2px solid #107095;
 	}
 
 	#accommodations p{
@@ -486,9 +492,21 @@ address a:hover{
 	#portraits{
 		padding:0;
 	}
+
+	#accommodations .col3{
+		width:80%;
+	}
+
+	#accommodations .col3:nth-of-type(3){
+		margin:0 auto 15%;
+	}
 }
 
 @media screen and (max-width:811px){
+	.arrow_link{
+		display: none;
+	}
+
 	.col2{
 		width: 100%;
 		float:none;
@@ -506,7 +524,7 @@ address a:hover{
 		padding: 0 5%;
 		margin:auto;
 		float: none;
-		min-width: 250px;
+		/*min-width: 250px;*/
 	}
 
 	.travel_txt{
@@ -568,7 +586,8 @@ address a:hover{
 	#accommodations .col3{
 		width:100%;
 		padding: 1% 6%;
-		min-width: auto;
+		border-bottom: none;
+		/*min-width: auto;*/
 	}
 
 	h2{
